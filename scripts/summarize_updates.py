@@ -44,7 +44,11 @@ Items (read each on the official website before summarising):
 {listing}
 
 Return ONLY a JSON array of strings, one per item, in the same order."""
-    out = claude_util.ask_json(prompt, allowed_domains=OFFICIAL, max_searches=min(10, len(todo) + 2))
+    try:
+        out = claude_util.ask_json(prompt, allowed_domains=OFFICIAL, max_searches=min(10, len(todo) + 2))
+    except Exception as e:  # never fail the daily run because of the AI service
+        print(f"Summaries skipped today: {e}")
+        return 0
     added = 0
     for u, text in zip(todo, out if isinstance(out, list) else []):
         text = (text or "").strip()

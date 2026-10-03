@@ -5,12 +5,12 @@ Works with either provider – whichever key is set as a GitHub secret:
   ANTHROPIC_API_KEY  Anthropic Claude (paid; web search restricted to official domains)
 If both are set, Gemini is used unless AI_PROVIDER=anthropic.
 """
-import json, os, re
+import json, os, re, time
 
 import requests
 
 DEFAULT_CLAUDE_MODEL = "claude-sonnet-4-5"   # override with repository variable CLAUDE_MODEL
-DEFAULT_GEMINI_MODEL = "gemini-flash-latest"  # override with repository variable GEMINI_MODEL
+GEMINI_FALLBACKS = ["gemini-2.5-flash", "gemini-2.5-flash-lite", "gemini-flash-latest"]  # free-tier models, tried in order
 
 
 def provider():
@@ -38,7 +38,6 @@ def _parse_json(text):
 
 
 def _gemini(prompt, allowed_domains, max_tokens):
-    model = os.environ.get("GEMINI_MODEL") or DEFAULT_GEMINI_MODEL
     if allowed_domains:
         prompt += ("\n\nUse Google Search. Rely only on pages from these official websites: "
                    + ", ".join(allowed_domains) + ". Ignore all other websites.")
@@ -47,12 +46,25 @@ def _gemini(prompt, allowed_domains, max_tokens):
         "tools": [{"google_search": {}}],
         "generationConfig": {"maxOutputTokens": max_tokens, "temperature": 0.3},
     }
-    r = requests.post(
-        f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent",
-        params={"key": os.environ["GEMINI_API_KEY"]}, json=body, timeout=180)
-    r.raise_for_status()
-    parts = r.json()["candidates"][0]["content"]["parts"]
-    return "".join(p.get("text", "") for p in parts)
+    models = [m for m in [os.environ.get("GEMINI_MODEL")] if m] + GEMINI_FALLBACKS
+    last = None
+    for model in models:
+        for attempt in range(2):
+            r = requests.post(
+                f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent",
+                params={"key": os.environ["GEMINI_API_KEY"]}, json=body, timeout=180)
+            if r.status_code == 429:          # rate limit: wait and retry, then try the next model
+                last = f"429 on {model}"
+                time.sleep(15 * (attempt + 1))
+                continue
+            if r.status_code in (400, 404):    # model not available on this key: try the next one
+                last = f"{r.status_code} on {model}: {r.text[:200]}"
+                break
+            r.raise_for_status()
+            parts = r.json()["candidates"][0]["content"]["parts"]
+            time.sleep(7)                      # stay under the free-tier requests-per-minute limit
+            return "".join(p.get("text", "") for p in parts)
+    raise RuntimeError(f"Gemini unavailable ({last})")
 
 
 def _anthropic(prompt, allowed_domains, max_searches, max_tokens):

@@ -59,6 +59,20 @@ SOURCES = [
      "url": "https://www.gst.gov.in/fomessage/newsupdates"},
     {"name": "ICAI", "kind": "news", "type": "icai", "label": "ICAI Announcement",
      "url": "https://www.icai.org/category/announcements"},
+    # Fallbacks: used only when the direct feeds above are blocked (these sites often refuse
+    # requests from servers outside India).
+    {"name": "CBDT", "type": "ai_search", "label": "CBDT", "fallback": True,
+     "authority": "the Central Board of Direct Taxes (CBDT) / Income Tax Department",
+     "what": "income tax notifications, circulars and press releases",
+     "domains": ["incometaxindia.gov.in", "egazette.gov.in", "pib.gov.in"]},
+    {"name": "GST", "type": "ai_search", "label": "GST", "fallback": True,
+     "authority": "the GST Network portal (GSTN) and the GST Council",
+     "what": "GST portal advisories, news and updates",
+     "domains": ["gst.gov.in", "tutorial.gst.gov.in", "gstcouncil.gov.in"]},
+    {"name": "RBI", "type": "ai_search", "label": "RBI", "fallback": True,
+     "authority": "the Reserve Bank of India (RBI)",
+     "what": "notifications, master directions, circulars and major press releases (exclude routine auction and money market data)",
+     "domains": ["rbi.org.in"]},
     {"name": "MCA", "type": "ai_search", "label": "MCA",
      "authority": "the Ministry of Corporate Affairs (MCA), Government of India",
      "what": "notifications (including amendments to Companies Act rules and LLP rules), general circulars, "
@@ -73,8 +87,21 @@ SOURCES = [
 ]
 
 
+def fix_mojibake(t):
+    """Repair UTF-8 text that was wrongly decoded as Latin-1 (e.g. 'â€œ' instead of a quote)."""
+    if t and re.search("[\u00c2\u00c3\u00e2][\u0080-\u00bf\u20ac\u2122\u0153\u2018-\u201d]", t):
+        try:
+            return t.encode("cp1252", errors="strict").decode("utf-8")
+        except (UnicodeEncodeError, UnicodeDecodeError):
+            try:
+                return t.encode("latin-1").decode("utf-8")
+            except (UnicodeEncodeError, UnicodeDecodeError):
+                return t
+    return t
+
+
 def clean_title(t):
-    t = html.unescape(re.sub(r"<[^>]+>", " ", t or ""))
+    t = fix_mojibake(html.unescape(re.sub(r"<[^>]+>", " ", t or "")))
     t = re.sub(r"\[\s*F\.?\s*No\.?[^\]]*\]", "", t, flags=re.I)        # file numbers
     t = re.sub(r"/\s*S\.?O\.?\s*\d+\s*\(E\)", "", t, flags=re.I)       # gazette S.O. numbers
     t = re.sub(r"/\s*G\.?S\.?R\.?\s*\d+\s*\(E\)", "", t, flags=re.I)
@@ -112,10 +139,12 @@ def get(url, **kw):
     return r
 
 
-def parse_rss(xml_text):
-    """RSS 2.0 or Atom -> list of (title, link, date)."""
-    xml_text = re.sub(r"^\s*<\?xml[^>]*\?>", "", xml_text.lstrip("﻿"))
-    root = ET.fromstring(xml_text)
+def parse_rss(xml):
+    """RSS 2.0 or Atom -> list of (title, link, date). Accepts raw bytes (preferred) or text."""
+    if isinstance(xml, bytes):
+        root = ET.fromstring(xml.lstrip(b"\xef\xbb\xbf").lstrip())  # encoding from the XML declaration
+    else:
+        root = ET.fromstring(re.sub(r"^\s*<\?xml[^>]*\?>", "", xml.lstrip("\ufeff")))
     out = []
     for it in root.iter():
         tag = it.tag.split("}")[-1]
@@ -140,7 +169,7 @@ def parse_rss(xml_text):
 
 def fetch_rss(src):
     items = []
-    for title, link, date in parse_rss(get(src["url"]).text):
+    for title, link, date in parse_rss(get(src["url"]).content):
         if src.get("include_link") and not re.search(src["include_link"], link):
             continue
         if src.get("exclude") and re.search(src["exclude"], title, re.I):
@@ -161,7 +190,7 @@ def fetch_gstn(src):
 
 def fetch_icai(src):
     from bs4 import BeautifulSoup
-    soup = BeautifulSoup(get(src["url"]).text, "html.parser")
+    soup = BeautifulSoup(get(src["url"]).content, "html.parser")
     items, seen = [], set()
     for a in soup.find_all("a", href=True):
         text = a.get_text(" ", strip=True)
@@ -214,7 +243,10 @@ def main():
     existing = json.loads(OUT.read_text(encoding="utf-8")) if OUT.exists() else {"items": []}
     by_link = {i["link"]: i for i in existing.get("items", [])}
     report = []
+    ok_sources = set()
     for src in SOURCES:
+        if src.get("fallback") and src["name"] in ok_sources:
+            continue  # direct feed worked; no need for the AI fallback
         try:
             got = FETCHERS[src["type"]](src)
             new = 0
@@ -234,9 +266,12 @@ def main():
                     "first_seen": by_link.get(link, {}).get("first_seen", today.isoformat()),
                 }
             report.append(f"OK    {src['label']:<26} {len(got):>3} items, {new} new")
+            ok_sources.add(src["name"])
         except Exception as e:  # keep going with other sources
             report.append(f"FAIL  {src['label']:<26} {type(e).__name__}: {str(e)[:90]}")
 
+    for i in by_link.values():
+        i["title"] = fix_mojibake(i["title"])
     cutoff = (today - dt.timedelta(days=KEEP_DAYS)).isoformat()
     items = [i for i in by_link.values() if i["date"] >= cutoff and i["date"] <= (today + dt.timedelta(days=1)).isoformat()]
     items.sort(key=lambda i: (i["date"], i["first_seen"]), reverse=True)
