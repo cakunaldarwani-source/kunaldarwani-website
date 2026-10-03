@@ -1,10 +1,239 @@
 {
- "updated": "2026-10-03 11:00 IST",
+ "updated": "2026-10-03 23:44 IST",
  "items": [
-  {"title": "Advisory on 'Multistate Registration' Facility for GST Registration", "link": "https://www.gst.gov.in/newsandupdates/read/674", "date": "2026-10-01", "source": "GST", "label": "GST Portal Advisory", "kind": "news", "first_seen": "2026-10-03"},
-  {"title": "Gross and Net GST revenue collections for the month of September, 2026", "link": "https://www.gst.gov.in/newsandupdates/read/673", "date": "2026-10-01", "source": "GST", "label": "GST Portal Advisory", "kind": "news", "first_seen": "2026-10-03"},
-  {"title": "Circular No. 7/2026: Extension of timelines for filing of various reports of audit and Income Tax Returns (ITRs) for the Assessment Year 2026-27", "link": "https://www.incometaxindia.gov.in/w/circular-no.-7/2026-extension-of-timelines-for-filing-of-various-reports-of-audit-and-income-tax-returns-itrs-for-the-assessment-year-2026-27", "date": "2026-09-29", "source": "CBDT", "label": "Income Tax Circular", "kind": "circular", "first_seen": "2026-10-03"},
-  {"title": "Implementation of Section 51A of UAPA, 1967: Updates to UNSC's 1267/1989 ISIL (Da'esh) and Al-Qaida Sanctions List", "link": "https://www.rbi.org.in/scripts/NotificationUser.aspx?Id=13715&Mode=0", "date": "2026-09-29", "source": "RBI", "label": "RBI Notification", "kind": "circular", "first_seen": "2026-10-03"},
-  {"title": "Foreign Exchange Management (Export and Import of Goods and Services) (Amendment) Regulations, 2026", "link": "https://www.rbi.org.in/scripts/NotificationUser.aspx?Id=13714&Mode=0", "date": "2026-09-25", "source": "RBI", "label": "RBI Notification", "kind": "circular", "first_seen": "2026-10-03"}
+  {
+   "title": "Advisory on 'Multistate Registration' Facility for GST Registration",
+   "link": "https://www.gst.gov.in/newsandupdates/read/674",
+   "date": "2026-10-01",
+   "source": "GST",
+   "label": "GST Portal Advisory",
+   "kind": "news",
+   "first_seen": "2026-10-03"
+  },
+  {
+   "title": "Gross and Net GST revenue collections for the month of September, 2026",
+   "link": "https://www.gst.gov.in/newsandupdates/read/673",
+   "date": "2026-10-01",
+   "source": "GST",
+   "label": "GST Portal Advisory",
+   "kind": "news",
+   "first_seen": "2026-10-03"
+  },
+  {
+   "title": "Display of âinvestor awareness message(s)â by stock brokers on their trading apps and websites, under Project Jagrook",
+   "link": "https://www.sebi.gov.in/legal/circulars/oct-2026/display-of-investor-awareness-message-s-by-stock-brokers-on-their-trading-apps-and-websites-under-project-jagrook_104858.html",
+   "date": "2026-10-01",
+   "source": "SEBI",
+   "label": "SEBI Circular",
+   "kind": "circular",
+   "first_seen": "2026-10-03"
+  },
+  {
+   "title": "SEBI revamps its âDocument Number Verification Systemâ",
+   "link": "https://www.sebi.gov.in/media-and-notifications/press-releases/oct-2026/sebi-revamps-its-document-number-verification-system-_104873.html",
+   "date": "2026-10-01",
+   "source": "SEBI",
+   "label": "SEBI Press Release",
+   "kind": "news",
+   "first_seen": "2026-10-03"
+  },
+  {
+   "title": "Circular No. 7/2026: Extension of timelines for filing of various reports of audit and Income Tax Returns (ITRs) for the Assessment Year 2026-27",
+   "link": "https://www.incometaxindia.gov.in/w/circular-no.-7/2026-extension-of-timelines-for-filing-of-various-reports-of-audit-and-income-tax-returns-itrs-for-the-assessment-year-2026-27",
+   "date": "2026-09-29",
+   "source": "CBDT",
+   "label": "Income Tax Circular",
+   "kind": "circular",
+   "first_seen": "2026-10-03"
+  },
+  {
+   "title": "Implementation of Section 51A of UAPA, 1967: Updates to UNSC's 1267/1989 ISIL (Da'esh) and Al-Qaida Sanctions List",
+   "link": "https://www.rbi.org.in/scripts/NotificationUser.aspx?Id=13715&Mode=0",
+   "date": "2026-09-29",
+   "source": "RBI",
+   "label": "RBI Notification",
+   "kind": "circular",
+   "first_seen": "2026-10-03"
+  },
+  {
+   "title": "Foreign Exchange Management (Export and Import of Goods and Services) (Amendment) Regulations, 2026",
+   "link": "https://www.rbi.org.in/scripts/NotificationUser.aspx?Id=13714&Mode=0",
+   "date": "2026-09-25",
+   "source": "RBI",
+   "label": "RBI Notification",
+   "kind": "circular",
+   "first_seen": "2026-10-03"
+  },
+  {
+   "title": "Advisory regarding timely completion of statutory compliances in view of the proposed Bank Strike from 28th to 30th September 2026.",
+   "link": "https://resource.cdn.icai.org/94389clc-aps6399.pdf",
+   "date": "2026-09-25",
+   "source": "ICAI",
+   "label": "ICAI Announcement",
+   "kind": "news",
+   "first_seen": "2026-10-03"
+  },
+  {
+   "title": "Commencement of Live Virtual Revisionary Classes (LVRC) for the students of CA Intermediate course appearing in January 2027 Examinations.",
+   "link": "https://resource.cdn.icai.org/94364bos-aps6376-lvrc-jan2027.pdf",
+   "date": "2026-09-24",
+   "source": "ICAI",
+   "label": "ICAI Announcement",
+   "kind": "news",
+   "first_seen": "2026-10-03"
+  },
+  {
+   "title": "Schedule of ISA AT, November 2026",
+   "link": "https://resource.cdn.icai.org/94358exam-aps6372-isa-at-nov2026.pdf",
+   "date": "2026-09-23",
+   "source": "ICAI",
+   "label": "ICAI Announcement",
+   "kind": "news",
+   "first_seen": "2026-10-03"
+  },
+  {
+   "title": "Schedule of Intermediate & Foundation Examinations, January 2027.",
+   "link": "https://resource.cdn.icai.org/94359exam-aps6372-stu-iff-jan2027.pdf",
+   "date": "2026-09-23",
+   "source": "ICAI",
+   "label": "ICAI Announcement",
+   "kind": "news",
+   "first_seen": "2026-10-03"
+  },
+  {
+   "title": "Commencement of Live Virtual Classes for the students of CA Foundation course appearing in January 2027 Examination.",
+   "link": "https://resource.cdn.icai.org/94127bos-aps6134-fnd-lvc-jan2027.pdf",
+   "date": "2026-09-02",
+   "source": "ICAI",
+   "label": "ICAI Announcement",
+   "kind": "news",
+   "first_seen": "2026-10-03"
+  },
+  {
+   "title": "Resignation by CA. Madhukar Narayan Hiregange, FCA from the membership of the Central Council of ICAI",
+   "link": "https://resource.cdn.icai.org/94135council020926.pdf",
+   "date": "2026-09-02",
+   "source": "ICAI",
+   "label": "ICAI Announcement",
+   "kind": "news",
+   "first_seen": "2026-10-03"
+  },
+  {
+   "title": "Observations of the candidates on the question papers of CA Intermediate and Foundation Examinations - September 2026.",
+   "link": "https://www.icai.org/post/exam-observation-01092026",
+   "date": "2026-09-01",
+   "source": "ICAI",
+   "label": "ICAI Announcement",
+   "kind": "news",
+   "first_seen": "2026-10-03"
+  },
+  {
+   "title": "Announcement for Extension of Last Date for Submitting MEF 2026-27 from 29th August to 9th September, 2026",
+   "link": "https://www.icai.org/post/mef280826",
+   "date": "2026-08-28",
+   "source": "ICAI",
+   "label": "ICAI Announcement",
+   "kind": "news",
+   "first_seen": "2026-10-03"
+  },
+  {
+   "title": "Important Announcement - Self-Paced Module Test",
+   "link": "https://www.icai.org/post/exam-spmt-24082026",
+   "date": "2026-08-24",
+   "source": "ICAI",
+   "label": "ICAI Announcement",
+   "kind": "news",
+   "first_seen": "2026-10-03"
+  },
+  {
+   "title": "Convocation - 12th September, 2026",
+   "link": "https://www.icai.org/post/convocation-sep-2026",
+   "date": "2026-08-18",
+   "source": "ICAI",
+   "label": "ICAI Announcement",
+   "kind": "news",
+   "first_seen": "2026-10-03"
+  },
+  {
+   "title": "Extension of Last Date to 31st August 2026 for Submission of Feedback on the Chartered Accountancy Scheme of Education and Training.",
+   "link": "https://www.icai.org/post/bosa-cret-ex-of-last-date",
+   "date": "2026-08-18",
+   "source": "ICAI",
+   "label": "ICAI Announcement",
+   "kind": "news",
+   "first_seen": "2026-10-03"
+  },
+  {
+   "title": "Mock Test Papers Series - I & Series II for CA. Final students appearing in November 2026 Examinations.",
+   "link": "https://resource.cdn.icai.org/93707bos-aps6055-mtp-nov2026.pdf",
+   "date": "2026-08-10",
+   "source": "ICAI",
+   "label": "ICAI Announcement",
+   "kind": "news",
+   "first_seen": "2026-10-03"
+  },
+  {
+   "title": "Success at CA. Exam - Series I starting from 6th October 2026 for CA. Final students appearing in November 2026 Examinations",
+   "link": "https://resource.cdn.icai.org/93706bos-aps6055-ca-ex-final-nov2026.pdf",
+   "date": "2026-08-10",
+   "source": "ICAI",
+   "label": "ICAI Announcement",
+   "kind": "news",
+   "first_seen": "2026-10-03"
+  },
+  {
+   "title": "Announcement - Hosting of Multipurpose Empanelment Form (MEF)-2026-27",
+   "link": "https://www.icai.org/post/mef070826",
+   "date": "2026-08-07",
+   "source": "ICAI",
+   "label": "ICAI Announcement",
+   "kind": "news",
+   "first_seen": "2026-10-03"
+  },
+  {
+   "title": "77th Annual Report and Accounts of the Institute for the year 2025-26",
+   "link": "https://www.icai.org/post/77th-annual-report-and-accounts-icai-year-2025-26",
+   "date": "2026-08-06",
+   "source": "ICAI",
+   "label": "ICAI Announcement",
+   "kind": "news",
+   "first_seen": "2026-10-03"
+  },
+  {
+   "title": "Merit List of the Information Systems Audit [ISA] Assessment Test held in July 2026.",
+   "link": "https://resource.cdn.icai.org/93631exam-aps6025-isa-july2026.pdf",
+   "date": "2026-08-05",
+   "source": "ICAI",
+   "label": "ICAI Announcement",
+   "kind": "news",
+   "first_seen": "2026-10-03"
+  },
+  {
+   "title": "Result of the Information Systems Audit [ISA] Assessment Test held on 25th July 2026 declared.",
+   "link": "https://isaat.icai.org/",
+   "date": "2026-08-03",
+   "source": "ICAI",
+   "label": "ICAI Announcement",
+   "kind": "news",
+   "first_seen": "2026-10-03"
+  },
+  {
+   "title": "One-time Opportunity for Eligible CA Final Pass Candidates to complete Virtual Advanced Information Technology Training (Adv. ITT) and Management & Communication Skills (MCS) Co…",
+   "link": "https://www.icai.org/post/bosoannoun020826",
+   "date": "2026-08-02",
+   "source": "ICAI",
+   "label": "ICAI Announcement",
+   "kind": "news",
+   "first_seen": "2026-10-03"
+  },
+  {
+   "title": "Invitation for Stakeholder Feedback on the Review of the Chartered Accountancy Scheme of Education and Training",
+   "link": "https://resource.cdn.icai.org/93570bos310726a.pdf",
+   "date": "2026-07-31",
+   "source": "ICAI",
+   "label": "ICAI Announcement",
+   "kind": "news",
+   "first_seen": "2026-10-03"
+  }
  ]
 }
