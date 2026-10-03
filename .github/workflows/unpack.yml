@@ -1,0 +1,25 @@
+name: Unpack website (one-time setup)
+
+on:
+  push:
+    paths: ["kunaldarwani-website.zip"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  unpack:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Extract site files (workflows are added separately)
+        run: |
+          unzip -q -o kunaldarwani-website.zip -d /tmp/site
+          rsync -a --exclude='.github' /tmp/site/kunaldarwani-website/ ./
+          git rm -q --cached kunaldarwani-website.zip && rm -f kunaldarwani-website.zip
+          git config user.name "setup-bot"
+          git config user.email "setup-bot@users.noreply.github.com"
+          git add -A
+          git commit -m "Add website files"
+          git push
