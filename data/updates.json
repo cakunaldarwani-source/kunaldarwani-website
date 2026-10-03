@@ -1,6 +1,132 @@
 {
- "updated": "2026-10-03 23:44 IST",
+ "updated": "2026-10-04 00:38 IST",
  "items": [
+  {
+   "title": "Master Direction on Note Sorting Machines",
+   "link": "https://www.rbi.org.in/scripts/NotificationUser.aspx?Id=13723&Mode=0",
+   "date": "2026-10-02",
+   "source": "RBI",
+   "label": "RBI Notification",
+   "kind": "circular",
+   "first_seen": "2026-10-04"
+  },
+  {
+   "title": "Processing of Applications Received Under the Citizen’s Charter Status as on September 30, 2026",
+   "link": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63717",
+   "date": "2026-10-02",
+   "source": "RBI",
+   "label": "RBI Press Release",
+   "kind": "news",
+   "first_seen": "2026-10-04"
+  },
+  {
+   "title": "Non-Resident Deposits - Comprehensive Single Return (NRD-CSR)(R012): Submission under CIMS Sankalan Portal",
+   "link": "https://www.rbi.org.in/scripts/NotificationUser.aspx?Id=13725&Mode=0",
+   "date": "2026-10-01",
+   "source": "RBI",
+   "label": "RBI Notification",
+   "kind": "circular",
+   "first_seen": "2026-10-04"
+  },
+  {
+   "title": "Online submission of Form A2: Removal of limits on amount of remittance",
+   "link": "https://www.rbi.org.in/scripts/NotificationUser.aspx?Id=13724&Mode=0",
+   "date": "2026-10-01",
+   "source": "RBI",
+   "label": "RBI Notification",
+   "kind": "circular",
+   "first_seen": "2026-10-04"
+  },
+  {
+   "title": "Reserve Bank of India (Local Area Banks - Acquisition and Holding of Shares or Voting Rights) Amendment Directions, 2026",
+   "link": "https://www.rbi.org.in/scripts/NotificationUser.aspx?Id=13722&Mode=0",
+   "date": "2026-10-01",
+   "source": "RBI",
+   "label": "RBI Notification",
+   "kind": "circular",
+   "first_seen": "2026-10-04"
+  },
+  {
+   "title": "Reserve Bank of India (Payments Banks - Acquisition and Holding of Shares or Voting Rights) Amendment Directions, 2026",
+   "link": "https://www.rbi.org.in/scripts/NotificationUser.aspx?Id=13721&Mode=0",
+   "date": "2026-10-01",
+   "source": "RBI",
+   "label": "RBI Notification",
+   "kind": "circular",
+   "first_seen": "2026-10-04"
+  },
+  {
+   "title": "Reserve Bank of India (Small Finance Banks - Acquisition and Holding of Shares or Voting Rights) Amendment Directions, 2026",
+   "link": "https://www.rbi.org.in/scripts/NotificationUser.aspx?Id=13720&Mode=0",
+   "date": "2026-10-01",
+   "source": "RBI",
+   "label": "RBI Notification",
+   "kind": "circular",
+   "first_seen": "2026-10-04"
+  },
+  {
+   "title": "Reserve Bank of India (Commercial Banks - Acquisition and Holding of Shares or Voting Rights) Amendment Directions, 2026",
+   "link": "https://www.rbi.org.in/scripts/NotificationUser.aspx?Id=13719&Mode=0",
+   "date": "2026-10-01",
+   "source": "RBI",
+   "label": "RBI Notification",
+   "kind": "circular",
+   "first_seen": "2026-10-04"
+  },
+  {
+   "title": "Consolidation/ Review of instructions issued on currency management matters – Withdrawal of Circulars/ Guidelines",
+   "link": "https://www.rbi.org.in/scripts/NotificationUser.aspx?Id=13718&Mode=0",
+   "date": "2026-10-01",
+   "source": "RBI",
+   "label": "RBI Notification",
+   "kind": "circular",
+   "first_seen": "2026-10-04"
+  },
+  {
+   "title": "Cassette - Swaps in ATMs",
+   "link": "https://www.rbi.org.in/scripts/NotificationUser.aspx?Id=13717&Mode=0",
+   "date": "2026-10-01",
+   "source": "RBI",
+   "label": "RBI Notification",
+   "kind": "circular",
+   "first_seen": "2026-10-04"
+  },
+  {
+   "title": "Master Circular - Credit Facilities to Scheduled Castes (SCs) & Scheduled Tribes (STs)",
+   "link": "https://www.rbi.org.in/scripts/NotificationUser.aspx?Id=13716&Mode=0",
+   "date": "2026-10-01",
+   "source": "RBI",
+   "label": "RBI Notification",
+   "kind": "circular",
+   "first_seen": "2026-10-04"
+  },
+  {
+   "title": "Indicative Calendar of Market borrowings by State Governments/ Union Territories for the Quarter October – December 2026",
+   "link": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63715",
+   "date": "2026-10-01",
+   "source": "RBI",
+   "label": "RBI Press Release",
+   "kind": "news",
+   "first_seen": "2026-10-04"
+  },
+  {
+   "title": "Rate of Interest on Government of India Floating Rate Bond 2028",
+   "link": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63713",
+   "date": "2026-10-01",
+   "source": "RBI",
+   "label": "RBI Press Release",
+   "kind": "news",
+   "first_seen": "2026-10-04"
+  },
+  {
+   "title": "RBI issues Amendment Directions on ‘Simplified approval process for subsequent acquisitions of major shareholding in a banking company by mutual funds, insurance companies and p…",
+   "link": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63711",
+   "date": "2026-10-01",
+   "source": "RBI",
+   "label": "RBI Press Release",
+   "kind": "news",
+   "first_seen": "2026-10-04"
+  },
   {
    "title": "Advisory on 'Multistate Registration' Facility for GST Registration",
    "link": "https://www.gst.gov.in/newsandupdates/read/674",
@@ -20,7 +146,7 @@
    "first_seen": "2026-10-03"
   },
   {
-   "title": "Display of âinvestor awareness message(s)â by stock brokers on their trading apps and websites, under Project Jagrook",
+   "title": "Display of “investor awareness message(s)” by stock brokers on their trading apps and websites, under Project Jagrook",
    "link": "https://www.sebi.gov.in/legal/circulars/oct-2026/display-of-investor-awareness-message-s-by-stock-brokers-on-their-trading-apps-and-websites-under-project-jagrook_104858.html",
    "date": "2026-10-01",
    "source": "SEBI",
@@ -29,7 +155,7 @@
    "first_seen": "2026-10-03"
   },
   {
-   "title": "SEBI revamps its âDocument Number Verification Systemâ",
+   "title": "SEBI revamps its “Document Number Verification System”",
    "link": "https://www.sebi.gov.in/media-and-notifications/press-releases/oct-2026/sebi-revamps-its-document-number-verification-system-_104873.html",
    "date": "2026-10-01",
    "source": "SEBI",
