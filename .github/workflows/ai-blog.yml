@@ -1,0 +1,88 @@
+name: AI blog (twice weekly, auto-publish)
+
+# Tuesday and Friday, 09:15 IST (03:45 UTC).
+# The article is published automatically when it passes the ICAI wording check
+# and the build. If the check finds a problem, it is held back as a pull request instead.
+# Set the repository variable REQUIRE_BLOG_REVIEW=true to send every article for review.
+on:
+  schedule:
+    - cron: "45 3 * * 2,5"
+  workflow_dispatch:
+    inputs:
+      topic_hint:
+        description: "Optional topic steer (e.g. 'CBDT circular on TDS statements')"
+        required: false
+
+permissions:
+  contents: write
+  pull-requests: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: site-content
+  cancel-in-progress: false
+
+jobs:
+  draft:
+    runs-on: ubuntu-latest
+    outputs:
+      published: ${{ steps.publish.outputs.published }}
+    steps:
+      - uses: actions/checkout@v4
+        with: { ref: main }
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install -r requirements.txt anthropic
+      - name: Write article with AI
+        id: draft
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_MODEL: ${{ vars.GEMINI_MODEL }}
+          AI_PROVIDER: ${{ vars.AI_PROVIDER }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          CLAUDE_MODEL: ${{ vars.CLAUDE_MODEL }}
+          TOPIC_HINT: ${{ github.event.inputs.topic_hint }}
+        run: python scripts/draft_post.py
+      - name: Quality gates (ICAI wording, sources, length, build)
+        id: gates
+        run: |
+          POST="${{ steps.draft.outputs.post }}"
+          ok=true
+          python scripts/icai_check.py "$POST" > automation/icai_report.txt || ok=false
+          grep -q "Sources:" "$POST" || { echo "No sources cited" >> automation/icai_report.txt; ok=false; }
+          words=$(wc -w < "$POST"); [ "$words" -ge 500 ] || { echo "Too short: $words words" >> automation/icai_report.txt; ok=false; }
+          python build.py > /dev/null || ok=false
+          cat automation/icai_report.txt
+          echo "ok=$ok" >> "$GITHUB_OUTPUT"
+      - name: Publish directly
+        id: publish
+        if: steps.gates.outputs.ok == 'true' && vars.REQUIRE_BLOG_REVIEW != 'true'
+        run: |
+          git config user.name "blog-bot"
+          git config user.email "blog-bot@users.noreply.github.com"
+          git add content/blog/*.md
+          git commit -m "Publish article: ${{ steps.draft.outputs.title }}"
+          git pull --rebase && git push
+          echo "published=true" >> "$GITHUB_OUTPUT"
+      - name: Hold for review (check failed or review required)
+        if: steps.gates.outputs.ok != 'true' || vars.REQUIRE_BLOG_REVIEW == 'true'
+        run: |
+          { echo; echo "## Automatic checks"; echo '```'; cat automation/icai_report.txt; echo '```';
+            echo; echo "Merging this pull request publishes the article."; } >> automation/last_review_notes.md
+      - name: Open pull request
+        if: steps.gates.outputs.ok != 'true' || vars.REQUIRE_BLOG_REVIEW == 'true'
+        uses: peter-evans/create-pull-request@v6
+        with:
+          branch: blog/${{ github.run_id }}
+          commit-message: "Draft article: ${{ steps.draft.outputs.title }}"
+          title: "Blog held for review: ${{ steps.draft.outputs.title }}"
+          labels: blog-draft
+          body-path: automation/last_review_notes.md
+          add-paths: |
+            content/blog/*.md
+
+  deploy:
+    needs: draft
+    if: needs.draft.outputs.published == 'true'
+    uses: ./.github/workflows/deploy.yml
