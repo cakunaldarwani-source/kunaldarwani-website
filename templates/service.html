@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="page-head">
+  <div class="wrap">
+    <p class="crumbs"><a href="../index.html">Home</a> / <a href="index.html">Services</a> / {% for c in categories if c.slug == s.category %}<a href="index.html#{{ c.slug }}">{{ c.name }}</a>{% endfor %}</p>
+    <h1>{{ s.title }}</h1>
+    <p class="lede">{{ s.summary }}</p>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap svc-layout">
+    <div class="svc-main prose">
+      {{ s.html|safe }}
+    </div>
+    <aside class="svc-side">
+      {% if s.includes %}
+      <div class="side-box">
+        <h2>Scope of work</h2>
+        <ul class="ticks">{% for i in s.includes %}<li>{{ i }}</li>{% endfor %}</ul>
+      </div>
+      {% endif %}
+      {% if s.documents %}
+      <div class="side-box">
+        <h2>Documents usually needed</h2>
+        <ul>{% for d in s.documents %}<li>{{ d }}</li>{% endfor %}</ul>
+      </div>
+      {% endif %}
+      {% if s.laws %}
+      <div class="side-box">
+        <h2>Governing law</h2>
+        <ul class="mono-list">{% for l in s.laws %}<li>{{ l }}</li>{% endfor %}</ul>
+      </div>
+      {% endif %}
+      <div class="side-box side-contact">
+        <h2>Enquiries</h2>
+        <p>{% for ph in site.phones %}{{ ph }}<br>{% endfor %}{{ site.email }}</p>
+        <a class="btn btn-small" href="../contact.html">Office details</a>
+      </div>
+    </aside>
+  </div>
+</section>
+
+{% if s.posts %}
+<section class="band band-alt" id="article">
+  <div class="wrap">
+    {% set first = s.posts[0] %}
+    <article class="embedded-post">
+      <p class="eyebrow">From the Knowledge Centre</p>
+      <h2><a href="../blog/{{ first.slug }}.html">{{ first.title }}</a></h2>
+      <p class="meta">{{ first.date_human }} &middot; {{ first.reading_minutes }} min read{% if first.author %} &middot; {{ first.author }}{% endif %}</p>
+      <div class="prose">{{ first.html|safe }}</div>
+    </article>
+    {% if s.posts|length > 1 %}
+    <div class="more-posts">
+      <h3>More on {{ s.short or s.title }}</h3>
+      <ul>{% for p in s.posts[1:] %}<li><a href="../blog/{{ p.slug }}.html">{{ p.title }}</a> <span class="meta">{{ p.date_human }}</span></li>{% endfor %}</ul>
+    </div>
+    {% endif %}
+  </div>
+</section>
+{% endif %}
+
+<section class="band">
+  <div class="wrap">
+    <h2 class="small-head">Related services</h2>
+    <div class="chip-row">
+      {% for c in categories if c.slug == s.category %}{% for o in c.services if o.slug != s.slug %}<a class="chip" href="{{ o.slug }}.html">{{ o.short or o.title }}</a>{% endfor %}{% endfor %}
+    </div>
+  </div>
+</section>
+{% endblock %}

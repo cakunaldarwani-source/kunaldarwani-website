@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="page-head">
+  <div class="wrap">
+    <p class="crumbs"><a href="index.html">Home</a> / Compliance calendar</p>
+    <h1>Compliance calendar</h1>
+    <p class="lede">{{ compliance.note }}</p>
+  </div>
+</section>
+<section class="band">
+  <div class="wrap">
+    <div class="table-wrap">
+      <table class="cal">
+        <thead><tr><th>Due date</th><th>Law</th><th>Compliance</th></tr></thead>
+        <tbody>
+        {% for it in compliance["items"] %}
+          <tr data-date="{{ it.date }}"><td class="mono">{{ it.date }}</td><td>{{ it.law }}</td><td>{{ it.what }}</td></tr>
+        {% endfor %}
+        </tbody>
+      </table>
+    </div>
+    <p class="small">Past dates are dimmed automatically. Last updated {{ build_date }}.</p>
+  </div>
+</section>
+{% endblock %}

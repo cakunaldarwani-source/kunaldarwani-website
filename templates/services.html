@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="page-head">
+  <div class="wrap">
+    <p class="crumbs"><a href="../index.html">Home</a> / Services</p>
+    <h1>Services</h1>
+    <p class="lede">The services offered by the firm, grouped by practice area. Select a service for its scope, the documents usually needed, and a detailed article on the subject.</p>
+    <nav class="jump" aria-label="Practice areas">
+      {% for c in categories %}<a href="#{{ c.slug }}">{{ c.name }}</a>{% endfor %}
+    </nav>
+  </div>
+</section>
+<section class="band">
+  <div class="wrap">
+    {% for c in categories %}
+    <div class="svc-block" id="{{ c.slug }}">
+      <div class="svc-block-head">
+        <h2>{{ c.name }}</h2>
+        <p>{{ c.blurb }}</p>
+      </div>
+      <div class="svc-list">
+        {% for s in c.services %}
+        <a class="svc-item" href="{{ s.slug }}.html">
+          <span class="svc-title">{{ s.title }}{% if s.new %} <span class="tag">New</span>{% endif %}</span>
+          <span class="svc-sum">{{ s.summary }}</span>
+        </a>
+        {% endfor %}
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+{% endblock %}

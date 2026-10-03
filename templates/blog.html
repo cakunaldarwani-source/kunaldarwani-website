@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="page-head">
+  <div class="wrap">
+    <p class="crumbs"><a href="../index.html">Home</a> / Knowledge Centre</p>
+    <h1>Knowledge Centre</h1>
+    <p class="lede">Articles and updates on income tax, GST, company law, audit and accounting. New articles are added twice a week.</p>
+    <div class="filter" role="group" aria-label="Filter by practice area">
+      <button type="button" class="chip is-on" data-filter="all">All</button>
+      {% for c in categories %}<button type="button" class="chip" data-filter="{{ c.slug }}">{{ c.name }}</button>{% endfor %}
+    </div>
+  </div>
+</section>
+<section class="band">
+  <div class="wrap">
+    <div class="post-list">
+      {% for p in posts %}
+      <article class="post-row" data-cat="{{ p.service_obj.category if p.service_obj else p.category }}">
+        <p class="meta"><time datetime="{{ p.date }}">{{ p.date_human }}</time><br>{{ p.reading_minutes }} min read</p>
+        <div>
+          <h2><a href="{{ p.slug }}.html">{{ p.title }}</a></h2>
+          <p>{{ p.summary }}</p>
+          {% if p.service_obj %}<p class="meta">Service: <a href="../services/{{ p.service_obj.slug }}.html">{{ p.service_obj.short or p.service_obj.title }}</a></p>{% endif %}
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endblock %}

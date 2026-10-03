@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% from "_updates.html" import upd_list %}
+{% block content %}
+<section class="page-head">
+  <div class="wrap">
+    <p class="crumbs"><a href="index.html">Home</a> / Latest News &amp; Notifications</p>
+    <h1>Latest News &amp; Notifications</h1>
+    <p class="lede">New notifications, circulars, press releases and advisories from CBDT, CBIC, MCA, RBI, SEBI, the GST portal and ICAI. This page updates every day at 11:00 AM IST. Each item links to the original document on the official website.</p>
+    <p class="compiled">Compiled by CA. Kunal Darwani</p>
+    <div class="filter" role="group" aria-label="Filter by source">
+      <button type="button" class="chip is-on" data-src-filter="all">All sources</button>
+      {% for s in ["CBDT", "CBIC", "GST", "MCA", "RBI", "SEBI", "ICAI"] %}<button type="button" class="chip" data-src-filter="{{ s }}">{{ s }}</button>{% endfor %}
+    </div>
+  </div>
+</section>
+<section class="band">
+  <div class="wrap upd-grid">
+    <div>
+      <h2 class="upd-head">Notifications &amp; Circulars</h2>
+      {{ upd_list(upd_circ, "No new notifications in the last 90 days.") }}
+    </div>
+    <div>
+      <h2 class="upd-head">Latest News</h2>
+      {{ upd_list(upd_news, "No news items in the last 90 days.") }}
+    </div>
+  </div>
+  <div class="wrap"><p class="small">Titles are reproduced from the issuing authority's website. Read the original document before acting on any item.</p></div>
+</section>
+{% endblock %}

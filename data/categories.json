@@ -1,0 +1,10 @@
+[
+  {"slug": "business-setup", "name": "Business Setup", "blurb": "Choosing and registering the right legal structure."},
+  {"slug": "registrations", "name": "Registrations & Licences", "blurb": "Statutory registrations, licences and certifications a business needs to operate."},
+  {"slug": "accounting", "name": "Accounting & Outsourcing", "blurb": "Books of account, payroll and outsourced accounting for Indian and overseas businesses."},
+  {"slug": "taxation", "name": "Taxation", "blurb": "Income tax, TDS and GST compliance, advisory and representation."},
+  {"slug": "audit", "name": "Audit & Assurance", "blurb": "Statutory, tax, internal and stock audits."},
+  {"slug": "corporate-law", "name": "Company Law & ROC", "blurb": "Annual and event-based filings, conversions and closures."},
+  {"slug": "advisory", "name": "Finance & Advisory", "blurb": "Project reports, financing documentation and business structuring."},
+  {"slug": "documentation", "name": "Documentation", "blurb": "Business agreements and digital signature certificates."}
+]

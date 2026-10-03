@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="page-head">
+  <div class="wrap">
+    <p class="crumbs"><a href="index.html">Home</a> / Contact</p>
+    <h1>Contact</h1>
+  </div>
+</section>
+<section class="band">
+  <div class="wrap contact-grid">
+    <div class="side-box">
+      <h2>Office</h2>
+      <p><b>{{ site.firm_name }}</b><br>{{ site.firm_type }}</p>
+      <address>{% for l in site.address_lines %}{{ l }}<br>{% endfor %}</address>
+      <p><a class="text-link" href="{{ site.map_url }}" rel="noopener">Open in Google Maps &rarr;</a></p>
+    </div>
+    <div class="side-box">
+      <h2>Phone &amp; email</h2>
+      <p>{% for ph in site.phones %}<a href="tel:{{ ph|replace(' ','') }}">{{ ph }}</a><br>{% endfor %}</p>
+      <p><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+      <p><a class="text-link" href="https://wa.me/{{ site.whatsapp }}" rel="noopener">WhatsApp &rarr;</a></p>
+    </div>
+    <div class="side-box">
+      <h2>Office hours</h2>
+      <p>{{ site.hours }}</p>
+      <p class="small">Please call or write before visiting so that the right person is available.</p>
+    </div>
+  </div>
+</section>
+{% endblock %}

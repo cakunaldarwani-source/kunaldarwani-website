@@ -1,0 +1,52 @@
+{
+  "firm_name": "Kunal Darwani & Company",
+  "firm_type": "Chartered Accountants",
+  "domain": "www.kunaldarwani.com",
+  "base_url": "https://www.kunaldarwani.com",
+  "address_lines": [
+    "E-14, First Floor, Indrapuram",
+    "Opposite Metro Multispeciality Hospital, near Shankar Greens",
+    "Tajganj Phase II, Agra – 282001, Uttar Pradesh"
+  ],
+  "phones": [
+    "+91 96757 61717"
+  ],
+  "whatsapp": "919675761717",
+  "email": "cakunaldarwani@gmail.com",
+  "hours": "Monday to Saturday, 10:00 AM – 8:00 PM",
+  "map_url": "https://www.google.com/maps/search/?api=1&query=Indrapuram+Tajganj+Agra+282001",
+  "partners": [
+    {
+      "slug": "kunal-darwani",
+      "name": "CA. Kunal Darwani",
+      "initials": "KD",
+      "designation": "Partner",
+      "qualifications": "FCA, DISA (ICAI)",
+      "membership_no": "431904",
+      "photo": "",
+      "areas": [
+        "Direct taxation – income tax, TDS, assessments and representation",
+        "GST – registration, returns, audits and notices",
+        "Company law and LLP compliance, corporate structuring",
+        "Information systems audit (DISA)"
+      ],
+      "bio": "CA. Kunal Darwani is a Fellow Member of the Institute of Chartered Accountants of India and holds the Post Qualification Course certificate in Information Systems Audit (DISA) from ICAI. His practice covers income tax, GST, company law compliance and business structuring for proprietors, firms, LLPs and companies. He works with clients on compliance calendars, departmental notices and the tax implications of business decisions, and writes regularly on regulatory updates for the firm's knowledge section."
+    },
+    {
+      "slug": "reet-darwani",
+      "name": "CA. Reet Darwani",
+      "initials": "RD",
+      "designation": "Partner",
+      "qualifications": "FCA, M.Com",
+      "membership_no": "447420",
+      "photo": "",
+      "areas": [
+        "Accounting, bookkeeping and financial reporting",
+        "Audit and assurance",
+        "Foreign accounting outsourcing (US, UK, UAE, Australia)",
+        "Payroll and statutory compliance"
+      ],
+      "bio": "CA. Reet Darwani is a Fellow Member of the Institute of Chartered Accountants of India and holds a Master of Commerce degree. She leads the firm's accounting, financial reporting and audit engagements, including outsourced accounting for overseas businesses and accounting firms. Her work focuses on clean books, documented processes and timely month-end closes that make audits and tax filings straightforward."
+    }
+  ]
+}

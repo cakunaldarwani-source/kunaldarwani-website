@@ -1,0 +1,145 @@
+{
+  "note": "Statutory due dates as per law. Dates are often extended by CBDT, CBIC or MCA; always check the latest official notification.",
+  "items": [
+    {
+      "date": "2026-10-07",
+      "law": "Income Tax",
+      "what": "TDS/TCS deposit for September 2026"
+    },
+    {
+      "date": "2026-10-11",
+      "law": "GST",
+      "what": "GSTR-1 for September 2026 (monthly filers)"
+    },
+    {
+      "date": "2026-10-13",
+      "law": "GST",
+      "what": "IFF / GSTR-1 for July–September quarter (QRMP)"
+    },
+    {
+      "date": "2026-10-15",
+      "law": "Labour",
+      "what": "PF and ESI contribution for September 2026"
+    },
+    {
+      "date": "2026-10-15",
+      "law": "Income Tax",
+      "what": "Quarterly TCS statement, July–September"
+    },
+    {
+      "date": "2026-10-18",
+      "law": "GST",
+      "what": "CMP-08 for composition taxpayers, July–September"
+    },
+    {
+      "date": "2026-10-20",
+      "law": "GST",
+      "what": "GSTR-3B for September 2026 (monthly filers)"
+    },
+    {
+      "date": "2026-10-21",
+      "law": "Income Tax",
+      "what": "Tax audit report for FY 2025-26 (extended by CBDT Circular 7/2026)"
+    },
+    {
+      "date": "2026-10-22",
+      "law": "GST",
+      "what": "GSTR-3B for July–September quarter (QRMP, Category A states)"
+    },
+    {
+      "date": "2026-10-24",
+      "law": "GST",
+      "what": "GSTR-3B for July–September quarter (QRMP, Category B states incl. Uttar Pradesh)"
+    },
+    {
+      "date": "2026-10-29",
+      "law": "Companies Act",
+      "what": "AOC-4 (financial statements) where AGM held on 30 September 2026"
+    },
+    {
+      "date": "2026-10-30",
+      "law": "LLP Act",
+      "what": "Form 8 (Statement of Account & Solvency) for FY 2025-26"
+    },
+    {
+      "date": "2026-10-31",
+      "law": "Income Tax",
+      "what": "Quarterly TDS statements (salary, non-salary, non-resident), July–September"
+    },
+    {
+      "date": "2026-11-07",
+      "law": "Income Tax",
+      "what": "TDS/TCS deposit for October 2026"
+    },
+    {
+      "date": "2026-11-11",
+      "law": "GST",
+      "what": "GSTR-1 for October 2026 (monthly filers)"
+    },
+    {
+      "date": "2026-11-15",
+      "law": "Labour",
+      "what": "PF and ESI contribution for October 2026"
+    },
+    {
+      "date": "2026-11-20",
+      "law": "GST",
+      "what": "GSTR-3B for October 2026 (monthly filers)"
+    },
+    {
+      "date": "2026-11-21",
+      "law": "Income Tax",
+      "what": "Income tax return for FY 2025-26 – audit cases (extended by CBDT Circular 7/2026)"
+    },
+    {
+      "date": "2026-11-28",
+      "law": "Companies Act",
+      "what": "MGT-7 / MGT-7A (annual return) where AGM held on 30 September 2026"
+    },
+    {
+      "date": "2026-11-30",
+      "law": "Income Tax",
+      "what": "Income tax return for FY 2025-26 – transfer pricing cases"
+    },
+    {
+      "date": "2026-12-07",
+      "law": "Income Tax",
+      "what": "TDS/TCS deposit for November 2026"
+    },
+    {
+      "date": "2026-12-11",
+      "law": "GST",
+      "what": "GSTR-1 for November 2026 (monthly filers)"
+    },
+    {
+      "date": "2026-12-15",
+      "law": "Income Tax",
+      "what": "Third instalment of advance tax (75% cumulative)"
+    },
+    {
+      "date": "2026-12-20",
+      "law": "GST",
+      "what": "GSTR-3B for November 2026 (monthly filers)"
+    },
+    {
+      "date": "2026-12-31",
+      "law": "GST",
+      "what": "GSTR-9 / GSTR-9C annual return for FY 2025-26"
+    },
+    {
+      "date": "2027-01-15",
+      "law": "Income Tax",
+      "what": "Quarterly TCS statement, October–December"
+    },
+    {
+      "date": "2027-01-31",
+      "law": "Income Tax",
+      "what": "Quarterly TDS statements (salary, non-salary, non-resident), October–December"
+    },
+    {
+      "date": "2027-03-15",
+      "law": "Income Tax",
+      "what": "Fourth instalment of advance tax (100%)"
+    }
+  ]
+}

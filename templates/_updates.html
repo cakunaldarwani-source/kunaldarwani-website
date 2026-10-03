@@ -1,0 +1,14 @@
+{% macro upd_list(items, empty_msg) %}
+<ul class="upd-list">
+  {% for u in items %}
+  <li data-src="{{ u.source }}">
+    <div class="upd-meta"><span class="upd-src">{{ u.source }}</span><time datetime="{{ u.date }}">{{ u.date_human }}</time></div>
+    <a href="{{ u.link }}" target="_blank" rel="noopener">{{ u.title }}</a>
+    {% if u.summary %}<p class="upd-sum">{{ u.summary }} <span class="upd-by">Summary by CA. Kunal Darwani</span></p>{% endif %}
+    <span class="upd-label">{{ u.label }}</span>
+  </li>
+  {% else %}
+  <li class="upd-empty">{{ empty_msg }}</li>
+  {% endfor %}
+</ul>
+{% endmacro %}

@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="page-head">
+  <div class="wrap">
+    <p class="crumbs"><a href="index.html">Home</a> / Partners</p>
+    <h1>Partners</h1>
+  </div>
+</section>
+<section class="band">
+  <div class="wrap partner-list">
+    {% for p in site.partners %}
+    <article class="partner" id="{{ p.slug }}">
+      <div class="partner-photo">
+        {% if p.photo %}<img src="{{ p.photo }}" alt="Passport-size photograph of {{ p.name }}" width="150" height="190">{% else %}<span class="avatar avatar-lg" aria-hidden="true">{{ p.initials }}</span>{% endif %}
+      </div>
+      <div class="partner-body">
+        <h2>{{ p.name }}</h2>
+        <dl class="facts">
+          <div><dt>Designation</dt><dd>{{ p.designation }}</dd></div>
+          <div><dt>Qualifications</dt><dd>{{ p.qualifications }}</dd></div>
+          <div><dt>ICAI M. No.</dt><dd>{{ p.membership_no }}</dd></div>
+        </dl>
+        <p>{{ p.bio }}</p>
+        <h3>Areas of work</h3>
+        <ul>{% for a in p.areas %}<li>{{ a }}</li>{% endfor %}</ul>
+      </div>
+    </article>
+    {% endfor %}
+  </div>
+</section>
+{% endblock %}

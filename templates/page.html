@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="page-head">
+  <div class="wrap narrow">
+    <p class="crumbs"><a href="index.html">Home</a> / {{ pg.title }}</p>
+    <h1>{{ pg.title }}</h1>
+  </div>
+</section>
+<section class="band">
+  <div class="wrap narrow prose">{{ pg.html|safe }}</div>
+</section>
+{% endblock %}
