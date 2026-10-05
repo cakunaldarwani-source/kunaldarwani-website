@@ -1,0 +1,48 @@
+name: Daily news & notifications (11:00 AM IST)
+
+# 05:30 UTC = 11:00 AM IST, every day
+on:
+  schedule:
+    - cron: "30 5 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: site-content
+  cancel-in-progress: false
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    outputs:
+      changed: ${{ steps.commit.outputs.changed }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install -r requirements.txt
+      - name: Fetch from official sources (RBI, SEBI, ICAI, CBDT, GST)
+        # No AI key is passed: only official feeds and pages are used (no AI search, no summaries).
+        run: python scripts/fetch_updates.py
+      - name: Commit new items
+        id: commit
+        run: |
+          if git diff --quiet -- data/updates.json; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"; echo "No new items."
+          else
+            git config user.name "updates-bot"
+            git config user.email "updates-bot@users.noreply.github.com"
+            git add data/updates.json
+            git commit -m "Daily updates $(TZ=Asia/Kolkata date +%Y-%m-%d)"
+            git pull --rebase && git push
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+  deploy:
+    needs: fetch
+    if: needs.fetch.outputs.changed == 'true'
+    uses: ./.github/workflows/deploy.yml
