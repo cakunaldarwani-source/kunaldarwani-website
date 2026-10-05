@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en-IN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>{% if page_title %}{{ page_title }} | {% endif %}{{ site.firm_name }}, {{ site.firm_type }}</title>
+<meta name="description" content="{{ description or (site.firm_name ~ ', Chartered Accountants, Agra. Income tax, GST, audit, company law, accounting and foreign accounting outsourcing.') }}">
+<link rel="canonical" href="{{ canonical }}">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+<meta property="og:site_name" content="{{ site.firm_name }}, {{ site.firm_type }}">
+<meta property="og:type" content="{{ og_type }}">
+<meta property="og:title" content="{{ page_title or (site.firm_name ~ ', ' ~ site.firm_type) }}">
+<meta property="og:description" content="{{ description or (site.firm_name ~ ', Chartered Accountants, Agra.') }}">
+<meta property="og:url" content="{{ canonical }}">
+<meta property="og:locale" content="en_IN">
+<meta name="twitter:card" content="summary">
+<script type="application/ld+json">{{ jsonld|safe }}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&display=swap">
+<link rel="stylesheet" href="{{ rel }}static/css/site.css">
+<link rel="alternate" type="application/rss+xml" title="Knowledge Centre" href="{{ rel }}blog/feed.xml">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="gate" id="gate" role="dialog" aria-modal="true" aria-labelledby="gate-title" hidden>
+  <div class="gate-card">
+    <p class="eyebrow">Disclaimer</p>
+    <h2 id="gate-title">Before you continue</h2>
+    <p>This website is maintained by {{ site.firm_name }}, Chartered Accountants, in accordance with the Code of Ethics and the Guidelines on Advertisement and Websites issued by the Institute of Chartered Accountants of India (ICAI).</p>
+    <p>The information here is provided for general knowledge only. It is not an advertisement, solicitation or invitation for any professional assignment, and it does not create a professional relationship. Nothing on this site should be treated as professional advice for any specific situation.</p>
+    <p>By clicking <strong>I agree</strong>, you confirm that you are visiting this site on your own initiative to learn about the firm.</p>
+    <div class="gate-actions">
+      <button type="button" class="btn" id="gate-agree">I agree</button>
+      <a class="btn btn-ghost" href="https://www.icai.org/" rel="noopener">Leave site</a>
+    </div>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="wrap masthead-row">
+    <a class="wordmark" href="{{ rel }}index.html">
+      <span class="wm-name">{{ site.firm_name }}</span>
+      <span class="wm-sub">{{ site.firm_type }}</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav id="nav" class="nav" aria-label="Main">
+      <a href="{{ rel }}index.html" {% if nav=='home' %}aria-current="page"{% endif %}>Home</a>
+      <a href="{{ rel }}about.html" {% if nav=='about' %}aria-current="page"{% endif %}>The Firm</a>
+      <a href="{{ rel }}partners.html" {% if nav=='partners' %}aria-current="page"{% endif %}>Partners</a>
+      <a href="{{ rel }}services/index.html" {% if nav=='services' %}aria-current="page"{% endif %}>Services</a>
+      <a href="{{ rel }}blog/index.html" {% if nav=='blog' %}aria-current="page"{% endif %}>Knowledge Centre</a>
+      <a href="{{ rel }}updates.html" {% if nav=='updates' %}aria-current="page"{% endif %}>Updates</a>
+      <a href="{{ rel }}compliance-calendar.html" {% if nav=='calendar' %}aria-current="page"{% endif %}>Due Dates</a>
+      <a href="{{ rel }}contact.html" {% if nav=='contact' %}aria-current="page"{% endif %}>Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+{% block content %}{% endblock %}
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-grid">
+    <div>
+      <p class="f-name">{{ site.firm_name }}</p>
+      <p class="f-meta">{{ site.firm_type }}</p>
+      <address>{% for l in site.address_lines %}{{ l }}<br>{% endfor %}</address>
+    </div>
+    <div>
+      <p class="f-head">Reach us</p>
+      <p>{% for ph in site.phones %}<a href="tel:{{ ph|replace(' ','') }}">{{ ph }}</a><br>{% endfor %}
+      <a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+      <p class="f-meta">{{ site.hours }}</p>
+    </div>
+    <div>
+      <p class="f-head">Site</p>
+      <p><a href="{{ rel }}services/index.html">Services</a><br>
+      <a href="{{ rel }}blog/index.html">Knowledge Centre</a><br>
+      <a href="{{ rel }}updates.html">Latest news &amp; notifications</a><br>
+      <a href="{{ rel }}compliance-calendar.html">Compliance calendar</a><br>
+      <a href="{{ rel }}disclaimer.html">Disclaimer</a><br>
+      <a href="{{ rel }}privacy-policy.html">Privacy policy</a></p>
+    </div>
+    <div>
+      <p class="f-head">Useful links</p>
+      <p><a href="https://www.icai.org/" rel="noopener">ICAI</a><br>
+      <a href="https://www.incometax.gov.in/" rel="noopener">Income Tax e-Filing</a><br>
+      <a href="https://www.gst.gov.in/" rel="noopener">GST Portal</a><br>
+      <a href="https://www.mca.gov.in/" rel="noopener">MCA</a></p>
+    </div>
+  </div>
+  <div class="wrap footer-legal">
+    <p>This website contains information about the firm as permitted by the ICAI Guidelines on Advertisement and Websites. The content is informational and is not intended to solicit work. &copy; {{ year }} {{ site.firm_name }}.</p>
+  </div>
+</footer>
+<script src="{{ rel }}static/js/site.js"></script>
+</body>
+</html>
