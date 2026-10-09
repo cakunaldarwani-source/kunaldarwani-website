@@ -20,7 +20,7 @@ ai_drafted: true
 
 The **Foreign Assets of Small Taxpayers Disclosure Scheme, 2026 (FAST-DS 2026)** is a one-time window to regularise foreign assets and foreign income that were not reported in Indian income-tax returns. Declarations in Form 1 can be filed online from **16 August 2026 to 31 December 2026**. Undisclosed assets or income up to ₹1 crore attract 60% of their value (tax plus an equal additional amount), while assets up to ₹5 crore that were only left out of the return's foreign-asset schedule need a flat ₹1 lakh fee.
 
-The scheme is contained in Chapter IV of the Finance Act, 2026 and is administered through the income-tax e-filing portal. Once the process is completed, the declarant gets immunity under the Black Money Act, 2015 for what is declared.
+The scheme is contained in Chapter IV of the Finance Act, 2026 and runs fully online on the e-filing portal.
 
 ## Who can file a declaration under FAST-DS 2026?
 
@@ -31,7 +31,7 @@ As per the Income Tax Department's FAQ, the scheme is open to:
 
 A declaration can be made where no return was filed, where the asset or income was not shown in a return filed before the scheme began, or where the income has escaped assessment.
 
-Typical situations include a foreign bank account opened while studying or working abroad that was never reported after returning to India, or foreign shares received through an overseas employer's stock plan that were never shown in Schedule FA.
+Typical cases are a foreign bank account from years spent abroad, or shares from an overseas employer's stock plan, never shown in Schedule FA.
 
 ## What are the two categories and the amount payable?
 
@@ -44,14 +44,17 @@ The department's FAQ gives this illustration for Serial No. 1: a foreign asset w
 
 If the aggregate asset value exceeds ₹5 crore, the person cannot use Serial No. 2.
 
+## Is tax payable on the foreign asset or only on the income?
+
+It depends on the category. Under Serial No. 2, the asset was bought from income already taxed in India, or while non-resident. Only the failure to report it is regularised, so no tax is charged – just the ₹1 lakh fee. Under Serial No. 1, the source of the investment in the asset is unexplained, so the asset's value as on 31 March 2026 is itself treated as untaxed income and charged at 30% plus an equal amount. Untaxed foreign income such as interest or dividends is declared separately. Income that already forms part of an asset's value should not be counted again.
+
 ## How is the foreign asset valued?
 
-The valuation date is **31 March 2026**. The general rule is the higher of the cost of acquisition and the open-market price on that date. Some specific rules from the FAQ:
+The valuation date is **31 March 2026**. The general rule is the higher of the cost of acquisition and the open-market price on that date. Some specific rules:
 
 - **Listed shares:** mean of the day's high and low quoted prices on the valuation date, or the nearest earlier trading day.
 - **Foreign bank account:** the total of all deposits made since the account was opened, with adjustment for withdrawals that were redeposited.
 - **Currency conversion:** values are reported in rupees using the RBI reference rate on the valuation date. Other currencies are converted through the US dollar.
-- **Variance:** for assets other than bank accounts, a difference of up to 20% from the declared fair market value does not by itself make the declaration invalid.
 
 ## How do you file Form 1 on the e-filing portal?
 
@@ -60,8 +63,6 @@ The valuation date is **31 March 2026**. The general rule is the higher of the c
 3. Fill Part A (basic details) and Part B (types of assets or income). This opens the relevant annexures.
 4. Complete each annexure, attach the computation and valuation reports (PDF or ZIP, up to 5 MB each), and review the computed figures in Parts C and D.
 5. Preview the form and e-verify it through Aadhaar OTP, a digital signature certificate or EVC.
-
-Filing a fresh Form 1 replaces an earlier one, so the complete list of assets should be entered at one time.
 
 ## What are the deadlines after the declaration?
 
@@ -90,9 +91,8 @@ The scheme does not apply to:
 ## Points to check before declaring
 
 - Identify the correct category first. It decides both the value limit and whether 60% or the flat ₹1 lakh fee applies.
-- Collect bank statements from account opening, broker statements and employer stock plan records to support the valuation.
 - From now on, report all foreign assets every year in Schedule FA of the return. The [income-tax return](../services/income-tax-return.html) for each year should be checked for this. For the changes under the new law, see [Income-tax Act, 2025: tax year, regimes and ITR](income-tax-act-2025-tax-year-regimes-itr.html).
 
 *The information in this article reflects the law as on the date of publication and is for general guidance only.*
 
-**Sources:** https://www.incometaxindia.gov.in/documents/81799/15520974/FAST-DS-FAQs.pdf · https://www.incometax.gov.in/iec/foportal/help/all-topics/e-filing-services/foreign-assets-small-taxpayers-disclosure-scheme-2026 · https://www.incometax.gov.in/iec/foportal/newdownloads/form%201%20of%20fads-um
+**CA. Kunal Darwani**
