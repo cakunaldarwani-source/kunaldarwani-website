@@ -1,6 +1,15 @@
 {
- "updated": "2026-10-12 18:50 IST",
+ "updated": "2026-10-13 18:19 IST",
  "items": [
+  {
+   "title": "Risk Management and Inter-Bank Dealings",
+   "link": "https://www.rbi.org.in/scripts/NotificationUser.aspx?Id=13739&Mode=0",
+   "date": "2026-10-12",
+   "source": "RBI",
+   "label": "RBI Notification",
+   "kind": "circular",
+   "first_seen": "2026-10-13"
+  },
   {
    "title": "Money Supply for the fortnight ended on September 30, 2026",
    "link": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63791",
