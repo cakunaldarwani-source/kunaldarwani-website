@@ -1,6 +1,33 @@
 {
- "updated": "2026-10-15 15:38 IST",
+ "updated": "2026-10-16 15:28 IST",
  "items": [
+  {
+   "title": "Developments in India’s Balance of Payments for the Month of August 2026",
+   "link": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63813",
+   "date": "2026-10-15",
+   "source": "RBI",
+   "label": "RBI Press Release",
+   "kind": "news",
+   "first_seen": "2026-10-16"
+  },
+  {
+   "title": "RBI issues Frequently Asked Questions on Foreign Exchange Risk Reserve",
+   "link": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63812",
+   "date": "2026-10-15",
+   "source": "RBI",
+   "label": "RBI Press Release",
+   "kind": "news",
+   "first_seen": "2026-10-16"
+  },
+  {
+   "title": "Review of certain aspects of the Closing Auction Session, market timings and settlement methodology for derivatives contracts",
+   "link": "https://www.sebi.gov.in/legal/circulars/oct-2026/review-of-certain-aspects-of-the-closing-auction-session-market-timings-and-settlement-methodology-for-derivatives-contracts_105293.html",
+   "date": "2026-10-15",
+   "source": "SEBI",
+   "label": "SEBI Circular",
+   "kind": "circular",
+   "first_seen": "2026-10-16"
+  },
   {
    "title": "Scheduled Banks’ Statement of Position in India as on September 30, 2026",
    "link": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63810",
