@@ -28,7 +28,7 @@ MAX_LEN = 1200  # Buffer enforces ~1,248 characters for LinkedIn
 
 def GOOGLE_META(url):
     # "What's New" post with a "Learn more" button pointing to the article.
-    return {"type": "whats_new"}
+    return {"type": "whats_new", "detailsWhatsNew": {"button": "learn_more", "link": url}}
 
 HASHTAGS = {
     "gst": "#GST #GSTIndia #IndirectTax",
@@ -138,12 +138,16 @@ mutation($input: CreatePostInput!) {
                "assets": [], "needsApproval": False}
         if c["service"] == "googlebusiness":
             inp["metadata"] = {"google": GOOGLE_META(url)}
+        elif c["service"] == "linkedin":
+            inp["metadata"] = {"linkedin": {"linkAttachment": {
+                "url": url, "title": str(meta.get("title", ""))[:200],
+                "description": str(meta.get("summary", ""))[:250]}}}
         try:
             res = gql(mutation, {"input": inp})["createPost"]
         except Exception as e:  # noqa: BLE001
             # Google metadata shape may differ – retry once with text only (link stays in the text).
             if "metadata" in inp:
-                print(f"  {c['service']}: metadata rejected ({e}); retrying without button")
+                print(f"  {c['service']}: metadata rejected ({e}); retrying without metadata")
                 inp.pop("metadata")
                 res = gql(mutation, {"input": inp})["createPost"]
             else:
