@@ -1,0 +1,96 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="page-head">
+  <div class="wrap">
+    <p class="crumbs"><a href="index.html">Home</a> / Careers</p>
+    <h1>Careers</h1>
+    <p class="lede">The firm welcomes applications from CA students, semi-qualified and qualified Chartered Accountants, and accounts and tax professionals who want to build their practice experience in Agra.</p>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap svc-layout">
+    <div>
+      <div class="notice" id="applied" hidden>
+        <h2>Thank you for your application</h2>
+        <p>Your application has been received. We will get back to you on this shortly. A confirmation has also been sent to your email address.</p>
+      </div>
+
+      <h2>Apply</h2>
+      <p class="small">Fields marked * are required. Resume in PDF or Word, up to 5 MB.</p>
+      <form class="apply-form" action="https://formsubmit.co/{{ site.email }}" method="POST" enctype="multipart/form-data">
+        <input type="hidden" name="_subject" value="New job application – kunaldarwani.com">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_next" value="{{ site.base_url }}/careers.html?applied=1#applied">
+        <input type="hidden" name="_autoresponse" value="Thank you for your application to Kunal Darwani &amp; Company, Chartered Accountants. We have received your details and will get back to you on this shortly.">
+        <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+        <div class="f-row">
+          <label>Full name *<input type="text" name="Name" required autocomplete="name"></label>
+          <label>Email *<input type="email" name="email" required autocomplete="email"></label>
+        </div>
+        <div class="f-row">
+          <label>Mobile number *<input type="tel" name="Mobile" required pattern="[0-9+ ()-]{10,15}" autocomplete="tel"></label>
+          <label>City *<input type="text" name="City" required autocomplete="address-level2"></label>
+        </div>
+        <div class="f-row">
+          <label>Position applying for *
+            <select name="Position" required>
+              <option value="">Select</option>
+              <option>Article Assistant (CA student)</option>
+              <option>Semi-qualified / CA Inter</option>
+              <option>Qualified Chartered Accountant</option>
+              <option>Accounts &amp; Tax Executive</option>
+              <option>Foreign Accounting (US/UK) Executive</option>
+              <option>Internship</option>
+              <option>Other</option>
+            </select>
+          </label>
+          <label>Experience
+            <select name="Experience">
+              <option>Fresher</option>
+              <option>Less than 1 year</option>
+              <option>1–3 years</option>
+              <option>3–5 years</option>
+              <option>More than 5 years</option>
+            </select>
+          </label>
+        </div>
+        <label>Highest qualification *<input type="text" name="Qualification" required placeholder="e.g. CA Intermediate (both groups), B.Com"></label>
+        <label>Resume *<input type="file" name="Resume" required accept=".pdf,.doc,.docx"></label>
+        <label>Message<textarea name="Message" rows="4" placeholder="Anything you would like us to know – availability, notice period, areas of interest"></textarea></label>
+        <label class="check"><input type="checkbox" name="Consent" value="Yes" required> I agree that the firm may use these details to evaluate my application.</label>
+        <button class="btn" type="submit">Submit application</button>
+      </form>
+    </div>
+
+    <aside class="svc-side">
+      <div class="side-box">
+        <h2>Who can apply</h2>
+        <ul class="ticks">
+          <li>CA students seeking articleship</li>
+          <li>Semi-qualified and qualified Chartered Accountants</li>
+          <li>Accounts, GST and income tax professionals</li>
+          <li>Accountants with US/UK bookkeeping experience</li>
+        </ul>
+      </div>
+      <div class="side-box">
+        <h2>Work areas</h2>
+        <ul>
+          <li>Income tax, TDS and GST compliance</li>
+          <li>Audit and assurance</li>
+          <li>Company law and ROC</li>
+          <li>Accounting and foreign accounting outsourcing</li>
+        </ul>
+      </div>
+      <div class="side-box">
+        <h2>Office</h2>
+        <address>{% for l in site.address_lines %}{{ l }}<br>{% endfor %}</address>
+      </div>
+    </aside>
+  </div>
+</section>
+<script>
+  if (location.search.indexOf('applied=1') !== -1) { var n = document.getElementById('applied'); if (n) n.hidden = false; }
+</script>
+{% endblock %}
