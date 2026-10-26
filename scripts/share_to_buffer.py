@@ -25,6 +25,11 @@ API = "https://api.buffer.com"
 SITE = "https://www.kunaldarwani.com"
 MAX_LEN = 1200  # Buffer enforces ~1,248 characters for LinkedIn
 
+
+def GOOGLE_META(url):
+    # "What's New" post with a "Learn more" button pointing to the article.
+    return {"type": "whats_new"}
+
 HASHTAGS = {
     "gst": "#GST #GSTIndia #IndirectTax",
     "income": "#IncomeTax #ITR #DirectTax",
@@ -129,9 +134,10 @@ mutation($input: CreatePostInput!) {
   }
 }"""
     for c in chans:
-        inp = {"text": text, "channelId": c["id"], "schedulingType": "automatic", "mode": "shareNow"}
-        if c["service"] in ("googlebusiness", "google_business", "google"):
-            inp["metadata"] = {"google": {"type": "whats_new", "button": "learn_more", "link": url}}
+        inp = {"text": text, "channelId": c["id"], "schedulingType": "automatic", "mode": "shareNow",
+               "assets": [], "needsApproval": False}
+        if c["service"] == "googlebusiness":
+            inp["metadata"] = {"google": GOOGLE_META(url)}
         try:
             res = gql(mutation, {"input": inp})["createPost"]
         except Exception as e:  # noqa: BLE001
@@ -160,17 +166,26 @@ def main():
     if a.check:
         for c in channels():
             print(f"channel: {c['service']} | {c['name']} | {c['id']}")
-        for t in ("CreatePostInput", "PostInputMetaData", "ShareMode", "SchedulingType"):
+        todo, seen = ["PostTypeGoogleBusiness", "GoogleBusinessWhatsNewMetaDataInput", "LinkAttachmentInput"], set()
+        while todo:
+            t = todo.pop(0)
+            if t in seen or t in ("String", "Boolean", "Int", "Float", "ID", "DateTime"):
+                continue
+            seen.add(t)
             try:
-                print(json.dumps(input_fields(t)))
+                info = input_fields(t) or {}
             except Exception as e:  # noqa: BLE001
                 print(f"{t}: {e}")
-        for t in ("PostInputMetaData",):
-            info = input_fields(t) or {}
+                continue
+            fields = []
             for f in info.get("inputFields") or []:
-                if "google" in f["name"].lower() or "linkedin" in f["name"].lower():
-                    tn = f["type"]["name"] or (f["type"].get("ofType") or {}).get("name")
-                    print(json.dumps(input_fields(tn)))
+                ty = f["type"]
+                tn = ty["name"] or (ty.get("ofType") or {}).get("name")
+                fields.append(f"{f['name']}:{'!' if ty['kind'] == 'NON_NULL' else ''}{tn}")
+                if tn:
+                    todo.append(tn)
+            enums = [e["name"] for e in info.get("enumValues") or []]
+            print(f"TYPE {t}: fields=[{', '.join(fields)}] enums=[{', '.join(enums)}]")
         return
 
     files = [f for f in a.files if f.startswith("content/blog/") and f.endswith(".md") and Path(f).exists()]
