@@ -1,0 +1,74 @@
+name: Share new articles to LinkedIn & Google (Buffer)
+
+# Runs on GitHub's servers – no computer or browser needed.
+# Needs the repository secret BUFFER_API_KEY (Buffer > Settings > API).
+
+on:
+  push:
+    branches: [main]
+    paths: ["content/blog/*.md"]
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "check = list channels only; dry-run = show text; share = post"
+        type: choice
+        options: [check, dry-run, share]
+        default: check
+      files:
+        description: "Article files to share (space separated, e.g. content/blog/slug.md)"
+        required: false
+        default: ""
+
+permissions:
+  contents: read
+
+concurrency:
+  group: social-share
+  cancel-in-progress: false
+
+jobs:
+  share:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 0 }
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install pyyaml
+
+      - name: Find newly added articles
+        id: new
+        if: github.event_name == 'push'
+        run: |
+          BEFORE="${{ github.event.before }}"
+          if [ -z "$BEFORE" ] || [ "$BEFORE" = "0000000000000000000000000000000000000000" ]; then BEFORE="HEAD~1"; fi
+          FILES=$(git diff --name-only --diff-filter=A "$BEFORE" "${{ github.sha }}" -- 'content/blog/*.md' | tr '\n' ' ')
+          echo "files=$FILES" >> "$GITHUB_OUTPUT"
+          echo "New articles: ${FILES:-none}"
+
+      - name: Wait until the article is live
+        if: github.event_name == 'push' && steps.new.outputs.files != ''
+        run: |
+          for f in ${{ steps.new.outputs.files }}; do
+            url="https://www.kunaldarwani.com/blog/$(basename "$f" .md).html"
+            for i in $(seq 1 40); do
+              code=$(curl -s -o /dev/null -w "%{http_code}" "$url")
+              if [ "$code" = "200" ]; then echo "Live: $url"; break; fi
+              sleep 15
+            done
+          done
+
+      - name: Share via Buffer
+        if: github.event_name == 'workflow_dispatch' || steps.new.outputs.files != ''
+        env:
+          BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}
+        run: |
+          if [ "${{ github.event_name }}" = "push" ]; then
+            python scripts/share_to_buffer.py --files ${{ steps.new.outputs.files }}
+          elif [ "${{ inputs.mode }}" = "check" ]; then
+            python scripts/share_to_buffer.py --check
+          elif [ "${{ inputs.mode }}" = "dry-run" ]; then
+            python scripts/share_to_buffer.py --dry-run --files ${{ inputs.files }}
+          else
+            python scripts/share_to_buffer.py --files ${{ inputs.files }}
+          fi
