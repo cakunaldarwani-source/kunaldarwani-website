@@ -1,3 +1,5 @@
+.form-msg { margin: 0; font-size: .9rem; color: var(--muted); }
+.form-msg.is-bad { color: #b42318; }
 /* FAQ blocks on articles */
 .faq { border-top: 1px solid var(--rule); margin-bottom: var(--s5, 2rem); }
 .faq details { border-bottom: 1px solid var(--rule); padding: .8rem .25rem; }
