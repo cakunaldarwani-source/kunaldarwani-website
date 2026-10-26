@@ -89,6 +89,22 @@ def input_fields(type_name):
     return gql(q, {"n": type_name})["__type"]
 
 
+def url_ok(u):
+    try:
+        req = urllib.request.Request(u, method="HEAD", headers={"User-Agent": "kunaldarwani-website-actions"})
+        with urllib.request.urlopen(req, timeout=30) as r:
+            return r.status == 200
+    except Exception:  # noqa: BLE001
+        return False
+
+
+def instagram_caption(text, url):
+    """Links are not clickable on Instagram – point to the bio instead."""
+    t = text.replace(f"Full article:\n{url}", "Full article: link in bio (kunaldarwani.com)")
+    t = t.replace(url, "link in bio (kunaldarwani.com)")
+    return t[:2100]
+
+
 def front_matter(path):
     text = Path(path).read_text(encoding="utf-8")
     m = re.match(r"^---\s*\n(.*?)\n---\s*\n", text, re.S)
@@ -133,30 +149,46 @@ mutation($input: CreatePostInput!) {
     ... on MutationError { message }
   }
 }"""
+    slug = Path(path).stem
+    img_tall, img_wide = f"{SITE}/social/{slug}.png", f"{SITE}/social/{slug}-wide.png"
+    have_tall, have_wide = url_ok(img_tall), url_ok(img_wide)
     for c in chans:
+        svc = c["service"]
         inp = {"text": text, "channelId": c["id"], "schedulingType": "automatic", "mode": "shareNow",
                "assets": [], "needsApproval": False}
-        if c["service"] == "googlebusiness":
+        if svc == "googlebusiness":
             inp["metadata"] = {"google": GOOGLE_META(url)}
-        elif c["service"] == "linkedin":
-            inp["metadata"] = {"linkedin": {"linkAttachment": {
-                "url": url, "title": str(meta.get("title", ""))[:200],
-                "description": str(meta.get("summary", ""))[:250]}}}
+            if have_wide:
+                inp["assets"] = [{"image": {"url": img_wide}}]
+        elif svc == "linkedin":
+            att = {"url": url, "title": str(meta.get("title", ""))[:200],
+                   "description": str(meta.get("summary", ""))[:250]}
+            if have_wide:
+                att["thumbnail"] = {"url": img_wide}
+            inp["metadata"] = {"linkedin": {"linkAttachment": att}}
+        elif svc == "instagram":
+            if not have_tall:
+                ok = False
+                print(f"  SKIPPED instagram: image not found at {img_tall}")
+                continue
+            inp["text"] = instagram_caption(text, url)
+            inp["assets"] = [{"image": {"url": img_tall}}]
+            inp["metadata"] = {"instagram": {"type": "post", "shouldShareToFeed": True}}
         try:
             res = gql(mutation, {"input": inp})["createPost"]
         except Exception as e:  # noqa: BLE001
-            # Google metadata shape may differ – retry once with text only (link stays in the text).
-            if "metadata" in inp:
-                print(f"  {c['service']}: metadata rejected ({e}); retrying without metadata")
-                inp.pop("metadata")
+            if svc != "instagram" and ("metadata" in inp or inp["assets"]):
+                print(f"  {svc}: rejected ({e}); retrying as plain text")
+                inp.pop("metadata", None)
+                inp["assets"] = []
                 res = gql(mutation, {"input": inp})["createPost"]
             else:
                 raise
         if res.get("message"):
             ok = False
-            print(f"  FAILED {c['service']} ({c['name']}): {res['message']}")
+            print(f"  FAILED {svc} ({c['name']}): {res['message']}")
         else:
-            print(f"  posted to {c['service']} ({c['name']}): post id {res['post']['id']}")
+            print(f"  posted to {svc} ({c['name']}): post id {res['post']['id']}")
     return ok
 
 
@@ -165,6 +197,7 @@ def main():
     ap.add_argument("--files", nargs="*", default=[])
     ap.add_argument("--check", action="store_true")
     ap.add_argument("--dry-run", action="store_true")
+    ap.add_argument("--only", default="", help="comma-separated services, e.g. instagram")
     a = ap.parse_args()
 
     if a.check:
@@ -199,7 +232,9 @@ def main():
     if not files:
         print("No new articles to share.")
         return
-    wanted = ("linkedin", "googlebusiness", "google_business", "google")
+    wanted = ("linkedin", "googlebusiness", "instagram")
+    if a.only.strip():
+        wanted = tuple(x.strip() for x in a.only.split(",") if x.strip())
     chans = [c for c in channels() if c["service"] in wanted] if not a.dry_run else []
     if not a.dry_run and not chans:
         sys.exit("No LinkedIn / Google Business channels found in Buffer.")
