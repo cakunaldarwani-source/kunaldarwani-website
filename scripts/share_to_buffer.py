@@ -85,7 +85,7 @@ def channels():
 
 
 def input_fields(type_name):
-    q = 'query($n: String!) { __type(name: $n) { name kind inputFields { name type { name kind ofType { name kind } } } enumValues { name } } }'
+    q = 'query($n: String!) { __type(name: $n) { name kind inputFields { name type { name kind ofType { name kind ofType { name kind ofType { name kind } } } } } enumValues { name } } }'
     return gql(q, {"n": type_name})["__type"]
 
 
@@ -170,7 +170,7 @@ def main():
     if a.check:
         for c in channels():
             print(f"channel: {c['service']} | {c['name']} | {c['id']}")
-        todo, seen = ["PostTypeGoogleBusiness", "GoogleBusinessWhatsNewMetaDataInput", "LinkAttachmentInput"], set()
+        todo, seen = ["CreatePostInput", "InstagramPostMetadataInput"], set()
         while todo:
             t = todo.pop(0)
             if t in seen or t in ("String", "Boolean", "Int", "Float", "ID", "DateTime"):
@@ -184,7 +184,10 @@ def main():
             fields = []
             for f in info.get("inputFields") or []:
                 ty = f["type"]
-                tn = ty["name"] or (ty.get("ofType") or {}).get("name")
+                tn, cur = ty["name"], ty
+                while not tn and cur.get("ofType"):
+                    cur = cur["ofType"]
+                    tn = cur["name"]
                 fields.append(f"{f['name']}:{'!' if ty['kind'] == 'NON_NULL' else ''}{tn}")
                 if tn:
                     todo.append(tn)
