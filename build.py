@@ -157,8 +157,18 @@ def main():
         faq_schema = {"@type": "FAQPage", "mainEntity": [
             {"@type": "Question", "name": f["q"], "acceptedAnswer": {"@type": "Answer", "text": f["a"]}}
             for f in faq]} if faq else None
+        og_image = None
+        try:  # branded social cards: Instagram (portrait) + Google / link preview (wide)
+            from scripts.make_social_image import card, card_wide
+            (DIST / "social").mkdir(exist_ok=True)
+            card(p, p["slug"], DIST / "social" / f"{p['slug']}.png")
+            card_wide(p, p["slug"], DIST / "social" / f"{p['slug']}-wide.png")
+            og_image = f"{base}/social/{p['slug']}-wide.png"
+            article["image"] = og_image
+        except Exception as e:  # never break the site build over an image
+            print(f"  social image skipped for {p['slug']}: {e}")
         render("post.html", f"blog/{p['slug']}.html", 1, p=p, page_title=p.get("seo_title") or p["title"],
-               description=desc, nav="blog", og_type="article", schema=article,
+               description=desc, nav="blog", og_type="article", schema=article, og_image=og_image,
                extra_schema=[faq_schema] if faq_schema else None,
                lastmod=str(p.get("updated") or p["date"]))
     render("partners.html", "partners.html", page_title="Partners", nav="partners")
