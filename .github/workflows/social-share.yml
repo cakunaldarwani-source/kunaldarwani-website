@@ -18,6 +18,10 @@ on:
         description: "Article files to share (space separated, e.g. content/blog/slug.md)"
         required: false
         default: ""
+      only:
+        description: "Only these channels (e.g. instagram) – blank = all"
+        required: false
+        default: ""
 
 permissions:
   contents: read
@@ -70,5 +74,5 @@ jobs:
           elif [ "${{ inputs.mode }}" = "dry-run" ]; then
             python scripts/share_to_buffer.py --dry-run --files ${{ inputs.files }}
           else
-            python scripts/share_to_buffer.py --files ${{ inputs.files }}
+            python scripts/share_to_buffer.py --files ${{ inputs.files }} --only "${{ inputs.only }}"
           fi
