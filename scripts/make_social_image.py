@@ -116,7 +116,7 @@ def card(meta, slug, out):
     # footer
     fy = H - PAD - 150
     cta_f = font(SANS, 32, "Medium")
-    d.text((PAD, fy - 86), "Read the full article  —  link in bio", font=cta_f, fill=GOLD)
+    d.text((PAD, fy - 86), "Read the full article at kunaldarwani.com/blog", font=cta_f, fill=GOLD)
     d.rectangle([PAD, fy, W - PAD, fy + 2], fill=(70, 92, 126))
     d.text((PAD, fy + 32), "Kunal Darwani & Company", font=font(SERIF, 44, "SemiBold"), fill=WHITE)
     d.text((PAD, fy + 92), "Chartered Accountants  ·  Agra", font=font(SANS, 30, "Regular"), fill=MUTED)
