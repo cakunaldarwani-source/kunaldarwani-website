@@ -1,0 +1,111 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="page-head">
+  <div class="wrap">
+    <p class="crumbs"><a href="index.html">Home</a> / <a href="careers.html">Careers</a> / Articleship in Agra</p>
+    <h1>CA Articleship in Agra</h1>
+    <p class="lede">Kunal Darwani &amp; Company, Chartered Accountants, takes CA students as articled assistants at its office in Tajganj, Agra. This page explains the work, the training structure under the ICAI New Scheme and how to apply.</p>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap svc-layout">
+    <div class="prose">
+      {% if a.open %}
+      <div class="notice">
+        <h2>Articleship openings</h2>
+        <p>{{ a.status }}</p>
+      </div>
+      {% endif %}
+
+      <h2>What do articled assistants work on?</h2>
+      <p>Articled assistants work on live assignments under the supervision of the partners, CA. Kunal Darwani (FCA, DISA) and CA. Reet Darwani (FCA, M.Com). Three areas form a large part of the training:</p>
+      <ul>
+        <li><strong>Statutory audits</strong> – audits of companies under the Companies Act, 2013, from planning and vouching to drafting the audit report and CARO, along with tax audits.</li>
+        <li><strong>Bank audits</strong> – bank branch statutory audits during the audit season, and stock and internal audits for borrowers.</li>
+        <li><strong>Litigation</strong> – income tax and GST notices, assessments and appeals: reading the notice, preparing submissions and paper books, and attending hearings with the partners.</li>
+      </ul>
+      <p>Alongside these, articled assistants handle income tax and TDS returns, GST returns and reconciliations, ROC filings for companies and LLPs, and accounting, including work for businesses outside India.</p>
+
+      <h2>How does the training work day to day?</h2>
+      <ul>
+        <li><strong>End to end:</strong> an articled assistant follows an assignment from the client's first documents to the final filing, report or reply, rather than doing one isolated step.</li>
+        <li><strong>Working and learning with AI:</strong> the firm uses AI tools in research, drafting, reconciliations and audit documentation. Articled assistants learn to use them in day-to-day work, and to check every output against the law and the client's records before it is used.</li>
+        <li><strong>Review and feedback:</strong> work is reviewed by the partners, so assistants see how a file is corrected and why.</li>
+      </ul>
+
+      <h2>How is articleship structured under the ICAI New Scheme?</h2>
+      <table>
+        <thead><tr><th>Point</th><th>Position under ICAI New Scheme</th></tr></thead>
+        <tbody>
+          <tr><td>Duration</td><td>2 years of practical training</td></tr>
+          <tr><td>When you can start</td><td>After passing both groups of CA Intermediate and completing ICITSS</td></tr>
+          <tr><td>Leave</td><td>12 days in each year of training</td></tr>
+          <tr><td>Industrial training</td><td>Optional, 9 to 12 months, in the last part of the 2 years</td></tr>
+          <tr><td>Registration</td><td>Online, through the ICAI Self-Service Portal (SSP)</td></tr>
+          <tr><td>Minimum stipend</td><td>Prescribed by ICAI under Regulation 48 of the Chartered Accountants Regulations, 1988</td></tr>
+        </tbody>
+      </table>
+      <h2>What stipend does the firm pay?</h2>
+      <table>
+        <thead><tr><th>Period of training</th><th>Monthly stipend</th></tr></thead>
+        <tbody>
+          <tr><td>First year</td><td>₹{{ "{:,}".format(a.stipend.year1) }}</td></tr>
+          <tr><td>Second year</td><td>₹{{ "{:,}".format(a.stipend.year2) }}</td></tr>
+          <tr><td>Additional, for students who cleared both groups of CA Intermediate in a single attempt</td><td>₹{{ "{:,}".format(a.stipend.single_attempt_bonus) }} a month, in both years</td></tr>
+        </tbody>
+      </table>
+      <p>These amounts are higher than the minimum stipend ICAI prescribes for Agra under Regulation 48. ICAI published a draft amendment on 25 June 2026 proposing higher minimum rates; if the final rates exceed the firm's scale, the firm will pay the ICAI rates.</p>
+
+      <h2>Who can apply?</h2>
+      <ul>
+        <li>CA students who have cleared both groups of CA Intermediate and completed ICITSS</li>
+        <li>Students seeking a transfer of articleship to Agra, subject to ICAI's transfer rules</li>
+        <li>CA Intermediate students who want to apply in advance of their results</li>
+      </ul>
+
+      <h2>How do I apply?</h2>
+      <ol>
+        <li>Fill in the <a href="careers.html#apply-form">application form on the Careers page</a> and select <em>Article Assistant (CA student)</em>.</li>
+        <li>Attach your resume (PDF or Word) with your CA Intermediate result details.</li>
+        <li>Shortlisted applicants are called for a conversation at the office, after which the articleship is registered on the ICAI portal.</li>
+      </ol>
+      <p>You can also email your resume to <a href="mailto:{{ site.email }}">{{ site.email }}</a> with "Articleship" in the subject line.</p>
+
+      <h2>Choosing a CA firm for articleship</h2>
+      <p>If you are comparing firms in Agra, our Knowledge Centre article <a href="blog/how-to-choose-ca-firm-for-articleship-agra.html">How to choose a CA firm in Agra for articleship</a> sets out the points worth checking: kind of work, exposure, supervision, location and study time.</p>
+
+      <h2 id="faq">Frequently asked questions</h2>
+      <div class="faq">
+        {% for f in a.faq %}<details><summary>{{ f.q }}</summary><p>{{ f.a }}</p></details>
+        {% endfor %}
+      </div>
+    </div>
+
+    <aside class="svc-side">
+      <div class="side-box">
+        <h2>At a glance</h2>
+        <ul>
+          <li>Position: Articled Assistant</li>
+          <li>Training: 2 years (ICAI New Scheme)</li>
+          <li>Focus: statutory audits, bank audits, tax and GST litigation</li>
+          <li>Stipend: ₹{{ "{:,}".format(a.stipend.year1) }} (1st year), ₹{{ "{:,}".format(a.stipend.year2) }} (2nd year) a month</li>
+          <li>+ ₹{{ "{:,}".format(a.stipend.single_attempt_bonus) }} a month for single-attempt Intermediate</li>
+          <li>Location: Tajganj, Agra</li>
+          <li>Office hours: {{ site.hours }}</li>
+        </ul>
+      </div>
+      <div class="side-box">
+        <h2>Apply</h2>
+        <p><a class="btn" href="careers.html#apply-form">Application form</a></p>
+        <p class="small">Or email <a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+      </div>
+      <div class="side-box">
+        <h2>Office</h2>
+        <address>{% for l in site.address_lines %}{{ l }}<br>{% endfor %}</address>
+        <p class="small"><a href="{{ site.map_url }}" rel="noopener">View on map</a></p>
+      </div>
+    </aside>
+  </div>
+</section>
+{% endblock %}

@@ -177,6 +177,35 @@ def main():
     render("contact.html", "contact.html", page_title="Contact", nav="contact")
     render("careers.html", "careers.html", page_title="Careers",
            description="Careers at Kunal Darwani & Company, Chartered Accountants, Agra. Apply for articleship, CA, accounts and tax roles.", nav="careers")
+    art = load_json("articleship.json")
+    art_url = page_url("articleship-in-agra.html")
+    art_faq = {"@type": "FAQPage", "mainEntity": [
+        {"@type": "Question", "name": f["q"], "acceptedAnswer": {"@type": "Answer", "text": f["a"]}}
+        for f in art["faq"]]}
+    job = None
+    if art.get("open"):
+        st = art["stipend"]
+        job = {"@type": "JobPosting", "title": "Articled Assistant (CA Articleship)",
+               "description": ("<p>Two-year CA articleship (ICAI New Scheme) with Kunal Darwani &amp; Company, "
+                               "Chartered Accountants, Agra. Training focuses on statutory audits, bank audits and income tax / GST litigation, "
+                               "along with tax, GST, ROC and accounting work, handled end to end with AI tools under the partners' supervision.</p>"
+                               "<p>Eligibility: passed both groups of CA Intermediate and completed ICITSS.</p>"
+                               f"<p>Stipend: Rs. {st['year1']:,} a month in the first year and Rs. {st['year2']:,} in the second year, "
+                               f"plus Rs. {st['single_attempt_bonus']:,} a month for students who cleared both Intermediate groups in a single attempt.</p>"),
+               "datePosted": art["date_posted"], "validThrough": art["valid_through"] + "T23:59:59+05:30",
+               "employmentType": "INTERN", "industry": "Accounting",
+               "hiringOrganization": {"@type": "Organization", "name": f"{site['firm_name']}, {site['firm_type']}",
+                                      "sameAs": base + "/"},
+               "jobLocation": {"@type": "Place", "address": org["address"]},
+               "baseSalary": {"@type": "MonetaryAmount", "currency": "INR",
+                              "value": {"@type": "QuantitativeValue", "minValue": st["year1"],
+                                        "maxValue": st["year2"] + st["single_attempt_bonus"], "unitText": "MONTH"}},
+               "educationRequirements": "CA Intermediate (both groups) and ICITSS", "url": art_url}
+    render("articleship.html", "articleship-in-agra.html", a=art, schema=job, extra_schema=[art_faq],
+           page_title="CA Articleship in Agra – Stipend & How to Apply",
+           description=(f"CA articleship in Agra with Kunal Darwani & Company, Chartered Accountants: 2-year ICAI New Scheme "
+                        f"training in statutory audit, bank audit and litigation, stipend Rs. {art['stipend']['year1']:,}–{art['stipend']['year2']:,} a month, and how to apply."),
+           nav="careers")
     for slug, pg in pages.items():
         render("page.html", f"{slug}.html", pg=pg, page_title=pg["title"], nav=slug)
 

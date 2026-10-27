@@ -1,0 +1,34 @@
+{
+  "_note": "Update 'status', 'date_posted' and 'valid_through' each intake. When there are no openings, set 'open' to false: the page stays live but the JobPosting markup is dropped (Google requires an actual vacancy for job markup).",
+  "open": true,
+  "status": "Applications are being accepted from CA students who have cleared both groups of CA Intermediate and completed ICITSS.",
+  "date_posted": "2026-10-27",
+  "valid_through": "2027-01-31",
+  "faq": [
+    {
+      "q": "Who can apply for articleship at the firm?",
+      "a": "CA students under the New Scheme who have passed both groups of CA Intermediate and completed ICITSS, as required by ICAI before practical training can begin. Students seeking a transfer of articleship can also apply."
+    },
+    {
+      "q": "How long is CA articleship under the New Scheme?",
+      "a": "Two years of practical training. ICAI permits industrial training for nine to twelve months in the last part of the two years, and 12 days of leave in each year of training."
+    },
+    {
+      "q": "What stipend is paid to articled assistants?",
+      "a": "₹5,000 a month in the first year and ₹7,000 a month in the second year, higher than the ICAI minimum applicable in Agra. Students who cleared both groups of CA Intermediate in a single attempt receive an additional ₹2,000 a month."
+    },
+    {
+      "q": "What kind of work do articled assistants do here?",
+      "a": "Statutory audits of companies, bank audits, and income tax and GST litigation form a large part of the training, along with tax and GST returns, ROC filings and accounting. Assignments are handled end to end, using AI tools under the partners' review."
+    },
+    {
+      "q": "How do I apply?",
+      "a": "Submit the application form on the Careers page with your resume, selecting 'Article Assistant (CA student)'. You can also email your resume to the firm's email address."
+    }
+  ],
+  "stipend": {
+    "year1": 5000,
+    "year2": 7000,
+    "single_attempt_bonus": 2000
+  }
+}
