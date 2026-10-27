@@ -99,9 +99,9 @@ def url_ok(u):
 
 
 def instagram_caption(text, url):
-    """Links are not clickable on Instagram – give the short, typeable
-    Knowledge Centre address instead (never rely on a bio link)."""
-    short = "kunaldarwani.com/blog (Knowledge Centre)"
+    """Instagram links are not clickable, so show the article's own full URL
+    in plain text (never 'link in bio')."""
+    short = url.replace("https://", "")
     t = text.replace(f"Full article:\n{url}", f"Full article: {short}")
     t = t.replace(url, short)
     return t[:2100]
