@@ -52,11 +52,6 @@
       "what": "GSTR-3B for July–September quarter (QRMP, Category B states incl. Uttar Pradesh)"
     },
     {
-      "date": "2026-10-29",
-      "law": "Companies Act",
-      "what": "AOC-4 (financial statements) where AGM held on 30 September 2026"
-    },
-    {
       "date": "2026-10-30",
       "law": "LLP Act",
       "what": "Form 8 (Statement of Account & Solvency) for FY 2025-26"
@@ -92,11 +87,6 @@
       "what": "Income tax return for FY 2025-26 – audit cases (extended by CBDT Circular 7/2026)"
     },
     {
-      "date": "2026-11-28",
-      "law": "Companies Act",
-      "what": "MGT-7 / MGT-7A (annual return) where AGM held on 30 September 2026"
-    },
-    {
       "date": "2026-11-30",
       "law": "Income Tax",
       "what": "Income tax return for FY 2025-26 – transfer pricing cases"
@@ -123,6 +113,11 @@
     },
     {
       "date": "2026-12-31",
+      "law": "Companies Act",
+      "what": "AOC-4 (financial statements) for FY 2025-26 – last date without additional fees (MCA General Circular 05/2026)"
+    },
+    {
+      "date": "2026-12-31",
       "law": "GST",
       "what": "GSTR-9 / GSTR-9C annual return for FY 2025-26"
     },
@@ -130,6 +125,11 @@
       "date": "2027-01-15",
       "law": "Income Tax",
       "what": "Quarterly TCS statement, October–December"
+    },
+    {
+      "date": "2027-01-31",
+      "law": "Companies Act",
+      "what": "MGT-7 / MGT-7A (annual return) for FY 2025-26 – last date without additional fees (MCA General Circular 05/2026)"
     },
     {
       "date": "2027-01-31",
