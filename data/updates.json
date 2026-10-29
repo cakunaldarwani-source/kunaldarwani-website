@@ -1,6 +1,24 @@
 {
- "updated": "2026-10-28 16:57 IST",
+ "updated": "2026-10-29 17:07 IST",
  "items": [
+  {
+   "title": "RBI releases data on ECB / FCCB / RDB for August 2026",
+   "link": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63882",
+   "date": "2026-10-29",
+   "source": "RBI",
+   "label": "RBI Press Release",
+   "kind": "news",
+   "first_seen": "2026-10-29"
+  },
+  {
+   "title": "SEBI signs MoU with BoE on cooperation and exchange of information related to SEBI-recognised Clearing Corporations",
+   "link": "https://www.sebi.gov.in/media-and-notifications/press-releases/oct-2026/sebi-signs-mou-with-boe-on-cooperation-and-exchange-of-information-related-to-sebi-recognised-clearing-corporations_105473.html",
+   "date": "2026-10-28",
+   "source": "SEBI",
+   "label": "SEBI Press Release",
+   "kind": "news",
+   "first_seen": "2026-10-29"
+  },
   {
    "title": "Implementation of Section 51A of UAPA, 1967: Updates to UNSC’s 1267/ 1989 ISIL (Da'esh) & Al-Qaida Sanctions List: Amendment of 03 Entries",
    "link": "https://www.rbi.org.in/scripts/NotificationUser.aspx?Id=13748&Mode=0",
