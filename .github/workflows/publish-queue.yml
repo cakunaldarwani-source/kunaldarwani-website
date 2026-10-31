@@ -1,0 +1,79 @@
+name: Publish queued article (Saturdays)
+
+# Every Saturday at 13:15 IST (07:45 UTC). Runs on GitHub's servers, so no
+# computer or browser needs to be on. Takes the next file from content/queue/,
+# dates it today, publishes it to content/blog/, deploys the site and then
+# shares it to LinkedIn & Google through the existing Buffer workflow.
+# To publish one immediately: Actions > this workflow > Run workflow.
+on:
+  schedule:
+    - cron: "45 7 * * 6"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+  actions: write
+
+concurrency:
+  group: site-content
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    outputs:
+      published: ${{ steps.pick.outputs.published }}
+      file: ${{ steps.pick.outputs.file }}
+      slug: ${{ steps.pick.outputs.slug }}
+    steps:
+      - uses: actions/checkout@v4
+        with: { ref: main }
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install -r requirements.txt
+      - name: Move next queued article to the blog
+        id: pick
+        run: python scripts/publish_queue.py
+      - name: Quality gates (ICAI wording, build)
+        if: steps.pick.outputs.published == 'true'
+        run: |
+          python scripts/icai_check.py "${{ steps.pick.outputs.file }}"
+          python build.py > /dev/null
+      - name: Commit and push
+        if: steps.pick.outputs.published == 'true'
+        run: |
+          git config user.name "queue-bot"
+          git config user.email "queue-bot@users.noreply.github.com"
+          git add -A content/blog content/queue
+          git commit -m "Publish queued article: ${{ steps.pick.outputs.title }}"
+          git pull --rebase && git push
+
+  deploy:
+    needs: publish
+    if: needs.publish.outputs.published == 'true'
+    uses: ./.github/workflows/deploy.yml
+
+  share:
+    # A push made by this workflow does not trigger social-share.yml on its own,
+    # so start it explicitly once the page is live.
+    needs: [publish, deploy]
+    if: needs.publish.outputs.published == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Wait until the article is live
+        run: |
+          url="https://www.kunaldarwani.com/blog/${{ needs.publish.outputs.slug }}.html"
+          for i in $(seq 1 40); do
+            code=$(curl -s -o /dev/null -w "%{http_code}" "$url")
+            if [ "$code" = "200" ]; then echo "Live: $url"; exit 0; fi
+            sleep 15
+          done
+          echo "Page not live after 10 minutes - not sharing." && exit 1
+      - name: Share via Buffer workflow
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh workflow run social-share.yml --repo "${{ github.repository }}" --ref main \
+            -f mode=share -f files="${{ needs.publish.outputs.file }}" -f only=""
