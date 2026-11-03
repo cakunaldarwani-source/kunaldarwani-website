@@ -46,3 +46,5 @@ CARO does not apply to:
 A well-prepared audit usually finishes on time. Delays push the AGM and the AOC-4 and MGT-7 filings, which attract additional fees.
 
 *The information in this article reflects the law as on the date of publication and is for general guidance only.*
+
+**CA. Reet Darwani**

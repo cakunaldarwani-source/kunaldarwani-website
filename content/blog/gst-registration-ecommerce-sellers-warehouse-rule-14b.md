@@ -28,7 +28,6 @@ social: |
   https://www.kunaldarwani.com/blog/gst-registration-ecommerce-sellers-warehouse-rule-14b.html
 
   #GST #GSTRegistration #Ecommerce #OnlineSellers #CGSTRules #TaxUpdate
-ai_drafted: true
 ---
 From **1 November 2026**, a seller who sells goods through an e-commerce operator can take GST registration in another State without having its own office or godown there. Under the new **Rule 14B** of the CGST Rules, 2017, the seller declares the operator's warehouse in that State as its principal place of business, provided it is already registered in a home State, stays within an output tax limit of ₹2.5 lakh a month and the operator consents.
 

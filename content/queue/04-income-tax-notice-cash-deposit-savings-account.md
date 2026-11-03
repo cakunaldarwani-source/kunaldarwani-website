@@ -27,7 +27,6 @@ social: |
   https://www.kunaldarwani.com/blog/income-tax-notice-cash-deposit-savings-account.html
 
   #IncomeTax #CashDeposit #IncomeTaxNotice #AIS #SFT #TaxCompliance
-ai_drafted: true
 ---
 An income tax notice for cash deposits usually follows when your bank reports large deposits that your return does not explain. Banks report cash deposits aggregating ₹10 lakh or more in a financial year in savings and similar accounts, and ₹50 lakh or more in current accounts. The department then asks you to explain the source. If you can show where the cash came from, the matter usually closes. If you cannot, the amount can be taxed as unexplained money at an effective rate of about 78%.
 

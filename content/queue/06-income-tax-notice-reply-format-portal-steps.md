@@ -28,7 +28,6 @@ social: |
   https://www.kunaldarwani.com/blog/income-tax-notice-reply-format-portal-steps.html
 
   #IncomeTax #IncomeTaxNotice #ITR #eProceedings #TaxCompliance #Faceless
-ai_drafted: true
 ---
 A good reply to an income tax notice identifies the notice exactly, answers each query in the order asked, and backs every statement with an indexed document. It is submitted online on the e-filing portal, not by email or post, before the due date shown in the notice. Below is a structure that works for most notices, a sample outline, and the portal steps.
 

@@ -62,3 +62,5 @@ If a condition is breached later, the exemption is withdrawn and the gain is tax
 5. Transfer registrations, credit and bank accounts, and notify customers and vendors.
 
 *The information in this article reflects the law as on the date of publication and is for general guidance only.*
+
+**CA. Kunal Darwani**

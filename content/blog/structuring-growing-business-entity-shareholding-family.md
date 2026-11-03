@@ -46,3 +46,5 @@ Valuations are needed for share issues and transfers, FEMA transactions, mergers
 A well-designed structure reduces tax leakage, avoids family disputes and makes the business easier to fund. It is best done before a liquidity event or a succession, not after.
 
 *The information in this article reflects the law as on the date of publication and is for general guidance only.*
+
+**CA. Kunal Darwani**

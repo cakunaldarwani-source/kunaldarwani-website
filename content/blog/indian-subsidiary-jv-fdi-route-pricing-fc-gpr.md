@@ -48,3 +48,5 @@ Late reporting can be regularised by paying a **late submission fee**. Beyond th
 Planning these points at the time of incorporation avoids awkward restructuring later.
 
 *The information in this article reflects the law as on the date of publication and is for general guidance only.*
+
+**CA. Kunal Darwani**

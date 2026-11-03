@@ -50,3 +50,5 @@ The electronic Memorandum (INC-33) and Articles (INC-34) are filed with SPICe+. 
 A company carries more compliance than a proprietorship or an LLP. If you have no plans to raise equity and the business is small, an LLP may give you limited liability at lower cost. Read our article on LLPs and partnership firms for that comparison.
 
 *The information in this article reflects the law as on the date of publication and is for general guidance only.*
+
+**CA. Kunal Darwani**

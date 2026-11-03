@@ -45,3 +45,5 @@ Health and fire safety requirements are often checked at the time of the trade l
 - When you close or shift the business, file the closure intimation so that dues and notices do not continue to accrue.
 
 *The information in this article reflects the law as on the date of publication and is for general guidance only.*
+
+**CA. Reet Darwani**

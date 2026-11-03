@@ -143,7 +143,22 @@ def main():
         render("service.html", f"services/{s['slug']}.html", 1, s=s,
                page_title=s.get("seo_title") or f"{s['title']} in Agra", description=s.get("summary"), nav="services")
     render("blog.html", "blog/index.html", 1, posts=posts, page_title="Knowledge Centre", nav="blog")
+    partners_by_name = {x["name"]: x for x in site.get("partners", [])}
+
+    def author_schema(name):
+        """Person schema linked to the partner's profile, so Google can tie the article to a real, qualified author."""
+        a = {"@type": "Person", "name": name}
+        partner = partners_by_name.get(name)
+        if partner:
+            a["url"] = f"{base}/partners.html#{partner['slug']}"
+            a["jobTitle"] = "Chartered Accountant"
+            if partner.get("qualifications"):
+                a["honorificSuffix"] = partner["qualifications"]
+            a["worksFor"] = {"@id": base + "/#firm"}
+        return a
+
     for p in posts:
+        p["author_slug"] = (partners_by_name.get(p.get("author")) or {}).get("slug")
         same = [q for q in posts if q is not p and q.get("service") == p.get("service")]
         others = [q for q in posts if q is not p and q not in same]
         p["related"] = (same + others)[:3]
@@ -152,7 +167,7 @@ def main():
         article = {"@type": "Article", "headline": p["title"][:110], "description": desc,
                    "datePublished": p["date"].isoformat(),
                    "dateModified": str(p.get("updated") or p["date"]),
-                   "author": {"@type": "Person", "name": p.get("author", "CA. Kunal Darwani")},
+                   "author": author_schema(p.get("author", "CA. Kunal Darwani")),
                    "publisher": {"@id": base + "/#firm"}, "mainEntityOfPage": url,
                    "inLanguage": "en-IN"}
         if p.get("keywords"):

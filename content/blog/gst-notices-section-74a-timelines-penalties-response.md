@@ -50,3 +50,5 @@ Because the time limit is now the same for both categories, the department's cho
 - difference between GST turnover and income tax / financial statement turnover
 
 *The information in this article reflects the law as on the date of publication and is for general guidance only.*
+
+**CA. Kunal Darwani**

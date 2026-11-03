@@ -56,3 +56,5 @@ Under the Code on Social Security, **fixed-term employees** become eligible for 
 4. Track the state rules, which are being notified in stages.
 
 *The information in this article reflects the law as on the date of publication and is for general guidance only.*
+
+**CA. Reet Darwani**

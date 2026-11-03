@@ -15,7 +15,6 @@ faq:
     a: "Not at present. The advisory states that the functionality is currently available only for Normal Taxpayers. Other categories continue to apply State by State through the regular registration route."
   - q: "Can I add a new State later using the same Master TRN?"
     a: "The advisory describes selecting the required States at the start, before the Master TRN is generated. A State needed later can be applied for through the regular new registration route on the GST portal."
-ai_drafted: true
 ---
 
 GST Multistate Registration is a new facility on the GST portal that lets a business apply for GST registration in several States or Union territories at the same time under one PAN. You select the States, get a single Master TRN, enter the common business details once, and then complete only the State-specific details for each State. Each State still grants its own registration and GSTIN.

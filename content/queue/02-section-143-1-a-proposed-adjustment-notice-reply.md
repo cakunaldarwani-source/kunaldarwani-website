@@ -27,7 +27,6 @@ social: |
   https://www.kunaldarwani.com/blog/section-143-1-a-proposed-adjustment-notice-reply.html
 
   #IncomeTax #ITR #Section143 #IncomeTaxNotice #CPC #TaxCompliance
-ai_drafted: true
 ---
 A notice under section 143(1)(a) is a communication from the Centralised Processing Centre (CPC) proposing a change to your return before it is processed. It gives you 30 days to agree or disagree with each proposed change. If you do not respond in time, the return is processed with the adjustment, which often turns a refund into a demand.
 

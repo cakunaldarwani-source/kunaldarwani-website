@@ -49,3 +49,5 @@ Put the April–June update in your compliance calendar each year.
 - an address change not carried into the IEC
 
 *The information in this article reflects the law as on the date of publication and is for general guidance only.*
+
+**CA. Reet Darwani**

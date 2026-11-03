@@ -40,6 +40,41 @@ ALLOW = [r"top layer", r"upper layer", r"best-judg?ement", r"best judg?ement", r
          r"top of", r"guarantee fund", r"credit guarantee", r"bank guarantee", r"guarantee cover", r"\bguarantee scheme",
          r"do(es)? not act as a loan agent", r"does not arrange or guarantee loans", r"not arrange or guarantee"]
 
+# Article-only checks (content/blog and content/queue): things that make a post look
+# machine-written or break Kunal's standing rules for published articles.
+AI_PHRASES = [
+    r"\bdelve", r"navigat\w* the (complexit|landscape|maze)", r"in today'?s (fast-paced|digital|ever)",
+    r"\bit is (important|worth|crucial) to note\b", r"\bin conclusion\b", r"\bin summary\b",
+    r"\bgame[- ]changer\b", r"\bseamless(ly)?\b", r"\brobust\b", r"\bunlock\w*\b", r"\bembark\w*\b",
+    r"\bever-evolving\b", r"\bplays? a (crucial|pivotal|vital) role\b", r"\btapestry\b", r"\brealm\b",
+    r"\bwhether you(\'re| are) an? .{1,40} or an? \b",
+]
+MIN_WORDS = 900
+
+
+def scan_article(path: Path, text: str):
+    out = []
+    rel = path.relative_to(ROOT)
+    parts = text.split("---", 2)
+    front, body = (parts[1], parts[2]) if text.startswith("---") and len(parts) == 3 else ("", text)
+    if re.search(r"^ai_drafted\s*:", front, re.M):
+        out.append(("HIGH", rel, 0, "Front matter labels the article as AI-drafted (remove ai_drafted)", "ai_drafted"))
+    for i, line in enumerate(text.splitlines(), 1):
+        if re.match(r"\s*\**sources?\**\s*:", line, re.I):
+            out.append(("HIGH", rel, i, "Sources line in a published article (Kunal's rule: no sources on the page)", line.strip()[:110]))
+        if "\u2014" in line:
+            out.append(("MEDIUM", rel, i, "Em dash (common machine-writing tell; use a comma or colon)", line.strip()[:110]))
+        for pat in AI_PHRASES:
+            if re.search(pat, line, re.I):
+                out.append(("MEDIUM", rel, i, "Stock AI-style phrase", line.strip()[:110]))
+                break
+    words = len(re.sub(r"[#*|>`_\-]", " ", body).split())
+    if words < MIN_WORDS:
+        out.append(("MEDIUM", rel, 0, f"Short article: {words} words (aim for {MIN_WORDS}+ with a practice insight)", ""))
+    if not re.search(r"\*\*CA\. (Kunal|Reet) Darwani\*\*\s*$", body.strip()):
+        out.append(("MEDIUM", rel, 0, "Author signature missing as the last line", ""))
+    return out
+
 
 def scan(path: Path):
     text = path.read_text(encoding="utf-8")
@@ -54,6 +89,8 @@ def scan(path: Path):
                 m = re.search(pat, clean, re.I)
                 if m:
                     out.append((level, path.relative_to(ROOT), i, why, line.strip()[:110]))
+    if path.suffix == ".md" and path.parent.name in ("blog", "queue") and path.name != "README.txt":
+        out += scan_article(path, text)
     return out
 
 

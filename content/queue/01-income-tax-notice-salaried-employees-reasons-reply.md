@@ -27,7 +27,6 @@ social: |
   https://www.kunaldarwani.com/blog/income-tax-notice-salaried-employees-reasons-reply.html
 
   #IncomeTax #SalariedEmployees #ITR #IncomeTaxNotice #AIS #TaxCompliance
-ai_drafted: true
 ---
 Salaried employees receive income tax notices mainly because the return does not match the information the department already holds, or because a deduction or exemption claimed in the return cannot be supported. TDS by the employer covers salary only; interest, capital gains and claims made directly in the return are checked separately. Most of these notices can be resolved by checking the facts and replying, or correcting the return, within the time given.
 

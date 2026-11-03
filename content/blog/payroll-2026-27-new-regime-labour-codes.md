@@ -51,3 +51,5 @@ Under the 2025 Act, the TDS provisions are consolidated in **Section 393**, and 
 5. Fix a monthly payroll calendar covering inputs, approval, payment and deposit of statutory dues.
 
 *The information in this article reflects the law as on the date of publication and is for general guidance only.*
+
+**CA. Reet Darwani**

@@ -48,3 +48,5 @@ Books maintained in electronic form must also be **backed up daily on servers ph
 Books closed monthly make the year-end audit faster and the tax filings more reliable. They are also what lenders ask for when you need working capital.
 
 *The information in this article reflects the law as on the date of publication and is for general guidance only.*
+
+**CA. Reet Darwani**

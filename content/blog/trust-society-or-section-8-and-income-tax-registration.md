@@ -45,3 +45,5 @@ A charitable organisation is not exempt from income tax merely because it is a t
 Losing an exemption usually comes from missed filings or poor record-keeping, not from the charitable work itself. Set up the compliance calendar from day one.
 
 *The information in this article reflects the law as on the date of publication and is for general guidance only.*
+
+**CA. Reet Darwani**

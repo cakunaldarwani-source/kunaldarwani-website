@@ -49,3 +49,5 @@ For businesses selling on ONDC or marketplace platforms, the platform's own onbo
 - A **Food Safety Supervisor** trained under FoSTaC is required for licensed premises.
 
 *The information in this article reflects the law as on the date of publication and is for general guidance only.*
+
+**CA. Reet Darwani**

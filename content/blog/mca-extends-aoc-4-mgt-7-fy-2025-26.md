@@ -28,7 +28,6 @@ social: |
   https://www.kunaldarwani.com/blog/mca-extends-aoc-4-mgt-7-fy-2025-26.html
 
   #ROCCompliance #MCA #AOC4 #MGT7 #CompaniesAct #AnnualFiling
-ai_drafted: true
 ---
 The Ministry of Corporate Affairs (MCA) has allowed companies to file their FY 2025-26 financial statements in Form AOC-4 up to **31 December 2026** and annual returns in Form MGT-7 or MGT-7A up to **31 January 2027**, without paying additional fees. The relief comes through General Circular No. 05/2026 dated 24 October 2026. It does not extend the time limit for holding the annual general meeting (AGM).
 

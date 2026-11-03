@@ -50,8 +50,8 @@ jobs:
           POST="${{ steps.draft.outputs.post }}"
           ok=true
           python scripts/icai_check.py "$POST" > automation/icai_report.txt || ok=false
-          grep -q "Sources:" "$POST" || { echo "No sources cited" >> automation/icai_report.txt; ok=false; }
-          words=$(wc -w < "$POST"); [ "$words" -ge 500 ] || { echo "Too short: $words words" >> automation/icai_report.txt; ok=false; }
+          if grep -qiE "^\**sources?\**:" "$POST"; then echo "Sources line must not be on the page" >> automation/icai_report.txt; ok=false; fi
+          words=$(wc -w < "$POST"); [ "$words" -ge 900 ] || { echo "Too short: $words words" >> automation/icai_report.txt; ok=false; }
           python build.py > /dev/null || ok=false
           cat automation/icai_report.txt
           echo "ok=$ok" >> "$GITHUB_OUTPUT"
@@ -59,8 +59,8 @@ jobs:
         id: publish
         if: steps.gates.outputs.ok == 'true' && vars.REQUIRE_BLOG_REVIEW != 'true'
         run: |
-          git config user.name "blog-bot"
-          git config user.email "blog-bot@users.noreply.github.com"
+          git config user.name "Kunal Darwani"
+          git config user.email "cakunaldarwani@gmail.com"
           git add content/blog/*.md
           git commit -m "Publish article: ${{ steps.draft.outputs.title }}"
           git pull --rebase && git push

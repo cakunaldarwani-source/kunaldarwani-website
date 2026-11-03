@@ -47,3 +47,5 @@ The audit report must be filed **one month before** the due date of the return. 
 - Review the previous year's report. Items reported then, such as pending disallowances, often affect the current year.
 
 *The information in this article reflects the law as on the date of publication and is for general guidance only.*
+
+**CA. Kunal Darwani**

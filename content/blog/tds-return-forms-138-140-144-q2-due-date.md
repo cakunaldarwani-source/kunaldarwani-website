@@ -15,7 +15,6 @@ faq:
     a: "Section 427 of the Income-tax Act, 2025 levies ₹200 for every day of delay, capped at the amount of tax deductible or collectible. The fee must be paid before the statement is filed."
   - q: "Within how many days must Form 131 (earlier Form 16A) be issued?"
     a: "Within 15 days from the due date of the quarterly statement. For the July–September 2026 quarter, that is 15 November 2026. The certificate must be downloaded from TRACES."
-ai_drafted: true
 ---
 The TDS return for the July–September 2026 quarter (Q2 of tax year 2026-27) is due on **31 October 2026**, and it is filed in the new forms prescribed by the Income-tax Rules, 2026: **Form 138** for salary (earlier Form 24Q), **Form 140** for non-salary payments to residents (earlier 26Q) and **Form 144** for payments to non-residents (earlier 27Q). The TCS statement is now **Form 143** (earlier 27EQ), also due on 31 October 2026.
 
@@ -90,4 +89,4 @@ The work involved in deductions, statements and corrections is outlined on the [
 
 *The information in this article reflects the law as on the date of publication and is for general guidance only.*
 
-**Sources:** https://www.incometaxindia.gov.in/w/faqs-on-forms-as-per-income-tax-rules-2026-1 · https://www.incometaxindia.gov.in/documents/d/guest/form-138-faqs · https://www.incometaxindia.gov.in/documents/d/guest/form-140-faqs · https://www.incometaxindia.gov.in/documents/d/guest/form-144-faqs · https://www.incometaxindia.gov.in/documents/d/guest/form-143-faqs · https://www.incometaxindia.gov.in/documents/d/guest/form-131-faqs · https://www.incometaxindia.gov.in/documents/d/guest/form-141-faqs · https://www.incometaxindia.gov.in/w/section-427-6
+**CA. Kunal Darwani**

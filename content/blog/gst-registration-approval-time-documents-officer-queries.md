@@ -28,7 +28,6 @@ social: |
   https://www.kunaldarwani.com/blog/gst-registration-approval-time-documents-officer-queries.html
 
   #GST #GSTRegistration #GSTIndia #MSME #Compliance #IndirectTax
-ai_drafted: true
 ---
 A new GST registration application is normally approved within **7 working days** when Aadhaar authentication succeeds and the documents are in order. Where Aadhaar authentication is not opted for, fails, or the application is flagged as risky, the officer conducts a physical verification and the decision is due within **30 days**. Officers may raise a query only on specified grounds, and the documents needed for the place of business are fixed by CBIC's instructions.
 

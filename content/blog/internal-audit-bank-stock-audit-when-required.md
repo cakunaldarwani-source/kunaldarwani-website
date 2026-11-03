@@ -53,3 +53,5 @@ Banks lending against inventory and receivables, through cash credit or overdraf
 - Address observations from the previous audit before the next one.
 
 *The information in this article reflects the law as on the date of publication and is for general guidance only.*
+
+**CA. Reet Darwani**

@@ -49,3 +49,5 @@ Legitimate uses include:
 An HUF is not a tool for converting personal income into family income. Used for the purposes above, it is a recognised and useful structure.
 
 *The information in this article reflects the law as on the date of publication and is for general guidance only.*
+
+**CA. Kunal Darwani**

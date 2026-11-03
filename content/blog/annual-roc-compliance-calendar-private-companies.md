@@ -53,3 +53,5 @@ Private companies that are not small companies were required to dematerialise th
 Set up the calendar once, and file well before the due dates. The MCA V3 portal tends to slow down near deadlines.
 
 *The information in this article reflects the law as on the date of publication and is for general guidance only.*
+
+**CA. Kunal Darwani**

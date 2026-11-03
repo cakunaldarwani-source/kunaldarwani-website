@@ -56,3 +56,5 @@ Statements for the quarters up to March 2026 relate to the 1961 Act. Statements 
 6. **Payments to non-residents** – get the tax residency certificate and Form 10F, and check the tax treaty and the beneficial ownership conditions before applying a treaty rate.
 
 *The information in this article reflects the law as on the date of publication and is for general guidance only.*
+
+**CA. Kunal Darwani**

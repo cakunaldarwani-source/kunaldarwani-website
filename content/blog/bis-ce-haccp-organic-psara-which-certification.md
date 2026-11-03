@@ -50,3 +50,5 @@ A PSARA licence is valid for five years and is specific to each state. An agency
 4. Keep the certificates and test reports linked to specific product models in your records.
 
 *The information in this article reflects the law as on the date of publication and is for general guidance only.*
+
+**CA. Reet Darwani**

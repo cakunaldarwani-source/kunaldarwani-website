@@ -52,3 +52,5 @@ From **22 September 2025**, the GST Council rationalised rates into two main sla
 GSTR-9 is due by **31 December** following the financial year. It is optional for taxpayers with turnover up to ₹2 crore. GSTR-9C, the self-certified reconciliation statement, applies above **₹5 crore**. Reconcile GST data with the audited accounts before filing, because the annual return is the department's primary scrutiny tool.
 
 *The information in this article reflects the law as on the date of publication and is for general guidance only.*
+
+**CA. Kunal Darwani**

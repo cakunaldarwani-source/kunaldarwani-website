@@ -22,7 +22,6 @@ faq:
     a: "No. A Nidhi can accept deposits from and lend to its own members only. It cannot deal with any body corporate, and members cannot be companies, trusts or minors."
   - q: "What happens if NDH-4 is rejected?"
     a: "The company cannot raise deposits from or give loans to members. Any deposit raised afterwards is treated as a deposit under Chapter V of the Companies Act, 2013, with all its conditions."
-ai_drafted: true
 ---
 A Nidhi company is a public limited company that takes deposits from its members and lends to them against security, for mutual benefit. Before forming one, check five things: the business stays member-only and secured, you can reach 200 members and ₹20 lakh Net Owned Funds within 120 days, every promoter and director is "fit and proper", you can live with small loan limits in the early years, and you can sustain public-company compliance. The points below follow the Nidhi Rules, 2014 as amended up to the Nidhi (Amendment) Rules, 2024.
 

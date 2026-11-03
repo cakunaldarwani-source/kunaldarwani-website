@@ -27,7 +27,6 @@ social: |
   https://www.kunaldarwani.com/blog/tds-mismatch-income-tax-notice-26as-ais.html
 
   #IncomeTax #TDS #Form26AS #AIS #IncomeTaxNotice #TaxCompliance
-ai_drafted: true
 ---
 A TDS mismatch notice arises when the tax deducted at source claimed in your return differs from what appears in Form 26AS or the Annual Information Statement (AIS). The Centralised Processing Centre (CPC) allows credit only for TDS reported by the deductor. Any excess claim is cut, and a demand or reduced refund follows. Most mismatches are fixed by getting the deductor to correct its TDS statement and then asking for rectification. Where the issue is timing, a specific application shifts the credit to the right year.
 

@@ -15,7 +15,6 @@ faq:
     a: "The advisory does not link these supply types to e-way bills. RCMIMP covers only import of services. For goods moved under an RCMDOM self-invoice, existing e-way bill rules continue to apply."
   - q: "Will the self-invoice still need to be issued within 30 days?"
     a: "Yes. Rule 47A requires a recipient liable under section 9(3) or 9(4) to issue the self-invoice within 30 days of receiving the supply. The new e-invoice facility only changes how that invoice is reported."
-ai_drafted: true
 ---
 GST e-invoicing is being extended to self-invoices that a registered recipient issues under the reverse charge mechanism (RCM). Through an advisory dated 16 October 2026, GSTN introduced two new supply types – **RCMDOM** for specified domestic supplies received from unregistered persons and **RCMIMP** for import of services – so that recipients with aggregate annual turnover of ₹5 crore and above can generate an Invoice Reference Number (IRN) for such self-invoices. The facility is presently in sandbox only; the production date will be announced later.
 

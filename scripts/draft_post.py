@@ -113,7 +113,7 @@ SOURCES:
 REVIEW_NOTES:
 <one point per line that the reviewing partner should verify>
 BODY:
-<the full article in Markdown, no H1, at least 700 words>"""
+<the full article in Markdown, no H1, 900 to 1,300 words, including one practice-insight section>"""
 
     data = None
     for attempt in range(2):
@@ -134,16 +134,19 @@ BODY:
         "service": data["service"] if data["service"] in {s["slug"] for s in services} else svc["slug"],
         "author": data.get("author", "CA. Kunal Darwani"),
         "summary": data["summary"],
-        "ai_drafted": True,
     }
     body = data["body_markdown"].strip()
-    if data.get("sources"):
-        body += "\n\n**Sources:** " + " · ".join(f"<{u}>" for u in data["sources"])
+    # Sources are verified but never printed on the page (Kunal's rule); they go into the review notes.
+    author = fm["author"] if fm["author"] in ("CA. Kunal Darwani", "CA. Reet Darwani") else "CA. Kunal Darwani"
+    if not body.rstrip().endswith(f"**{author}**"):
+        body += f"\n\n**{author}**"
     out = ROOT / "content/blog" / f"{slug}.md"
     out.write_text("---\n" + yaml.safe_dump(fm, allow_unicode=True, sort_keys=False) + "---\n" + body + "\n", encoding="utf-8")
 
     notes = ROOT / "automation" / "last_review_notes.md"
-    notes.write_text(f"# Review notes for {out.name}\n\n" + "\n".join(f"- {n}" for n in data.get("review_notes", [])) + "\n", encoding="utf-8")
+    notes.write_text(f"# Review notes for {out.name}\n\n" + "\n".join(f"- {n}" for n in data.get("review_notes", []))
+                     + "\n\n## Sources verified (not shown on the page)\n" + "\n".join(f"- {u}" for u in data.get("sources", [])) + "\n",
+                     encoding="utf-8")
     print(out.relative_to(ROOT))
     gh_out = os.environ.get("GITHUB_OUTPUT")
     if gh_out:

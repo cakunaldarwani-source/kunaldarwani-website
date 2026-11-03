@@ -15,7 +15,6 @@ faq:
     a: "Yes, a person whose registration was cancelled during the year is still covered for the period the registration was active, subject to the ₹2 crore exemption."
   - q: "Who certifies GSTR-9C now?"
     a: "Since 1 August 2021, GSTR-9C is a self-certified reconciliation statement filed by the taxpayer. Certification by a Chartered Accountant or Cost Accountant is no longer required by law."
-ai_drafted: true
 ---
 
 The annual return in Form GSTR-9 for FY 2025-26 is due on **31 December 2026**. Filing is optional for taxpayers whose aggregate turnover for the year is up to ₹2 crore, and the reconciliation statement in Form GSTR-9C must also be filed where aggregate turnover exceeds ₹5 crore. GSTN enabled both forms on the GST portal from 8 October 2026.

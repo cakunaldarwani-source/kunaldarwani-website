@@ -15,7 +15,6 @@ faq:
     a: "Yes, if the person was resident in India in the year to which the undisclosed income relates or in the year in which the foreign asset was acquired. Residential status is stated in Form 1."
   - q: "Which challan is used to pay the FAST-DS amount?"
     a: "Payment is made online through challan ITNS 289 under e-Pay Tax. Assessment year 2026-27 is pre-filled. A payment made under the wrong minor head cannot be corrected or refunded."
-ai_drafted: true
 ---
 
 The **Foreign Assets of Small Taxpayers Disclosure Scheme, 2026 (FAST-DS 2026)** is a one-time window to regularise foreign assets and foreign income that were not reported in Indian income-tax returns. Declarations in Form 1 can be filed online from **16 August 2026 to 31 December 2026**. Undisclosed assets or income up to ₹1 crore attract 60% of their value (tax plus an equal additional amount), while assets up to ₹5 crore that were only left out of the return's foreign-asset schedule need a flat ₹1 lakh fee.

@@ -54,3 +54,5 @@ An LLP is not subject to dividend distribution and is not covered by the deemed-
 A firm can later convert into an LLP under Section 55 of the LLP Act. If the conditions are met, the conversion is tax-neutral. Our article on entity conversions covers this.
 
 *The information in this article reflects the law as on the date of publication and is for general guidance only.*
+
+**CA. Kunal Darwani**

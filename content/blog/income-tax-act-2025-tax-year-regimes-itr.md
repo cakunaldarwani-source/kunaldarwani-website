@@ -62,3 +62,5 @@ An **updated return (ITR-U)** can be filed within **48 months** from the end of 
 4. **E-verify within 30 days** of filing. A return that is not verified is treated as not filed.
 
 *The information in this article reflects the law as on the date of publication and is for general guidance only.*
+
+**CA. Kunal Darwani**

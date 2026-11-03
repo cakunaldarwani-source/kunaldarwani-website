@@ -40,3 +40,5 @@ Recognition does not give the tax holiday by itself. The start-up must apply to 
 - Recognition ends automatically when the age or turnover limit is crossed, so track both.
 
 *The information in this article reflects the law as on the date of publication and is for general guidance only.*
+
+**CA. Kunal Darwani**

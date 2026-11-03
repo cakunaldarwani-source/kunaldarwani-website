@@ -44,8 +44,8 @@ jobs:
       - name: Commit and push
         if: steps.pick.outputs.published == 'true'
         run: |
-          git config user.name "queue-bot"
-          git config user.email "queue-bot@users.noreply.github.com"
+          git config user.name "Kunal Darwani"
+          git config user.email "cakunaldarwani@gmail.com"
           git add -A content/blog content/queue
           git commit -m "Publish queued article: ${{ steps.pick.outputs.title }}"
           git pull --rebase && git push

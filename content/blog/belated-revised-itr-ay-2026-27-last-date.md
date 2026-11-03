@@ -15,7 +15,6 @@ faq:
     a: "No. An updated return can be filed only once for a year and cannot be revised, so check all figures carefully before filing it."
   - q: "Is the 31 December 2026 date for belated returns affected by the CBDT extension for audit cases?"
     a: "No. The CBDT extension moved the original due date for audit cases to 21 November 2026. The outer limit for a belated return remains 31 December 2026."
-ai_drafted: true
 ---
 For Assessment Year 2026-27 (financial year 2025-26), a **belated income tax return** can be filed up to **31 December 2026**. A **revised return** can now be filed up to **31 March 2027**, because the Finance Act, 2026 extended the revision window by three months. Revisions filed in the later part of that window attract a new fee of ₹1,000 or ₹5,000.
 
@@ -84,4 +83,4 @@ More on return filing is on the [income tax return](../services/income-tax-retur
 
 *The information in this article reflects the law as on the date of publication and is for general guidance only.*
 
-**Sources:** https://egazette.gov.in/WriteReadData/2026/271439.pdf · https://www.indiabudget.gov.in/doc/memo.pdf · https://www.incometaxindia.gov.in/w/return-of-income-2 · https://www.incometaxindia.gov.in/w/section-115bac-4 · https://incometaxindia.gov.in/documents/d/guest/circular-7-2026-pdf · https://www.incometaxindia.gov.in/documents/20117/42998/Updated-Return-of-Income_2026-01-21_03-31-05_3f6059_en.pdf
+**CA. Kunal Darwani**

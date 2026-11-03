@@ -27,7 +27,6 @@ social: |
   https://www.kunaldarwani.com/blog/iso-22301-business-continuity-bia-rto-audit.html
 
   #ISO22301 #BusinessContinuity #RiskManagement #BCMS #ISOCertification #Resilience
-ai_drafted: true
 ---
 
 ISO 22301:2019 sets the requirements for a business continuity management system (BCMS): a documented, tested way of keeping your most important activities running, or restarting them within an agreed time, when something goes wrong. In practice it rests on three things: a business impact analysis that fixes recovery targets, plans that meet those targets, and regular exercises that prove the plans work.

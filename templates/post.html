@@ -5,7 +5,7 @@
   <div class="wrap narrow">
     <p class="crumbs"><a href="../index.html">Home</a> / <a href="index.html">Knowledge Centre</a></p>
     <h1>{{ p.title }}</h1>
-    <p class="meta"><time datetime="{{ p.date }}">{{ p.date_human }}</time> &middot; {{ p.reading_minutes }} min read{% if p.author %} &middot; {{ p.author }}{% endif %}</p>
+    <p class="meta"><time datetime="{{ p.date }}">{{ p.date_human }}</time> &middot; {{ p.reading_minutes }} min read{% if p.author %} &middot; {% if p.author_slug %}<a href="../partners.html#{{ p.author_slug }}" rel="author">{{ p.author }}</a>{% else %}{{ p.author }}{% endif %}{% endif %}</p>
   </div>
 </section>
 <section class="band">

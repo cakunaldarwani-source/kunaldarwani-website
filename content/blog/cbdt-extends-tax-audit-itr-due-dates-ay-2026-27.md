@@ -4,7 +4,6 @@ date: '2026-10-05'
 service: tax-audit
 author: CA. Kunal Darwani
 summary: Circular 07/2026 moves the tax audit report to 21 October 2026 and the ITR for audit cases to 21 November 2026. Who is covered and what to plan for.
-ai_drafted: true
 ---
 The Central Board of Direct Taxes (CBDT) has extended two key due dates for **Assessment Year 2026-27** (the financial year ended 31 March 2026). The extension is in **Circular No. 07/2026 dated 28 September 2026** (F. No. 225/128/2026/ITA-II). It gives taxpayers whose accounts must be audited about three more weeks for the audit report and for the return.
 
@@ -59,4 +58,4 @@ From **tax year 2026-27** (FY 2026-27), audits and returns will be governed by t
 
 *The information in this article reflects the law as on the date of publication and is for general guidance only.*
 
-**Sources:** <https://incometaxindia.gov.in/documents/d/guest/circular-7-2026-pdf> · <https://newsonair.gov.in/cbdt-extends-i-t-return-filing-deadline-for-audit-cases-to-november-21/>
+**CA. Kunal Darwani**

@@ -55,3 +55,5 @@ An NBFC files periodic returns with RBI, gets a statutory auditor's certificate 
 If you need to lend only within your group, or in very limited ways, there are exemptions. Explore them before applying, because an NBFC licence carries ongoing obligations.
 
 *The information in this article reflects the law as on the date of publication and is for general guidance only.*
+
+**CA. Kunal Darwani**

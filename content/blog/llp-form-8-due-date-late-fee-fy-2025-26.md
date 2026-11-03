@@ -15,7 +15,6 @@ faq:
     a: "Yes. Form 11 is the annual return with partner and contribution details, due by 30 May. Form 8 is the Statement of Account and Solvency, due by 30 October."
   - q: "Who signs LLP Form 8?"
     a: "A designated partner signs it with a digital signature. A practising chartered accountant, cost accountant or company secretary certifies it, and the auditor certifies it where the turnover or contribution limits are crossed."
-ai_drafted: true
 ---
 **LLP Form 8** (Statement of Account and Solvency) for **financial year 2025-26** must be filed with the Registrar by **30 October 2026**. The due date is 30 days from the end of the first six months of the next financial year (30 September). Filing late attracts an additional fee that rises with the delay, and continued non-filing can lead to a penalty on the LLP and its designated partners.
 
@@ -111,4 +110,4 @@ The annual filing process for LLPs and companies is covered on our [ROC and annu
 
 *The information in this article reflects the law as on the date of publication and is for general guidance only.*
 
-**Sources:** https://www.mca.gov.in/content/dam/mca-aem-forms/instructionkits/Instruction%20Kit_LLP%20Form%20No.%208.pdf · https://www.mca.gov.in/content/dam/mca/pdf/llpAct2021_19082021.pdf
+**CA. Kunal Darwani**

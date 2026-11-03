@@ -27,7 +27,6 @@ social: |
   https://www.kunaldarwani.com/blog/income-tax-notice-property-purchase-sale.html
 
   #IncomeTax #Property #RealEstate #CapitalGains #IncomeTaxNotice #AIS
-ai_drafted: true
 ---
 Buying or selling property of ₹30 lakh or more is reported to the Income Tax Department by the sub-registrar, so the transaction appears in the Annual Information Statement (AIS) of both buyer and seller. A notice follows when the return does not explain the deal. For a buyer, that usually means the source of funds, TDS or the stamp duty value. For a seller, it usually means capital gains. Most such notices are answered with the sale deed, bank records and a clear computation.
 

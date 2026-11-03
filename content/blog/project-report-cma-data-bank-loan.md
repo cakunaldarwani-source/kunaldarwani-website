@@ -60,3 +60,5 @@ For MSMEs, banks commonly use the **turnover method**, under which the working c
 A Chartered Accountant can prepare and certify the financial information. The lender's credit team makes the decision. Presenting realistic, well-supported numbers is the most effective thing a borrower can do.
 
 *The information in this article reflects the law as on the date of publication and is for general guidance only.*
+
+**CA. Reet Darwani**

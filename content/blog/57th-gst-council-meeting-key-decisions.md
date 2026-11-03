@@ -20,7 +20,6 @@ faq:
     a: "As recommended, for ITC on input services availed on or after 1 November 2026. Plant and machinery credit qualifies from 1 April 2027 at 1/60th per month."
   - q: "Will a GST notice be issued for small amounts?"
     a: "As recommended, no notice will be issued where the amount involved is below ₹10,000."
-ai_drafted: true
 ---
 
 The 57th meeting of the GST Council, held on 8 October 2026 in New Delhi, made **no change in GST rates**. Its entire agenda was process reform: removal of arrest powers, a higher prosecution threshold, lower penalties, faster refunds, wider input tax credit (ITC), simpler registration and returns, and fewer roadside checks on goods in transit.

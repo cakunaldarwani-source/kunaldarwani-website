@@ -53,3 +53,5 @@ Before issuing a reassessment notice, the officer must issue a show cause notice
 Respond on time, answer exactly what is asked, and support every statement with evidence. These three habits resolve most notices without escalation.
 
 *The information in this article reflects the law as on the date of publication and is for general guidance only.*
+
+**CA. Kunal Darwani**

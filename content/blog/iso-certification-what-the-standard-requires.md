@@ -58,3 +58,5 @@ The certificate is valid for **three years**, with **annual surveillance audits*
 Offers of a "certificate in three days, no audit" usually come from unaccredited bodies. Such certificates can be rejected, and in tenders they can lead to disqualification. A lean, well-designed system that your staff actually follow is worth more than a thick binder of borrowed procedures.
 
 *The information in this article reflects the law as on the date of publication and is for general guidance only.*
+
+**CA. Reet Darwani**

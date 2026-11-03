@@ -1,6 +1,6 @@
-# Knowledge Centre – Writing Guide for AI-Drafted Articles
+# Knowledge Centre – Writing Guide
 
-This guide is given to the AI model every time it writes an article. Articles are published automatically, so accuracy and ICAI compliance must be right the first time: if in doubt, leave it out.
+This guide is followed every time an article is written. Articles are published automatically, so accuracy and ICAI compliance must be right the first time: if in doubt, leave it out.
 
 ## Who we are
 
@@ -26,7 +26,7 @@ The website must follow the ICAI Code of Ethics (13th edition, in force from 1 A
 - GST rate structure: 5% / 18% / 40% from 22 September 2025.
 - The Labour Codes have been in force since 21 November 2025.
 - DIR-3 KYC is triennial (amendment of 31 December 2025).
-- **Cite the primary source** (CBDT / CBIC / MCA / RBI notification or circular number and date) for every new change you report, in a "Source" line at the end.
+- **Verify every new change on the primary source** (CBDT / CBIC / MCA / RBI notification or circular). You may name the notification or circular number and date in the text where it helps the reader, but do **not** add a "Source:" or "Sources:" line or a list of source URLs to the article. Sources go only in the run report.
 - If you are not certain of a figure or date, leave it out or flag it in `review_notes`. Do not guess.
 
 ## SEO – how every article is written
@@ -52,8 +52,26 @@ Articles target **questions people actually type into Google** about Indian tax,
 ## Style
 
 - Audience: business owners, finance managers and individual taxpayers in India, and overseas businesses for outsourcing topics.
-- 700–1,100 words. Short paragraphs. Use `##` headings, tables where they help, and lists for steps.
+- 900–1,300 words. Short paragraphs. Use `##` headings, tables where they help, and lists for steps.
 - Plain English. Active voice. No filler such as "In today's fast-paced world".
 - Indian conventions: ₹, lakh and crore, DD Month YYYY dates.
 - Author: "CA. Kunal Darwani" for tax, GST, company law and advisory topics; "CA. Reet Darwani" for accounting, audit, payroll, outsourcing and licensing topics.
-- End with the italic line: *The information in this article reflects the law as on the date of publication and is for general guidance only.*
+- End with the italic line: *The information in this article reflects the law as on the date of publication and is for general guidance only.* Then, as the very last line, the author's signature in bold: **CA. Kunal Darwani** or **CA. Reet Darwani**.
+
+## Practice insight – required in every article
+
+Every article must contain at least one short section or paragraph drawn from day-to-day practice, for example "## What we commonly see in practice" or "## Common mistakes when filing …". Describe patterns, not people: the errors taxpayers usually make, how officers usually frame queries, which documents are typically asked for, what causes delays. Never name or hint at a client, never quote case outcomes or success rates. This first-hand angle is what separates our articles from generic content and is the main thing Google rewards (Experience in E-E-A-T).
+
+## Avoiding a templated, machine-written feel
+
+Google does not penalise content for how it was drafted, but it does demote thin, repetitive, mass-produced pages. So:
+- Vary the structure: do not open every article the same way or use the same set of headings each time.
+- The paragraph just before the closing disclaimer must be specific to the topic (a practical next step or a date to watch), never a generic summary such as "In conclusion…".
+- Avoid stock filler phrases: "delve", "navigate the complexities", "in today's fast-paced world", "it is important to note", "in conclusion", "in summary", "game-changer", "seamless", "robust", "unlock", "embark", "landscape", "ever-evolving", "plays a crucial role", "whether you are a … or a …". No em dashes (—); use commas, colons or brackets.
+- Prefer specific numbers, forms, dates and portal steps over general statements.
+- No front-matter field or text that labels the article as AI-generated (no `ai_drafted`).
+
+## Publishing rhythm
+
+- Publish at most **one article per day**. Do not release several posts on the same date.
+- Commits that publish articles are made in the firm's name (author "Kunal Darwani <cakunaldarwani@gmail.com>"), with a plain message such as "Blog: <title>" and no tool attribution or co-author trailer lines.

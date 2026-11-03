@@ -65,3 +65,5 @@ It takes longer and costs more than strike off, but gives a clean, court-approve
 - Company is temporarily inactive and may restart → consider **dormant status** under Section 455
 
 *The information in this article reflects the law as on the date of publication and is for general guidance only.*
+
+**CA. Kunal Darwani**

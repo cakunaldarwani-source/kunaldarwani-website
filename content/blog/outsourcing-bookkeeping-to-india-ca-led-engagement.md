@@ -69,3 +69,5 @@ For the Indian firm, accounting services to overseas clients are an **export of 
 Begin with a **discovery call** to agree scope and software access. Then run a **parallel month**, in which the outsourced team closes a month that you also close, so you can compare results before switching over fully. Most clients settle into a steady monthly rhythm within two or three months.
 
 *This article is general information for overseas businesses and accounting firms. It does not constitute tax or legal advice in any jurisdiction.*
+
+**CA. Reet Darwani**

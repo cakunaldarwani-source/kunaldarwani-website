@@ -56,3 +56,5 @@ A reply to REG-03 must be filed within **seven working days**. Otherwise the app
 - Generate **e-way bills** for movement of goods above ₹50,000.
 
 *The information in this article reflects the law as on the date of publication and is for general guidance only.*
+
+**CA. Kunal Darwani**

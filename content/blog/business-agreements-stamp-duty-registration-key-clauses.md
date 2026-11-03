@@ -52,3 +52,5 @@ An unregistered document that requires registration does not affect the property
 Commercial agreements can be prepared with financial and tax inputs from your Chartered Accountant. Where there is an existing dispute, a question of title to property, or a need for a formal legal opinion or court representation, involve an advocate. Our firm coordinates with legal counsel in such cases.
 
 *The information in this article reflects the law as on the date of publication and is for general guidance only.*
+
+**CA. Kunal Darwani**

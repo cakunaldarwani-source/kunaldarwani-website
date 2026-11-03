@@ -15,7 +15,6 @@ faq:
     a: "Yes, but only in full and within 24 hours of generation on the e-invoice system. After that, the correction is made through a credit note or debit note, which is itself reported to the IRP."
   - q: "What happens if an invoice is reported after 30 days?"
     a: "For taxpayers with AATO of ₹10 crore or more, the IRP rejects documents dated more than 30 days before the date of reporting. No IRN is generated, so the document cannot be a valid e-invoice."
-ai_drafted: true
 ---
 GST e-invoicing is mandatory for a registered person whose aggregate turnover, computed on a PAN basis, has exceeded ₹5 crore in any financial year from 2017-18 onwards. Such a supplier must report each B2B invoice, credit note and debit note to an Invoice Registration Portal (IRP) and obtain an Invoice Reference Number (IRN) and QR code. If annual aggregate turnover (AATO) is ₹10 crore or more, the document must also be reported within 30 days of its date.
 

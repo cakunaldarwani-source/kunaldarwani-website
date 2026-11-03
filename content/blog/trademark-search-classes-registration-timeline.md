@@ -50,3 +50,5 @@ The applicant can file personally. Representation in objections, hearings and op
 - Owning the brand in a separate entity can make sense for franchising, but get the structure and the tax consequences reviewed first.
 
 *The information in this article reflects the law as on the date of publication and is for general guidance only.*
+
+**CA. Kunal Darwani**
