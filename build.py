@@ -127,7 +127,9 @@ def main():
         target = DIST / out
         target.parent.mkdir(parents=True, exist_ok=True)
         target.write_text(html, encoding="utf-8")
-        urls.append((out, lastmod or dt.date.today().isoformat()))
+        # Only real content dates go in the sitemap: stamping every page with the build date on
+        # each daily build teaches Google to ignore <lastmod> for the whole site.
+        urls.append((out, lastmod))
 
     render("updates.html", "updates.html", updates=updates, upd_news=upd_news, upd_circ=upd_circ,
            page_title="Latest News & Notifications", nav="updates")
@@ -136,8 +138,10 @@ def main():
            compliance=compliance, page_title=None, nav="home")
     render("services.html", "services/index.html", 1, page_title="Services", nav="services")
     for s in services:
+        # Title tag carries the city for local search ("GST Registration in Agra");
+        # the on-page H1 stays as the plain service name. A service can override with seo_title.
         render("service.html", f"services/{s['slug']}.html", 1, s=s,
-               page_title=s["title"], description=s.get("summary"), nav="services")
+               page_title=s.get("seo_title") or f"{s['title']} in Agra", description=s.get("summary"), nav="services")
     render("blog.html", "blog/index.html", 1, posts=posts, page_title="Knowledge Centre", nav="blog")
     for p in posts:
         same = [q for q in posts if q is not p and q.get("service") == p.get("service")]
@@ -212,7 +216,7 @@ def main():
     # sitemap + RSS
     sm = ['<?xml version="1.0" encoding="UTF-8"?>',
           '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
-    sm += [f"  <url><loc>{page_url(u)}</loc><lastmod>{lm}</lastmod></url>" for u, lm in urls]
+    sm += [f"  <url><loc>{page_url(u)}</loc>" + (f"<lastmod>{lm}</lastmod>" if lm else "") + "</url>" for u, lm in urls]
     sm.append("</urlset>")
     (DIST / "sitemap.xml").write_text("\n".join(sm), encoding="utf-8")
     (DIST / "robots.txt").write_text(f"User-agent: *\nAllow: /\nSitemap: {base}/sitemap.xml\n")
