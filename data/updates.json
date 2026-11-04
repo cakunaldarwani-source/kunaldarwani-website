@@ -1,6 +1,24 @@
 {
- "updated": "2026-11-03 18:24 IST",
+ "updated": "2026-11-04 18:38 IST",
  "items": [
+  {
+   "title": "Constitution of the Technical Consultative Committee for Financial Markets (TCCFM)",
+   "link": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63914",
+   "date": "2026-11-04",
+   "source": "RBI",
+   "label": "RBI Press Release",
+   "kind": "news",
+   "first_seen": "2026-11-04"
+  },
+  {
+   "title": "Review of Know Your Client process for individual Person Resident Outside India clients",
+   "link": "https://www.sebi.gov.in/legal/circulars/nov-2026/review-of-know-your-client-process-for-individual-person-resident-outside-india-clients_105603.html",
+   "date": "2026-11-04",
+   "source": "SEBI",
+   "label": "SEBI Circular",
+   "kind": "circular",
+   "first_seen": "2026-11-04"
+  },
   {
    "title": "Foreign Exchange Management (Export and Import of Goods and Services) (Second Amendment) Regulations, 2026",
    "link": "https://www.rbi.org.in/scripts/NotificationUser.aspx?Id=13750&Mode=0",
@@ -1328,15 +1346,6 @@
    "title": "77th Annual Report and Accounts of the Institute for the year 2025-26",
    "link": "https://www.icai.org/post/77th-annual-report-and-accounts-icai-year-2025-26",
    "date": "2026-08-06",
-   "source": "ICAI",
-   "label": "ICAI Announcement",
-   "kind": "news",
-   "first_seen": "2026-10-03"
-  },
-  {
-   "title": "Merit List of the Information Systems Audit [ISA] Assessment Test held in July 2026.",
-   "link": "https://resource.cdn.icai.org/93631exam-aps6025-isa-july2026.pdf",
-   "date": "2026-08-05",
    "source": "ICAI",
    "label": "ICAI Announcement",
    "kind": "news",
