@@ -1,6 +1,105 @@
 {
- "updated": "2026-11-04 18:38 IST",
+ "updated": "2026-11-05 18:51 IST",
  "items": [
+  {
+   "title": "Master Directions on Cyber Resilience and Digital Payment Security Controls for non-bank Payment System Operators",
+   "link": "https://www.rbi.org.in/scripts/NotificationUser.aspx?Id=13751&Mode=0",
+   "date": "2026-11-05",
+   "source": "RBI",
+   "label": "RBI Notification",
+   "kind": "circular",
+   "first_seen": "2026-11-05"
+  },
+  {
+   "title": "Foreign Exchange Turnover Data: October 26, 2026 – October 30, 2026",
+   "link": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63930",
+   "date": "2026-11-05",
+   "source": "RBI",
+   "label": "RBI Press Release",
+   "kind": "news",
+   "first_seen": "2026-11-05"
+  },
+  {
+   "title": "Foreign Exchange Turnover Data: October 19, 2026 – October 23, 2026",
+   "link": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63929",
+   "date": "2026-11-05",
+   "source": "RBI",
+   "label": "RBI Press Release",
+   "kind": "news",
+   "first_seen": "2026-11-05"
+  },
+  {
+   "title": "Foreign Exchange Turnover Data: October 12, 2026 – October 16, 2026",
+   "link": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63928",
+   "date": "2026-11-05",
+   "source": "RBI",
+   "label": "RBI Press Release",
+   "kind": "news",
+   "first_seen": "2026-11-05"
+  },
+  {
+   "title": "Foreign Exchange Turnover Data: October 05, 2026 – October 09, 2026",
+   "link": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63927",
+   "date": "2026-11-05",
+   "source": "RBI",
+   "label": "RBI Press Release",
+   "kind": "news",
+   "first_seen": "2026-11-05"
+  },
+  {
+   "title": "Foreign Exchange Turnover Data: September 28, 2026 – October 01, 2026",
+   "link": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63926",
+   "date": "2026-11-05",
+   "source": "RBI",
+   "label": "RBI Press Release",
+   "kind": "news",
+   "first_seen": "2026-11-05"
+  },
+  {
+   "title": "Consolidation of Instructions Related to Priority Sector Lending – Drafts for Comments",
+   "link": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63925",
+   "date": "2026-11-05",
+   "source": "RBI",
+   "label": "RBI Press Release",
+   "kind": "news",
+   "first_seen": "2026-11-05"
+  },
+  {
+   "title": "Review of the framework for Accredited Investors",
+   "link": "https://www.sebi.gov.in/legal/circulars/nov-2026/review-of-the-framework-for-accredited-investors_105618.html",
+   "date": "2026-11-05",
+   "source": "SEBI",
+   "label": "SEBI Circular",
+   "kind": "circular",
+   "first_seen": "2026-11-05"
+  },
+  {
+   "title": "Framework for net settlement of funds for transactions undertaken by mutual fund schemes in cash market",
+   "link": "https://www.sebi.gov.in/legal/circulars/nov-2026/framework-for-net-settlement-of-funds-for-transactions-undertaken-by-mutual-fund-schemes-in-cash-market_105616.html",
+   "date": "2026-11-05",
+   "source": "SEBI",
+   "label": "SEBI Circular",
+   "kind": "circular",
+   "first_seen": "2026-11-05"
+  },
+  {
+   "title": "Revision of limits relating to requirement of underlying exposure for currency derivatives contracts",
+   "link": "https://www.sebi.gov.in/legal/circulars/nov-2026/revision-of-limits-relating-to-requirement-of-underlying-exposure-for-currency-derivatives-contracts_105614.html",
+   "date": "2026-11-05",
+   "source": "SEBI",
+   "label": "SEBI Circular",
+   "kind": "circular",
+   "first_seen": "2026-11-05"
+  },
+  {
+   "title": "SEBI Constitutes Working Group to Review the Innovators Growth Platform Framework",
+   "link": "https://www.sebi.gov.in/media-and-notifications/press-releases/nov-2026/sebi-constitutes-working-group-to-review-the-innovators-growth-platform-framework_105610.html",
+   "date": "2026-11-04",
+   "source": "SEBI",
+   "label": "SEBI Press Release",
+   "kind": "news",
+   "first_seen": "2026-11-05"
+  },
   {
    "title": "Constitution of the Technical Consultative Committee for Financial Markets (TCCFM)",
    "link": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63914",
@@ -1337,15 +1436,6 @@
    "title": "Announcement - Hosting of Multipurpose Empanelment Form (MEF)-2026-27",
    "link": "https://www.icai.org/post/mef070826",
    "date": "2026-08-07",
-   "source": "ICAI",
-   "label": "ICAI Announcement",
-   "kind": "news",
-   "first_seen": "2026-10-03"
-  },
-  {
-   "title": "77th Annual Report and Accounts of the Institute for the year 2025-26",
-   "link": "https://www.icai.org/post/77th-annual-report-and-accounts-icai-year-2025-26",
-   "date": "2026-08-06",
    "source": "ICAI",
    "label": "ICAI Announcement",
    "kind": "news",
