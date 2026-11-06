@@ -11,12 +11,14 @@
     });
   }
 
-  // Mobile nav
-  var t = document.querySelector('.nav-toggle'), nav = document.getElementById('nav');
-  if (t && nav) t.addEventListener('click', function () {
-    var open = nav.classList.toggle('is-open');
-    t.setAttribute('aria-expanded', open ? 'true' : 'false');
-  });
+  // Mobile nav strip: bring the current page's link into view, drop the edge fade at the end.
+  var nav = document.getElementById('nav');
+  if (nav) {
+    var cur = nav.querySelector('[aria-current="page"]');
+    if (cur && nav.scrollWidth > nav.clientWidth) nav.scrollLeft = Math.max(0, cur.offsetLeft - nav.offsetLeft - 16);
+    var edge = function () { nav.classList.toggle('at-end', nav.scrollLeft + nav.clientWidth >= nav.scrollWidth - 4); };
+    nav.addEventListener('scroll', edge, { passive: true }); edge();
+  }
 
   // Compliance dates: hide past items on home ledger, dim them in the calendar table.
   var today = new Date(); today.setHours(0, 0, 0, 0);
