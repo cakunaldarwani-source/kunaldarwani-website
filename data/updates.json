@@ -1,6 +1,42 @@
 {
- "updated": "2026-11-05 18:51 IST",
+ "updated": "2026-11-06 18:34 IST",
  "items": [
+  {
+   "title": "Census on Foreign Liabilities and Assets of Indian Direct Investment Entities for 2025-26",
+   "link": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63941",
+   "date": "2026-11-06",
+   "source": "RBI",
+   "label": "RBI Press Release",
+   "kind": "news",
+   "first_seen": "2026-11-06"
+  },
+  {
+   "title": "Sectoral Deployment of Credit by NBFC – September 2026",
+   "link": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63940",
+   "date": "2026-11-06",
+   "source": "RBI",
+   "label": "RBI Press Release",
+   "kind": "news",
+   "first_seen": "2026-11-06"
+  },
+  {
+   "title": "Commencement of SEBI (Settlement of Administrative and Civil Proceedings) Regulations, 2026",
+   "link": "https://www.sebi.gov.in/media-and-notifications/press-releases/nov-2026/commencement-of-sebi-settlement-of-administrative-and-civil-proceedings-regulations-2026_105680.html",
+   "date": "2026-11-06",
+   "source": "SEBI",
+   "label": "SEBI Press Release",
+   "kind": "news",
+   "first_seen": "2026-11-06"
+  },
+  {
+   "title": "Results of the Chartered Accountants Foundation Examination held in September 2026 declared.",
+   "link": "https://caresults.icai.org/caresult/",
+   "date": "2026-11-06",
+   "source": "ICAI",
+   "label": "ICAI Announcement",
+   "kind": "news",
+   "first_seen": "2026-10-22"
+  },
   {
    "title": "Master Directions on Cyber Resilience and Digital Payment Security Controls for non-bank Payment System Operators",
    "link": "https://www.rbi.org.in/scripts/NotificationUser.aspx?Id=13751&Mode=0",
@@ -522,15 +558,6 @@
    "label": "SEBI Press Release",
    "kind": "news",
    "first_seen": "2026-10-23"
-  },
-  {
-   "title": "Results of the Chartered Accountants Intermediate Examination held in September 2026 declared.",
-   "link": "https://caresults.icai.org/caresult/",
-   "date": "2026-10-22",
-   "source": "ICAI",
-   "label": "ICAI Announcement",
-   "kind": "news",
-   "first_seen": "2026-10-22"
   },
   {
    "title": "Directions under Section 35 A read with Section 56 of the Banking Regulation Act, 1949 – Puducherry Co-operative Urban Bank Ltd",
@@ -1427,15 +1454,6 @@
    "title": "Success at CA. Exam - Series I starting from 6th October 2026 for CA. Final students appearing in November 2026 Examinations",
    "link": "https://resource.cdn.icai.org/93706bos-aps6055-ca-ex-final-nov2026.pdf",
    "date": "2026-08-10",
-   "source": "ICAI",
-   "label": "ICAI Announcement",
-   "kind": "news",
-   "first_seen": "2026-10-03"
-  },
-  {
-   "title": "Announcement - Hosting of Multipurpose Empanelment Form (MEF)-2026-27",
-   "link": "https://www.icai.org/post/mef070826",
-   "date": "2026-08-07",
    "source": "ICAI",
    "label": "ICAI Announcement",
    "kind": "news",
