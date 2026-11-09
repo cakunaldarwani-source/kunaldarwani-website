@@ -32,3 +32,21 @@ From tax year 2026-27, the provision is Section 63 of the Income-tax Act, 2025. 
 2. We review the books and the tax positions, and reconcile them with GST and TDS data.
 3. We prepare the report and discuss reportable items with you before finalising.
 4. We upload the report and coordinate the filing of the return by its due date.
+
+## Tax audit limits and due date (FY 2025-26, Section 44AB)
+
+| Taxpayer | Audit required when |
+|---|---|
+| Business | Turnover or gross receipts exceed ₹1 crore |
+| Business with cash receipts and cash payments each within 5% of the total | Turnover or gross receipts exceed ₹10 crore |
+| Profession | Gross receipts exceed ₹50 lakh |
+
+The audit report is due one month before the due date of the return. Where the return is due on 31 October, the report is due by 30 September. Audits up to assessment year 2026-27 use Forms 3CA, 3CB and 3CD. From tax year 2026-27, the report is furnished in Form No. 26 under Section 63.
+
+## What we commonly see in practice
+
+- Cash payments above the permitted limit that must be reported and can be disallowed.
+- TDS deducted late or at the wrong rate.
+- Payments to micro and small enterprises made after the period allowed under the MSME law.
+- Turnover in the books that does not match GST returns.
+- Presumptive taxation cases where the declared profit is below the prescribed rate and total income exceeds the basic exemption limit, which can bring the business into audit.

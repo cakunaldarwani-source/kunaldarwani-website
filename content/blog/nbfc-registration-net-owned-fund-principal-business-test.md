@@ -4,6 +4,23 @@ date: 2026-09-28
 service: nbfc-registration
 author: CA. Kunal Darwani
 summary: When a company needs RBI registration, the capital it must bring in, and what RBI looks at before granting a Certificate of Registration.
+seo_title: "NBFC Registration: Principal Business Test and Net Owned Fund"
+meta_description: "When lending turns a company into an NBFC under RBI's 50-50 test, the ₹10 crore NOF glide path, regulatory layers and what RBI checks in an application."
+keywords:
+  - NBFC registration
+  - NBFC net owned fund requirement
+  - principal business test NBFC
+  - NBFC registration process RBI
+  - scale based regulation NBFC
+faq:
+  - q: "What NOF applies to an NBFC that uses no public funds?"
+    a: "RBI's Scale Based Regulation circular of 22 October 2021 keeps NOF at ₹2 crore for NBFCs with no public funds and no customer interface, and for P2P lending platforms and account aggregators."
+  - q: "Where is an NBFC application filed?"
+    a: "On RBI's PRAVAAH portal, with the company's financial statements, board resolutions, details of directors and shareholders, the business plan and proof of where the capital came from."
+  - q: "Which layer does a small new NBFC fall in?"
+    a: "A non-deposit-taking NBFC with assets below ₹1,000 crore sits in the Base Layer, which carries the lightest set of regulations under the Scale Based Regulation framework."
+  - q: "Is the 50-50 test applied on monthly figures?"
+    a: "No. Both limbs, financial assets to total assets and financial income to gross income, are applied on the figures in the last audited balance sheet."
 ---
 Many businesses lend money as a side activity: to group companies, dealers or employees. The question is when that lending turns the company into a Non-Banking Financial Company that needs RBI registration under Section 45-IA of the RBI Act. Carrying on NBFC business without registration is an offence.
 
@@ -22,12 +39,15 @@ Net Owned Fund (NOF) is owned funds, meaning paid-up capital and free reserves l
 
 Under the Scale Based Regulation framework, the minimum NOF for NBFC-ICCs (investment and credit companies), NBFC-MFIs and NBFC-Factors is moving to **₹10 crore**, on a glide path:
 
-| By | Minimum NOF |
-|---|---|
-| 31 March 2025 | ₹5 crore |
-| 31 March 2027 | ₹10 crore |
+| Category | By 31 March 2025 | By 31 March 2027 |
+|---|---|---|
+| NBFC-ICC | ₹5 crore | ₹10 crore |
+| NBFC-MFI | ₹7 crore | ₹10 crore |
+| NBFC-Factor | ₹7 crore | ₹10 crore |
 
-New applicants must meet the current requirement on the date of application. Peer-to-peer lending platforms and account aggregators have their own NOF requirements.
+The glide path in RBI's circular of 22 October 2021 is framed for existing NBFCs.
+
+New applicants must meet the current requirement on the date of application. For NBFC-P2P platforms, account aggregators and NBFCs with no public funds and no customer interface, the same circular keeps the NOF at ₹2 crore.
 
 ## The layers
 
@@ -47,6 +67,22 @@ Governance, capital adequacy, concentration norms and disclosures become stricte
 - **Policies** – KYC/AML, fair practices code, grievance redressal, asset-liability management and loan policies.
 
 The application is filed on RBI's PRAVAAH portal. Processing time depends on how complete the application is and how quickly queries are answered.
+
+## Documents usually asked for
+
+- certificate of incorporation, MOA and AOA, with the objects clause covering financial activity
+- audited financial statements and, for a new company, a banker's certificate showing the capital held in a fixed deposit
+- board resolution approving the application
+- details of directors and shareholders: identity, address, credit reports, other directorships
+- promoters' income tax returns and bank statements tracing the capital
+- organisation chart, business plan and the policies listed above
+
+## What we commonly see in practice
+
+- **Capital that cannot be traced.** Money routed through several family accounts just before the application draws queries.
+- **Objects clauses** that still describe the old trading business, so the MOA has to be altered first.
+- **Group lending that grows quietly** until the 50-50 test is crossed at a year end, discovered only during the audit.
+- **Policies copied from templates** that do not match the products in the business plan.
 
 ## After registration
 

@@ -30,3 +30,22 @@ Payroll combines tax, labour law and confidentiality. Errors show up as employee
 2. Each month we process attendance inputs, compute salaries and deductions, and share payslips and the bank file for approval.
 3. We deposit TDS, PF and ESI and file the related returns.
 4. At year end we issue TDS certificates and reconcile salary figures with the books.
+
+## Payroll compliance calendar
+
+| Task | Due date |
+|---|---|
+| Deposit of TDS on salary | Monthly, generally by the 7th of the following month |
+| PF contributions and ECR | By the 15th of the following month |
+| ESI contributions | Within 15 days after the end of the month |
+| Quarterly salary TDS statement (Form 138, earlier Form 24Q) | 31 July, 31 October, 31 January and 31 May |
+| Annual salary TDS certificate (Form 130, earlier Form 16) | By 15 June after the end of the tax year |
+
+The new form numbers apply from tax year 2026-27. Salary for FY 2025-26 and earlier years is reported in the old forms.
+
+## What we commonly see in practice
+
+- Investment proofs collected only in March, which leads to a large TDS deduction in the last month and unhappy employees.
+- Salary from a previous employer not captured for mid-year joiners, so tax is short-deducted.
+- The employee's choice of tax regime not recorded in writing.
+- Full and final settlements delayed because leave and gratuity data is not kept current.

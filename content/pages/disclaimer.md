@@ -1,5 +1,6 @@
 ---
 title: Disclaimer
+meta_description: "Disclaimer for the website of Kunal Darwani & Company, Chartered Accountants, Agra: no solicitation, general information only, not professional advice."
 ---
 This website is maintained by Kunal Darwani & Company, Chartered Accountants, in accordance with the Code of Ethics and the Guidelines on Advertisement and Websites issued by the Institute of Chartered Accountants of India (ICAI).
 

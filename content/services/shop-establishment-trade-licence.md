@@ -29,3 +29,18 @@ These registrations also serve as proof of business existence for opening a curr
 1. We check which registrations apply to each premises.
 2. We file the online applications and track them until certificates are issued.
 3. We maintain renewal dates and file amendments when staff numbers, address or ownership change.
+
+## Who needs these registrations?
+
+Shops, offices, godowns, restaurants, hotels and other commercial premises in areas where the state law applies. Applicability and the registration requirements depend on the area and the number of employees, so we check the current position for each premises. Each separate place of business generally needs its own registration. Food businesses also need FSSAI registration or a licence, which is separate from the municipal trade licence.
+
+## What we commonly see in practice
+
+- The rent agreement is in a family member's name, with no consent letter from the owner.
+- The business name in the application differs from the name on GST or the bank account.
+- Staff numbers, timings or the address change but no amendment is filed.
+- The certificate is not displayed at the premises, which is often the first thing checked during an inspection.
+
+## What to keep ready
+
+Proof of the premises and the owner's NOC, ID and address proof of the owners, a list of employees with their working hours, and a photograph of the premises showing the signboard.

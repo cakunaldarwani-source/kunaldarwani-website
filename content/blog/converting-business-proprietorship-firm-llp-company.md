@@ -4,6 +4,21 @@ date: 2026-09-07
 service: entity-conversion
 author: CA. Kunal Darwani
 summary: The legal routes for the common conversions, the conditions for keeping them tax-neutral, and practical steps that are easy to miss.
+seo_title: "Convert Proprietorship or Firm to LLP or Company: Tax Conditions"
+meta_description: "Converting a proprietorship, firm or company into an LLP or company is tax-neutral only if Section 47 conditions are met. Legal routes, GST ITC-02, steps."
+keywords:
+  - convert proprietorship to private limited company
+  - partnership firm to LLP conversion
+  - private company to LLP conversion conditions
+  - Section 47 conversion capital gains exemption
+  - business conversion tax neutral
+faq:
+  - q: "How long must a proprietor keep control after converting into a company?"
+    a: "To keep the capital gains exemption, the former proprietor must hold at least 50% of the voting power in the company for five years from the date of succession. Selling down earlier withdraws the exemption."
+  - q: "Can a company with turnover above ₹60 lakh convert into an LLP?"
+    a: "It can convert under the LLP Act, but the capital gains exemption is not available if turnover exceeded ₹60 lakh, or total assets exceeded ₹5 crore, in any of the three preceding years."
+  - q: "Does the new entity need a fresh GST registration?"
+    a: "Yes. The converted entity applies for its own GST registration, and unutilised input tax credit can be moved across by filing ITC-02 where liabilities are also transferred."
 ---
 Conversion lets a business change its legal form while keeping its assets, liabilities, contracts and history. Without care, though, a conversion can be treated as a **transfer** for income tax purposes, which triggers capital gains, and it can create stamp duty and GST costs. Here is a guide to the common routes.
 
@@ -53,6 +68,20 @@ If a condition is breached later, the exemption is withdrawn and the gain is tax
 - **Contracts.** Check the assignment and change-of-control clauses in customer, vendor and lease agreements.
 - **Accumulated losses and depreciation** – the rules on carrying them forward differ by type of conversion.
 
+## Documents usually needed
+
+- financial statements and a statement of assets and liabilities as on the conversion date
+- the partnership deed or the company's memorandum and articles
+- consent of all partners or the required shareholder resolution
+- no-objection letters from secured creditors and lenders
+- a list of registrations, licences and bank accounts to be transferred
+- the proposed LLP agreement or the articles of the new company
+- a capital account or shareholding reconciliation showing how ownership carries across
+
+## What we commonly see in practice
+
+The usual difficulty is not the filing itself but what happens in the years after. Partners or shareholders take out money, change profit-sharing ratios or bring in a new investor within the restricted period without realising that this can withdraw the tax exemption. Old balance sheets often carry revalued assets or partner loans that do not fit the condition that all assets and liabilities pass across. Banks take the longest to update records, so payments to and from the old name continue for months. Our [entity conversion](../services/entity-conversion.html) page sets out how we plan the timeline.
+
 ## Sequencing a conversion
 
 1. Finalise the target structure and confirm that the tax conditions can be met for the required period.
@@ -60,6 +89,7 @@ If a condition is breached later, the exemption is withdrawn and the gain is tax
 3. Prepare the financial statements as on the conversion date.
 4. File the conversion forms and obtain the certificate.
 5. Transfer registrations, credit and bank accounts, and notify customers and vendors.
+6. Diary the end of the restricted period (five years for most routes, three years for the profit-distribution condition on company to LLP) and review the conditions each year until then.
 
 *The information in this article reflects the law as on the date of publication and is for general guidance only.*
 

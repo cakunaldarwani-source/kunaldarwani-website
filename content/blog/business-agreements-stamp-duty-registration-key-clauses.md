@@ -4,6 +4,21 @@ date: 2026-09-03
 service: business-agreements
 author: CA. Kunal Darwani
 summary: Why the stamp paper and registration matter as much as the wording, the clauses that most often cause disputes, and the tax angles in common agreements.
+seo_title: "Stamp Duty and Registration of Business Agreements: Key Clauses"
+meta_description: "An unstamped agreement cannot be used as evidence until duty and penalty are paid. When registration is compulsory and which clauses often cause disputes."
+keywords:
+  - stamp duty on business agreements
+  - agreement registration compulsory
+  - e-stamping Uttar Pradesh
+  - important clauses in business contracts
+  - 11 month rent agreement stamp duty
+faq:
+  - q: "Is a notarised agreement on plain paper valid?"
+    a: "Notarisation only attests the signatures. It does not replace stamp duty. If the instrument is chargeable with duty and is not duly stamped, it cannot be admitted in evidence until the deficit duty and penalty are paid."
+  - q: "Can stamp duty be paid after the agreement is signed?"
+    a: "Duty is payable before or at the time of execution. A deficit can be made good later, but only with a penalty, which is why the e-stamp certificate should be bought before signing."
+  - q: "Does an 11-month rent agreement need stamp duty?"
+    a: "Yes. A lease of up to eleven months avoids compulsory registration, but it is still an instrument chargeable with stamp duty under the state's law."
 ---
 A business agreement that is not properly stamped, or not registered when registration is required, may not be usable as evidence when you need it most. And an agreement that ignores tax can cost more than the deal is worth. Here is what to watch.
 
@@ -46,6 +61,20 @@ An unregistered document that requires registration does not affect the property
 | **Consultancy / professional services** | TDS on professional fees; GST registration status of the consultant. |
 | **Employment** | Treatment of perquisites, notice pay and non-compete payments. |
 | **Gift / family arrangement** | Exemption for gifts from relatives; clubbing of income; stamp duty concessions. |
+
+## An execution checklist
+
+1. Agree the final draft, and check that the names of the parties match their PAN, GST and incorporation records.
+2. Work out the duty for the type of instrument and its value, and buy the e-stamp certificate in the name of one of the parties before signing.
+3. Print the agreement on, or attach it to, the e-stamp certificate.
+4. Have every page initialled and the last page signed by authorised signatories, with two witnesses where the law requires it.
+5. Attach board or partner resolutions authorising the signatory.
+6. Where registration is compulsory, present the document before the Sub-Registrar within the time allowed under the Registration Act.
+7. Keep the original safely and scan a full copy, including the stamp certificate.
+
+## What we commonly see in practice
+
+Most problems surface only when a dispute or a tax scrutiny begins. A partnership deed is changed by an unstamped supplementary letter, so the revised remuneration clause cannot be relied on. A lease runs on long after the original eleven months with no fresh document, and the security deposit and rent increase are recorded only in emails. Agreements signed by an employee who had no written authority are questioned by the other side. And GST is left out of the payment clause, leading to an argument about whether the price was inclusive. For drafting support on commercial documents, see our [business agreements](../services/business-agreements.html) page.
 
 ## When to involve an advocate
 

@@ -226,7 +226,7 @@ def main():
                         f"training in statutory audit, bank audit and litigation, stipend Rs. {art['stipend']['year1']:,}–{art['stipend']['year2']:,} a month, and how to apply."),
            nav="careers")
     for slug, pg in pages.items():
-        render("page.html", f"{slug}.html", pg=pg, page_title=pg["title"], nav=slug)
+        render("page.html", f"{slug}.html", pg=pg, page_title=pg["title"], description=pg.get("meta_description"), nav=slug)
 
     # sitemap + RSS
     sm = ['<?xml version="1.0" encoding="UTF-8"?>',

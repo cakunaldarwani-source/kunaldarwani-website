@@ -32,3 +32,19 @@ The decision to sanction a loan rests entirely with the lender. The firm prepare
 2. We build the financial model – costs, revenue, working capital and the repayment schedule.
 3. We prepare the report or CMA data, and the certificates the lender asks for.
 4. We help answer the lender's appraisal queries on the numbers.
+
+## When is a project report or CMA data needed?
+
+Lenders usually ask for a project report for a new unit, an expansion or a large machinery purchase financed by a term loan. CMA data is used to assess working capital limits, both at first sanction and at each annual renewal or enhancement. Government-supported schemes have their own formats and eligibility conditions, which we follow.
+
+## What we commonly see in practice
+
+- Projected sales and margins far above past performance, with no explanation of what will change.
+- Promoters' contribution shown in the report without evidence of where the money will come from.
+- Machinery and civil work quotations that are several months old.
+- Working capital needs worked out without reference to the actual stock and debtor days in the books.
+- Turnover in the financial statements that does not match GST returns or the income tax return, which lenders now cross-check routinely.
+
+## What to keep ready
+
+Udyam certificate, GST returns for the last year, the latest stock and debtor statement, sanction letters for existing loans, KYC of promoters, and documents for any property offered as collateral.

@@ -4,6 +4,23 @@ date: 2026-09-21
 service: intellectual-property
 author: CA. Kunal Darwani
 summary: Why a search comes first, how classes work, what the ™ and ® symbols mean, and what happens between filing and registration.
+seo_title: "Trademark Registration in India: Search, Classes and Timeline"
+meta_description: "Trademark registration in India: why search first, picking from 45 classes, the ₹4,500 or ₹9,000 e-filing fee per class, objections, opposition, renewal."
+keywords:
+  - trademark registration India
+  - trademark search before filing
+  - trademark classes India
+  - trademark registration timeline
+  - trademark renewal fee
+faq:
+  - q: "Can I use the ® symbol after filing a trademark application?"
+    a: "No. The ® symbol can be used only after the mark is registered. During the application stage, use ™. Falsely representing a mark as registered is an offence under the Trade Marks Act, 1999."
+  - q: "How long is a trademark registration valid?"
+    a: "Ten years from the date of application. It can be renewed for further ten-year periods without limit, using Form TM-R."
+  - q: "Can examination of a trademark application be speeded up?"
+    a: "Yes. An expedited examination request can be filed online in Form TM-M. The official fee is ₹20,000 for individuals, startups and small enterprises and ₹40,000 for others."
+  - q: "Does a GST or company name registration protect my brand?"
+    a: "No. These registrations do not give an exclusive right to use the name as a trademark. That right comes only from registration under the Trade Marks Act, 1999."
 ---
 A business name registered with the Registrar of Companies, or as a GST trade name, does **not** give you the exclusive right to use that name as a brand. That right comes from trademark registration under the Trade Marks Act, 1999.
 
@@ -38,6 +55,36 @@ The official e-filing fee per class is **₹4,500** for individuals, start-ups a
 The process can be completed in under a year where there are no objections, and it takes longer otherwise.
 
 Registration is valid for **10 years** from the application date and can be renewed indefinitely for further 10-year periods.
+
+## Official fees at a glance (e-filing, per class)
+
+| Form | Purpose | Individual, startup, small enterprise | Others |
+|---|---|---|---|
+| TM-A | New application | ₹4,500 | ₹9,000 |
+| TM-M | Expedited examination | ₹20,000 | ₹40,000 |
+| TM-O | Notice of opposition or counter-statement | ₹2,700 | ₹2,700 |
+| TM-R | Renewal before expiry | ₹9,000 | ₹9,000 |
+| TM-R | Renewal within six months after expiry | ₹9,000 plus ₹4,500 surcharge | ₹9,000 plus ₹9,000 surcharge |
+
+Physical filing costs more, and expedited examination can be requested only online. A mark that is not renewed even within the surcharge window is removed from the register and needs a restoration request.
+
+## Documents usually needed for filing
+
+- Applicant's name, address and legal status (individual, firm, company, LLP, trust)
+- The mark: the word in plain text, and a clear image if a logo or stylised form is being filed
+- A precise description of the goods or services in each class
+- The date from which the mark has been used in India, if use is claimed, with supporting evidence such as invoices, advertisements or website archives
+- Udyam or DPIIT certificate, if the lower fee is claimed
+- Authorisation in Form TM-48, where an agent or advocate files on the applicant's behalf
+
+## What we commonly see in practice
+
+- **Filing in only one class** when the business plans to expand. A café that later sells packaged snacks may find another person has registered the same name in the goods class.
+- **Claiming a user date without evidence.** Examiners and opponents often ask for proof, and an unsupported claim weakens the application.
+- **Ownership in the wrong name.** A director files in their own name while the company uses the mark, which later needs an assignment and a licence arrangement.
+- **Missing the one-month reply deadline** after an examination report, because the e-mail went to an address nobody checks.
+
+Diary the renewal date as soon as the certificate arrives. Our [intellectual property](../services/intellectual-property.html) page outlines the related documentation work.
 
 ## Who can represent you
 

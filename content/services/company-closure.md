@@ -27,9 +27,20 @@ A company or LLP that is not doing business still has to file returns every year
 
 The usual route for a defunct entity with no liabilities is **strike off**. Applications are processed centrally by the **Centre for Processing Accelerated Corporate Exit (C-PACE)**. An entity that has assets to distribute, or liabilities to settle, uses **voluntary liquidation**.
 
+## Who should consider closure
+
+Companies incorporated for a project that never started, subsidiaries that are no longer needed, and LLPs whose partners have moved on are typical cases. Strike off is available only where the entity has not carried on business for the period the law specifies, or never commenced business, and has no outstanding liabilities. Pending statutory filings generally have to be brought up to date before the application is accepted.
+
 ## How the engagement works
 
 1. We check eligibility and identify pending filings, dues and registrations.
 2. We clear the backlog and close bank accounts and registrations.
 3. We prepare and file the strike-off application with the required declarations.
 4. We track the application through to publication of the strike-off notice.
+
+## Issues that commonly delay closure
+
+- Overdue annual filings, which attract additional fees and must be cleared before the application.
+- GST registration still active, or returns pending, after operations have stopped.
+- Directors' loans or creditor balances shown in the accounts, which conflict with the declaration that there are no liabilities.
+- Bank accounts kept open for a small balance or a pending refund.

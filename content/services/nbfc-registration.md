@@ -33,3 +33,18 @@ Small-ticket lending to low-income households can also be done through an **NBFC
 2. We plan the Net Owned Fund and document its source, which RBI examines closely.
 3. We prepare the business plan, projections and the policies RBI expects.
 4. We file the application, respond to RBI queries, and set up post-registration returns and the statutory auditor's certification.
+
+## Does your company need RBI registration? The 50-50 test
+
+The RBI treats a company as carrying on financial business when its financial assets are more than 50% of its total assets (netted off by intangible assets) **and** its income from financial assets is more than 50% of its gross income. When both conditions are met, the company must register as an NBFC.
+
+## How much Net Owned Fund is needed?
+
+For most new NBFCs, the RBI currently requires a minimum Net Owned Fund of ₹10 crore at the time of application. Existing NBFCs have until 31 March 2027 to reach this level, and specialised categories have their own thresholds.
+
+## Common issues we see in practice
+
+- Net Owned Fund brought in through unsecured loans or funds whose source is not clearly documented.
+- Directors and key managerial persons with little financial sector experience.
+- Projections that do not match the business plan, or policies that are generic rather than written for the proposed business.
+- Slow or incomplete replies to RBI queries, which delay the application or lead to its return.

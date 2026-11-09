@@ -3,7 +3,7 @@ title: Proprietorship, MSME (Udyam) & HUF Setup
 short: Proprietorship, MSME & HUF
 category: business-setup
 order: 30
-summary: Setting up a sole proprietorship with the registrations it needs, Udyam (MSME) registration, and formation of a Hindu Undivided Family for tax and succession purposes.
+summary: Setting up a sole proprietorship with the registrations it needs, Udyam (MSME) registration, and formation of an HUF for tax and succession.
 includes:
   - Registrations a proprietorship needs to open a current account and trade
   - Udyam registration and classification as micro, small or medium enterprise
@@ -33,3 +33,7 @@ A **Hindu Undivided Family (HUF)** is a separate taxpayer with its own PAN and b
 2. We file the Udyam registration and explain how your investment and turnover decide your classification.
 3. For an HUF, we draft the declaration, obtain the PAN, and advise on how to build the HUF's capital without the clubbing provisions applying.
 4. We set up bookkeeping and the income tax, TDS and GST calendar that applies to you.
+
+## What to keep ready
+
+Keep the PAN and Aadhaar linked, with the mobile number registered with Aadhaar active for OTPs. The premises document should be in the proprietor's name, or supported by the owner's consent letter. For an HUF, keep a signed list of coparceners and a record of the source of the initial corpus.

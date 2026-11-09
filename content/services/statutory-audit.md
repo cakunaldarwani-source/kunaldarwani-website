@@ -35,3 +35,19 @@ The auditor gives an independent opinion on whether the financial statements sho
 2. We plan the audit, understand the business, and assess risks and controls.
 3. We carry out substantive procedures and obtain confirmations and management representations.
 4. We report, and discuss observations with management and those charged with governance.
+
+## Does CARO 2020 apply to your company?
+
+CARO 2020 does not apply to banking and insurance companies, Section 8 companies, One Person Companies and small companies. It also does not apply to a private company that is not a holding or subsidiary of a public company, if its paid-up capital and reserves do not exceed ₹1 crore on the balance sheet date, its borrowings from banks or financial institutions did not exceed ₹1 crore at any time during the year, and its total revenue did not exceed ₹10 crore for the year.
+
+## Common observations during audits
+
+- Bank, GST input tax credit and party balances not reconciled at year end.
+- No documented physical verification of inventory or fixed assets.
+- Related parties and related party transactions not fully identified.
+- Dues to micro and small enterprises not tracked.
+- The audit trail (edit log) feature of the accounting software not enabled for the full year.
+
+## What to keep ready
+
+Finalised books and trial balance, bank statements and reconciliations, inventory and fixed asset records, loan sanction letters, minutes, and the tax returns filed for the year.

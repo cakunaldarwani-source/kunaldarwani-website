@@ -3,7 +3,7 @@ title: Income Tax Notices, Assessments & Appeals
 short: Tax Notices & Appeals
 category: taxation
 order: 320
-summary: Review of and response to income tax notices – defective return, intimation, scrutiny, reassessment and penalty – and representation in faceless proceedings and appeals.
+summary: Replies to income tax notices, including defective return, intimation, scrutiny, reassessment and penalty, and representation in faceless appeals.
 includes:
   - Validity review of the notice – DIN, jurisdiction, limitation
   - Response to defective return notices and adjustments in intimations
@@ -34,3 +34,14 @@ Before replying, we check whether the notice itself is valid: whether it carries
 2. We assess validity and limitation, and flag any legal objection.
 3. We collect evidence and prepare the submission and annexures.
 4. We file within time, track the proceedings, and evaluate the order for rectification or appeal.
+
+## Notices we commonly see
+
+- Intimations adjusting the return, often because a deduction or TDS credit did not match the department's records.
+- Queries on high-value transactions reported in the AIS, such as cash deposits, property purchases or share sales, that the return does not reflect.
+- Scrutiny notices asking for the source of bank credits, loans received or balances of unsecured creditors.
+- Reassessment notices for earlier years based on information received from another agency or a third party.
+
+## Why notices get missed
+
+Notices go to the email address and mobile number registered on the e-filing portal. When these belong to a former accountant or an old phone, the notice is missed and the proceeding can be completed without the taxpayer's side being heard. Keep contact details current and check the e-proceedings section of the portal periodically.

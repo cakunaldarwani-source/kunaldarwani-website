@@ -4,8 +4,25 @@ date: 2026-09-14
 service: tds-compliance
 author: CA. Kunal Darwani
 summary: How the TDS provisions are now organised, the deposit and filing cycle, the costs of default and practical controls for businesses.
+seo_title: "TDS Section 393, Income-tax Act 2025: What Deductors Must Do"
+meta_description: "TDS under the Income-tax Act, 2025: Section 393 for non-salary payments, Section 392 for salary, new Forms 138, 140 and 144, due dates and default costs."
+keywords:
+  - TDS section 393 Income-tax Act 2025
+  - TDS under new income tax act
+  - Form 140 TDS return
+  - TDS due dates 2026-27
+  - section 392 TDS on salary
+faq:
+  - q: "Which form replaces Form 26Q from tax year 2026-27?"
+    a: "Form No. 140 is the quarterly statement for TDS on non-salary payments to residents. Salary statements move to Form No. 138 (formerly 24Q) and payments to non-residents to Form No. 144 (formerly 27Q)."
+  - q: "What replaces Form 16?"
+    a: "Form No. 130 is the TDS certificate for salary under the Income-tax Rules, 2026. It is to be issued by 15 June following the end of the tax year."
+  - q: "Do the quarterly due dates change under the 2025 Act?"
+    a: "No. Quarterly TDS statements remain due by 31 July, 31 October, 31 January and 31 May, the last one for the January to March quarter."
+  - q: "Is TDS on salary also under Section 393?"
+    a: "No. TDS on salary is dealt with in Section 392 of the Income-tax Act, 2025. Section 393 covers other payments to residents and non-residents."
 ---
-Under the Income-tax Act, 1961, TDS was spread across dozens of sections: 192 for salary, 194C for contractors, 194J for professionals, 194-I for rent, 194Q for purchase of goods, and many more. The **Income-tax Act, 2025**, in force from 1 April 2026, brings these together in **Section 393**. Payments, thresholds and rates are set out in tables.
+Under the Income-tax Act, 1961, TDS was spread across dozens of sections: 192 for salary, 194C for contractors, 194J for professionals, 194-I for rent, 194Q for purchase of goods, and many more. The **Income-tax Act, 2025**, in force from 1 April 2026, brings the non-salary provisions together in **Section 393**, with TDS on salary dealt with separately in **Section 392**. Payments, thresholds and rates are set out in tables.
 
 ## What has changed and what has not
 
@@ -22,6 +39,19 @@ Under the Income-tax Act, 1961, TDS was spread across dozens of sections: 192 fo
 - the consequences of default
 
 Statements for the quarters up to March 2026 relate to the 1961 Act. Statements from the April–June 2026 quarter onwards are filed under the 2025 Act, in the new formats.
+
+## Old and new form numbers
+
+| Purpose | Income-tax Rules, 1962 | Income-tax Rules, 2026 |
+|---|---|---|
+| Quarterly statement: salary | Form 24Q | Form 138 |
+| Quarterly statement: other payments to residents | Form 26Q | Form 140 |
+| Quarterly statement: payments to non-residents | Form 27Q | Form 144 |
+| Quarterly TCS statement | Form 27EQ | Form 143 |
+| Salary TDS certificate | Form 16 | Form 130 |
+| Information from a non-resident for treaty claims | Form 10F | Form 41 |
+
+The salary certificate in Form 130 is due by 15 June after the end of the tax year. Update vendor and employee communication, and any internal checklists that still refer to the old numbers.
 
 ## Changes carried over from Budget 2025
 
@@ -53,7 +83,17 @@ Statements for the quarters up to March 2026 relate to the 1961 Act. Statements 
 3. **Monthly review** of expense ledgers for payments where TDS was missed.
 4. **Reconcile** the TDS ledger with challans and statements every quarter before filing.
 5. **Lower deduction certificates** – check them on TRACES and apply the rate only within the certificate's limit and validity.
-6. **Payments to non-residents** – get the tax residency certificate and Form 10F, and check the tax treaty and the beneficial ownership conditions before applying a treaty rate.
+6. **Payments to non-residents** – get the tax residency certificate and Form 10F (Form 41 under the 2026 Rules), and check the tax treaty and the beneficial ownership conditions before applying a treaty rate.
+
+## What we commonly see in practice
+
+- **Year-end provisions without TDS.** Expenses booked on 31 March for audit fees, rent or professional charges are often missed, because no payment is made that day. TDS applies on credit as well as on payment.
+- **Wrong section code in the statement.** A contractor payment filed under the professional fees code, or a challan paid under the wrong code, leads to short deduction notices from TRACES even when the right amount was paid.
+- **PAN errors and inoperative PANs.** A single wrong character pushes the deductee to the higher rate and creates a demand on the deductor.
+- **Challans not matched to the statement** because they were paid from a different TAN or under the wrong assessment year.
+- **Corrections filed late.** Defaults shown on TRACES are cheaper to fix in the same quarter than after a demand notice.
+
+A quarterly review before each statement, covering these five points, prevents most notices. Our [TDS compliance](../services/tds-compliance.html) page describes the routine in more detail.
 
 *The information in this article reflects the law as on the date of publication and is for general guidance only.*
 

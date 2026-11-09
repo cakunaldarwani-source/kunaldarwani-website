@@ -33,3 +33,14 @@ Since 2025, applications go through Aadhaar authentication, biometric verificati
 2. We prepare and file the application with documents that match the address and ownership records exactly.
 3. We respond to any clarification notice and help with physical verification.
 4. After registration, we set up invoicing, e-invoice and e-way bill requirements and the return filing calendar.
+
+## Timelines on the portal
+
+Under Rule 9 of the CGST Rules, the officer is to approve an application within seven working days of submission, or within thirty days where physical verification of the place of business is required. If the officer issues a clarification notice in REG-03, the reply in REG-04 is due within seven working days of receiving it.
+
+## Reasons applications commonly get stuck
+
+- The rent agreement or consent letter in one name and the electricity bill in another, with nothing linking them.
+- A photograph of the premises without a visible name board.
+- Aadhaar authentication not completed by every promoter in time.
+- A description of business that does not match the HSN or service codes later used.

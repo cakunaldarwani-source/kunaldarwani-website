@@ -4,6 +4,21 @@ date: '2026-10-05'
 service: tax-audit
 author: CA. Kunal Darwani
 summary: Circular 07/2026 moves the tax audit report to 21 October 2026 and the ITR for audit cases to 21 November 2026. Who is covered and what to plan for.
+seo_title: "Tax Audit and ITR Due Date Extended for AY 2026-27: CBDT Circular"
+meta_description: "CBDT Circular 07/2026 extends the tax audit report due date to 21 October 2026 and the ITR due date for audit cases to 21 November 2026 for AY 2026-27."
+keywords:
+  - tax audit due date extended AY 2026-27
+  - ITR due date for audit cases AY 2026-27
+  - CBDT Circular 07/2026
+  - Section 44AB due date extension
+  - 21 November 2026 ITR deadline
+faq:
+  - q: "Does the extension apply to salaried individuals?"
+    a: "No. The extended return date applies only to taxpayers whose normal due date is 31 October, such as companies and persons whose accounts must be audited. Non-audit cases keep their own due date."
+  - q: "Can business losses be carried forward if the return is filed on 21 November 2026?"
+    a: "Yes. A return filed by the extended date is within the due date under Section 139(1), so the carry forward of business and capital losses is preserved, subject to the other conditions."
+  - q: "Does the circular waive interest under Section 234A?"
+    a: "The circular extends due dates and is silent on interest. Where tax is payable, paying self-assessment tax early is the safer course."
 ---
 The Central Board of Direct Taxes (CBDT) has extended two key due dates for **Assessment Year 2026-27** (the financial year ended 31 March 2026). The extension is in **Circular No. 07/2026 dated 28 September 2026** (F. No. 225/128/2026/ITA-II). It gives taxpayers whose accounts must be audited about three more weeks for the audit report and for the return.
 
@@ -51,6 +66,10 @@ The circular extends due dates. It does not say anything about **interest under 
 - Review **payments to MSME suppliers** that are outstanding beyond the time allowed under the MSMED Act, which affect the deduction for those payments under Section 43B(h) of the 1961 Act.
 - Once the audit report is uploaded, **accept it from the taxpayer's login** promptly, since the return cannot be filed until it is accepted.
 - Compute the tax liability early and pay any **self-assessment tax** before filing.
+
+## What we commonly see in practice
+
+Extensions tend to shift the rush rather than remove it. Audit reports uploaded on the last day are sometimes not accepted from the taxpayer's login for several days, which then squeezes the return. Turnover in Form 3CD and in the ITR does not always match the GST returns, which leads to mismatch communications later. Our [tax audit](../services/tax-audit.html) page explains the documents an auditor usually asks for.
 
 ## Looking ahead: the Income-tax Act, 2025
 

@@ -4,6 +4,23 @@ date: 2026-10-01
 service: proprietorship-msme-huf
 author: CA. Kunal Darwani
 summary: The revised MSME thresholds, why buyers now care whether you hold Udyam registration, and how a Hindu Undivided Family can be used legitimately.
+seo_title: "Udyam Registration for Proprietors: 45-Day Rule and MSME Limits"
+meta_description: "Udyam registration for a proprietorship: MSME limits from 1 April 2025, the 45-day payment rule and buyer tax disallowance, and when an HUF makes sense."
+keywords:
+  - Udyam registration for proprietorship
+  - MSME 45 day payment rule
+  - MSME classification limits 2025
+  - Udyam registration process
+  - HUF for business
+faq:
+  - q: "Is there a fee for Udyam registration?"
+    a: "No. Udyam registration on the government portal is free, paperless and based on self-declaration. No documents need to be uploaded; the details are verified through Aadhaar and PAN."
+  - q: "Do traders get the 45-day payment protection?"
+    a: "No. Retail and wholesale traders can register on Udyam for priority sector lending, but the delayed payment provisions of the MSMED Act do not cover them."
+  - q: "What if the supplier and buyer agreed on 60 days credit?"
+    a: "The MSMED Act caps the agreed period at 45 days from acceptance. Beyond that, interest is payable and the buyer's tax deduction for the unpaid amount is deferred until payment."
+  - q: "Can an HUF run a business?"
+    a: "Yes. An HUF can carry on business with its own funds and PAN, and is taxed separately. Funds introduced by a member without adequate consideration, however, attract clubbing of the resulting income."
 ---
 Most businesses in India start as sole proprietorships. The owner and the business are one person, so there is no separate incorporation. A few registrations make a real difference, though. Udyam is one of them.
 
@@ -33,6 +50,26 @@ The figures are taken from the enterprise's income tax return and GST data. Expo
 - **Udyam registration**
 - **Shop & Establishment registration** under the state law, and a trade licence from the local body where required
 - **Current account** in the trade name, for which banks usually accept two of the above
+
+## How to register on the Udyam portal
+
+Registration is free, paperless and based on self-declaration. It is done only on udyamregistration.gov.in.
+
+1. Enter the proprietor's Aadhaar number and validate it with the OTP sent to the linked mobile number.
+2. Validate the PAN. Investment and turnover figures are then drawn from the income tax return and GST data linked to the PAN.
+3. Fill in the enterprise name, address, bank details, the main business activity and the NIC codes, and the number of employees.
+4. Submit the self-declaration. The e-certificate with the Udyam Registration Number follows.
+
+A business without PAN or GST registration that only needs priority sector credit can be brought in through the **Udyam Assist Platform**, which works through banks and other lenders acting as authorised partners.
+
+## What we commonly see in practice
+
+- **Wrong activity selected.** A trading business registered as a service provider, or a manufacturer with only trading codes, causes problems when the delayed-payment protection is claimed.
+- **Certificates not updated** after a change of address, bank or activity. The details can be edited on the same portal and should be kept current.
+- **Buyers deferring payment past 45 days** while the supplier never issues a reminder or invoice term stating the period. Writing the credit period on the invoice and the purchase order helps.
+- **Proprietors registering more than once**, for example once for each shop. An enterprise may hold only one Udyam registration, and further activities, whether manufacturing or services, are added to that same registration. No renewal is needed.
+
+For proprietors setting up, our [proprietorship, MSME and HUF](../services/proprietorship-msme-huf.html) page outlines the related registrations.
 
 ## When a Hindu Undivided Family makes sense
 

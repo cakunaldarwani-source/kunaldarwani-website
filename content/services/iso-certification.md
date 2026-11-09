@@ -3,7 +3,7 @@ title: ISO Implementation & Certification Support
 short: ISO Certification Support
 category: registrations
 order: 170
-summary: Gap assessment, documentation, internal audit and management review support for ISO management system standards, up to the certification audit by an accredited certification body.
+summary: Gap assessment, documentation, internal audit and management review support for ISO standards, up to the audit by an accredited certification body.
 includes:
   - ISO 9001 (Quality), ISO 14001 (Environment), ISO 45001 (Occupational health & safety – replaced OHSAS 18001)
   - ISO 22000 (Food safety), ISO 27001 (Information security), ISO 20000-1 (IT service management)
@@ -34,3 +34,18 @@ The firm helps organisations **implement** the standard and get ready for certif
 3. **Implementation** – we run awareness sessions, and the records are kept for a period before the audit.
 4. **Internal audit and management review** – both are mandatory before certification.
 5. **Certification audit** – we coordinate with the certification body for Stage 1 and Stage 2 audits and support closure of any non-conformities.
+
+## Who usually needs ISO certification?
+
+Manufacturers supplying larger companies and public sector undertakings, exporters whose buyers ask for it, IT and service businesses that handle client data, and bidders in tenders that list certification as an eligibility condition. Certification is voluntary under Indian law; the push almost always comes from customers and tenders.
+
+## How long does it take, and what happens after?
+
+Certification bodies expect the system to have operated for a period, with internal audit and management review records, before the Stage 2 audit. After certification, the certificate generally runs on a three-year cycle with surveillance audits in between, followed by recertification.
+
+## Common issues we see in practice
+
+- Procedures copied from generic templates that do not describe how the business actually works, which auditors pick up quickly.
+- Records created in the few weeks before the audit instead of being kept as part of daily work.
+- Certificates from bodies that are not accredited, which some buyers and tender committees do not accept.
+- A certification scope that leaves out a site, product or service the customer needs covered.

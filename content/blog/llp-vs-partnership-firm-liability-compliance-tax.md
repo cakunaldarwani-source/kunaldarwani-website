@@ -4,6 +4,23 @@ date: 2026-10-02
 service: llp-partnership
 author: CA. Kunal Darwani
 summary: A practical comparison of LLPs and partnership firms, covering liability, annual filings, audit thresholds and the TDS on partner payments that has applied since April 2025.
+seo_title: "LLP vs Partnership Firm: Liability, Compliance and Tax Compared"
+meta_description: "LLP or partnership firm? Compare partner liability, registration, LLP Form 8 and Form 11 filings, audit limits, 30% tax rate and TDS on partner payments."
+keywords:
+  - LLP vs partnership firm
+  - difference between LLP and partnership firm
+  - LLP annual compliance
+  - partnership firm registration
+  - TDS on payment to partners
+faq:
+  - q: "Can a partnership firm convert into an LLP?"
+    a: "Yes. Section 55 of the LLP Act, 2008 permits it. All partners of the firm must become partners of the LLP, and the conversion is tax-neutral only if the conditions in the income-tax law are met."
+  - q: "Does an LLP with no business still have to file returns?"
+    a: "Yes. Form 8, Form 11 and the income-tax return are due every year even if the LLP did no business. Additional fees for late MCA filings run for each day of delay."
+  - q: "Is registration of a partnership firm compulsory?"
+    a: "No. The Indian Partnership Act, 1932 makes it optional. But an unregistered firm cannot sue a third party to enforce a contract, and banks and departments commonly ask for the registration certificate."
+  - q: "Is a partner's share of profit taxable?"
+    a: "No. The share of profit from a firm or LLP is exempt in the partner's hands because the entity has already paid tax on it. Interest and remuneration received from the firm are taxable in the partner's hands."
 ---
 Two people starting a business together usually look at three choices: a partnership firm, an LLP or a private company. This article compares the first two, since the choice between them comes up most often for small and mid-sized businesses.
 
@@ -50,6 +67,24 @@ An LLP is not subject to dividend distribution and is not covered by the deemed-
 - Choose a **registered partnership firm** if the business is small, the partners trust each other fully and you want minimum paperwork.
 - Choose an **LLP** if the business has meaningful credit exposure, you expect partners to change, or you want a separate legal entity without the compliance load of a company.
 - Look at a **private company** if you plan to raise equity from investors.
+
+## What does each one need to get started?
+
+| | Partnership firm | LLP |
+|---|---|---|
+| Core document | Partnership deed on stamp paper (stamp duty varies by state) | LLP agreement, filed with the Registrar after incorporation |
+| Where to apply | Registrar of Firms of the state, for registration | MCA portal: name reservation, then the incorporation form |
+| PAN and TAN | Applied for separately after the deed is signed | Issued along with incorporation |
+| From the partners | PAN, address proof, photographs | PAN, address proof, digital signatures and DIN for designated partners |
+| Office proof | Rent agreement or ownership proof, with a utility bill | Same, plus the owner's no-objection where premises are rented |
+
+## What we commonly see in practice
+
+- **Deeds that are silent on remuneration or interest**, or that do not fix how remuneration is worked out. The deduction is then disallowed in assessment, and a fresh deed applies only from its own date.
+- **Unregistered firms** that learn about Section 69 only when a customer defaults and a recovery suit is needed.
+- **Dormant LLPs** that stop filing Form 8 and Form 11. The daily additional fees keep accruing and make a later closure costly.
+- **LLP agreements** not filed after incorporation, or not updated when a partner joins or retires.
+- **Monthly drawings** treated as remuneration since April 2025 without TDS being deducted or a TAN obtained.
 
 A firm can later convert into an LLP under Section 55 of the LLP Act. If the conditions are met, the conversion is tax-neutral. Our article on entity conversions covers this.
 

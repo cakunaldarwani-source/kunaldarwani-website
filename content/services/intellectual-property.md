@@ -34,3 +34,16 @@ The firm assists with the business side of intellectual property: searching, pre
 2. We prepare the application and supporting documents and coordinate the filing.
 3. We track examination and publication. If an objection or opposition arises, we coordinate the reply with a registered agent or advocate.
 4. We maintain renewal dates and advise on royalty arrangements, IP valuation and their tax treatment.
+
+## When should a trademark be filed?
+
+As early as possible. An application can be filed on a "proposed to be used" basis before the product reaches the market, and the filing date then counts against later applicants for a similar mark. Where the mark is already in use, dated invoices, advertisements and website captures help support the claimed date of first use.
+
+After examination, an accepted mark is advertised in the Trade Marks Journal. Any person can oppose it within four months of publication. Registration has to be renewed periodically, so we keep renewal dates on record.
+
+## Common issues we see in practice
+
+- A descriptive word (one that simply describes the product or its quality) chosen as the brand, which usually draws an objection.
+- Filing in too few classes, leaving related goods or services unprotected.
+- A logo designed by an outside agency with no written assignment of copyright, so the business does not clearly own the artwork it wants to register.
+- The application filed in the name of a partner or director instead of the entity that actually owns the brand.

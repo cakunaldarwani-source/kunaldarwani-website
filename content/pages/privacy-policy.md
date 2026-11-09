@@ -1,5 +1,6 @@
 ---
 title: Privacy Policy
+meta_description: "How Kunal Darwani & Company, Chartered Accountants, Agra handles personal information shared through this website, email, phone or WhatsApp."
 ---
 This policy explains how Kunal Darwani & Company, Chartered Accountants ("the firm"), handles personal information collected through this website.
 

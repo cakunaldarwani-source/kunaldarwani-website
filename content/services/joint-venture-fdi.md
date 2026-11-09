@@ -34,3 +34,22 @@ Indian businesses investing abroad, by setting up a foreign subsidiary or joint 
 2. We incorporate the entity and coordinate the receipt of funds through banking channels.
 3. We obtain the valuation, allot shares and file FC-GPR within 30 days of allotment.
 4. We maintain annual FEMA compliance, including the FLA return, and review transfer pricing and withholding tax on payments to the parent.
+
+## Key FEMA reporting points
+
+| Event | Reporting |
+|---|---|
+| Allotment of shares to a foreign investor | Form FC-GPR on RBI's FIRMS portal within 30 days of allotment |
+| Transfer of shares between a resident and a non-resident | Form FC-TRS on the FIRMS portal |
+| Outstanding foreign investment (FDI or ODI) at end-March | Annual FLA return by 15 July |
+
+The FLA return is due every year while the investment remains outstanding, even in years with no fresh investment. It can be filed on unaudited figures if the audit is not complete by 15 July.
+
+## Common issues we see in practice
+
+- Foreign remittances received before the bank has completed KYC of the remitter, which delays the paperwork needed for reporting.
+- Share allotment delayed after receipt of funds, which can require the money to be refunded under FEMA.
+- Valuation reports dated after the price was fixed.
+- FLA returns missed in later years, and payments to the parent made without reviewing withholding tax.
+
+Late reporting can usually be regularised by paying a late submission fee, but it is simpler to keep the calendar from the start.

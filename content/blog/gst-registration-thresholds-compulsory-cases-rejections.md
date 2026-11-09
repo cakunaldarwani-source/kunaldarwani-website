@@ -4,6 +4,23 @@ date: 2026-09-26
 service: gst-registration
 author: CA. Kunal Darwani
 summary: When GST registration is required, when it is required regardless of turnover, the composition option, and how to avoid a REG-03 query or rejection.
+seo_title: "GST Registration Limit 2026: Thresholds, Compulsory Cases"
+meta_description: "GST registration is needed above ₹40 lakh for goods and ₹20 lakh for services in most states, and always for inter-state sale of goods. Why some fail."
+keywords:
+  - "GST registration limit"
+  - "GST registration threshold 2026"
+  - "compulsory GST registration"
+  - "GST registration rejected reasons"
+  - "REG-03 clarification reply"
+faq:
+  - q: "Is GST registration needed for inter-state supply of services below ₹20 lakh?"
+    a: "No. Suppliers of services making inter-state supplies are exempted from registration until their aggregate turnover crosses the threshold. Inter-state supply of goods, however, requires registration whatever the turnover."
+  - q: "How long does the officer have to approve a GST registration?"
+    a: "With successful Aadhaar authentication, an application is deemed approved if the officer does not act within seven working days. Without it, a site visit is required and the outer limit is 30 days."
+  - q: "Can I register for GST from my residence?"
+    a: "Yes. Residential premises can be the principal place of business, provided you upload ownership or rent proof and, where needed, a consent letter from the owner, and the business activity is explained."
+  - q: "What happens if I do not reply to a clarification notice in time?"
+    a: "The officer can reject the application. You would then have to file a fresh application, which generates a new TRN."
 ---
 GST registration looks like a form-filling exercise. In practice a large share of applications receive a clarification notice, and many are rejected for avoidable reasons. Here is what to know before you apply.
 
@@ -37,6 +54,22 @@ The **composition scheme** suits small businesses that sell mainly to consumers.
 
 There is a catch. A composition dealer cannot charge GST on invoices, cannot claim input tax credit and cannot make inter-state outward supplies. If your customers are registered businesses, composition makes you less attractive as a supplier.
 
+## How does the online application work?
+
+1. **Part A of REG-01.** Enter PAN, mobile number and email address on gst.gov.in. After OTP verification, a Temporary Reference Number (TRN) is generated.
+2. **Part B.** Log in with the TRN and fill in business details, promoters, the authorised signatory, the principal place of business, the bank account and HSN/SAC codes. Upload documents and sign with DSC or EVC.
+3. **Aadhaar authentication.** A link goes to the primary authorised signatory and one promoter or partner. It must be completed within **15 days** of submitting Part B.
+4. **Without Aadhaar authentication**, the application is marked for a site visit, and the applicant may be asked to visit a GST Suvidha Kendra for photo capture and document verification. Such applications are not deemed approved in seven working days.
+5. **Officer action.** Where a site visit applies, the application is deemed approved if the officer takes no action within **30 days**. If a clarification notice is issued, the officer has seven working days to decide after your reply.
+
+## Documents usually asked for
+
+- PAN, Aadhaar and photograph of the proprietor, partners or directors
+- proof of constitution: partnership deed, LLP agreement or certificate of incorporation
+- proof of the principal place of business: electricity bill or property tax receipt, with the rent agreement or consent letter
+- bank account proof: cancelled cheque, passbook page or statement
+- authorisation letter or board resolution for the authorised signatory
+
 ## Why applications get a REG-03 query or are rejected
 
 - **Address proof mismatch.** The electricity bill or property tax receipt is in a different name from the rent agreement or consent letter, or shows a different address format.
@@ -47,6 +80,12 @@ There is a catch. A composition dealer cannot charge GST on invoices, cannot cla
 - **Residential premises** used without explaining how the business is actually run from there.
 
 A reply to REG-03 must be filed within **seven working days**. Otherwise the application is rejected and you must start again.
+
+## What we commonly see in practice
+
+- Applications from shared or residential premises draw the most queries. A consent letter from the owner, with the owner's ID and a utility bill in the same name and address format, avoids most of them.
+- Applicants sometimes skip Aadhaar authentication to save a few minutes, and the site visit that follows adds days or weeks.
+- Replies to clarification notices are often filed with the same document the officer questioned. Read the query line by line and send exactly what it asks for.
 
 ## After registration
 

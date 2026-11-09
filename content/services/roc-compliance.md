@@ -30,3 +30,22 @@ The Companies Act requires companies to file their financial statements and annu
 2. We draft Board and general meeting documents and maintain the minutes and registers.
 3. We prepare and file the forms on the MCA V3 portal and track approvals.
 4. We send reminders for periodic filings such as DIR-3 KYC, DPT-3 and MSME-1.
+
+## Key annual due dates (31 March year-end)
+
+| Filing | Due date |
+|---|---|
+| AOC-4 (financial statements) | Within 30 days of the AGM |
+| MGT-7 / MGT-7A (annual return) | After the AGM, within the period set by Section 92 |
+| LLP Form 11 (annual return) | 30 May |
+| LLP Form 8 (statement of account and solvency) | 30 October |
+
+## What we commonly see in practice
+
+- DIR-3 KYC missed, so the director's DIN is deactivated and other filings get stuck.
+- ADT-1 not filed after the auditor is appointed or reappointed.
+- Changes in directors, registered office or share capital filed late, attracting additional fees for each day of delay.
+- Charges not marked as satisfied after a loan is repaid.
+- Statutory registers and minutes books not written up, which becomes a problem at the time of due diligence or a bank review.
+
+Keeping a single compliance calendar, with every director's DSC validity and KYC date on it, prevents most of these.

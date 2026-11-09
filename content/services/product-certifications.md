@@ -35,3 +35,20 @@ The firm helps clients identify what applies, prepares the documentation, and co
 2. We prepare technical files, process documentation and applications.
 3. We coordinate testing, inspection and audits.
 4. We maintain renewals and surveillance requirements.
+
+## Who needs these certifications?
+
+- **BIS:** manufacturers, including foreign manufacturers exporting to India, and importers of products covered by a Quality Control Order. Covered products cannot be made, imported, sold or stored for sale without a valid BIS licence or registration.
+- **CE marking:** Indian exporters selling regulated products in the European Union.
+- **HACCP:** food businesses whose buyers or export markets ask for a documented food safety plan.
+- **Organic:** producers and exporters who want to sell products labelled organic, certified through an accredited certification body.
+- **PSARA:** private security agencies, which need the state licence before they start operations.
+
+## Common issues we see in practice
+
+- Products tested against the wrong Indian Standard or an outdated version of it.
+- The factory lacks the in-house testing equipment, or calibration records, that the scheme requires.
+- A new model or brand name launched without updating the licence.
+- Import consignments arriving after a Quality Control Order has taken effect, without a licence in place.
+
+Keep product drawings, the bill of materials, a list of test equipment with calibration certificates and any brand authorisation letters ready before the application.

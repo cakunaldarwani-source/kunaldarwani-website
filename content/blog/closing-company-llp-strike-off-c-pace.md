@@ -4,6 +4,21 @@ date: 2026-09-06
 service: company-closure
 author: CA. Kunal Darwani
 summary: Eligibility for strike off, the documents involved, what to close first, and when voluntary liquidation is the better route.
+seo_title: "Strike Off of Company or LLP via C-PACE vs Voluntary Liquidation"
+meta_description: "A company with no assets or liabilities can apply for strike off in STK-2, processed by C-PACE; an LLP files Form 24. When voluntary liquidation is needed."
+keywords:
+  - strike off company C-PACE
+  - how to close a private limited company
+  - STK-2 documents
+  - LLP closure Form 24
+  - voluntary liquidation vs strike off
+faq:
+  - q: "Can a company with a small bank balance apply for strike off?"
+    a: "The company must have no assets and no liabilities on the date of application. Bank accounts should be closed, and any balance distributed or used to settle dues, before STK-2 is filed."
+  - q: "What happens after STK-2 is filed?"
+    a: "C-PACE examines the application and, if it is in order, publishes a public notice in Form STK-6 inviting objections within thirty days. After that, the name is struck off and a notice is published in the Official Gazette."
+  - q: "Can a struck-off company be revived?"
+    a: "Yes. The company, a member, a creditor or a workman who feels aggrieved can apply to the NCLT for restoration within 20 years of the publication of the notice of dissolution."
 ---
 Many companies and LLPs are formed for a project that never takes off, or a business that later moves into another entity. Leaving them dormant is not free: annual filings continue, and missed filings lead to penalties and director disqualification. Formal closure is usually the better choice.
 
@@ -46,6 +61,20 @@ A government fee of ₹10,000 applies. **All pending annual filings, AOC-4 and M
 6. **File the final income tax return.**
 
 Directors remain liable for liabilities that come to light later. The indemnity they sign is enforceable, and the Registrar can restore a struck-off company on application by an aggrieved person within 20 years.
+
+## How the strike-off process runs
+
+1. Complete all pending annual filings and close registrations, bank accounts and licences.
+2. Pass the Board resolution and the special resolution of members, and get the director affidavits and indemnity bonds signed and notarised.
+3. Obtain the CA-certified statement of accounts, dated within 30 days of filing.
+4. File STK-2 on the MCA portal with the government fee. The application is routed to C-PACE.
+5. C-PACE examines the application and may raise queries through the portal.
+6. A public notice in **Form STK-6** is published, giving thirty days for objections.
+7. If there are no objections, the name is struck off and a notice is published in the Official Gazette. The company stands dissolved from that date.
+
+## What we commonly see in practice
+
+Strike-off applications are most often held up by small loose ends: a director loan still sitting in the balance sheet, a GST registration that was never cancelled, or an old annual return that was filed with errors. Directors also sometimes close the bank account before the final charges and the last income tax payment have gone through, and are then left with a liability and no account to pay from. Clearing the balance sheet completely before preparing the statement of accounts saves rounds of queries. Our [company closure](../services/company-closure.html) page lists the steps we work through.
 
 ## Route 2: Voluntary liquidation
 

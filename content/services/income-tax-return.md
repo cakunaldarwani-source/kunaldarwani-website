@@ -35,3 +35,14 @@ The **Income-tax Act, 2025** applies from 1 April 2026, starting with **tax year
 2. We compute income under both regimes where an option exists, and recommend one.
 3. We share a draft computation for your approval, then file and e-verify the return.
 4. We track processing, refunds and any intimation, and plan advance tax for the next year.
+
+## Mismatches we commonly see
+
+- Interest on savings accounts and fixed deposits left out because no TDS was deducted.
+- Dividend and capital gains entries in the AIS that differ from the broker's statement because of corporate actions or the cost of acquisition.
+- Rent from let-out property, or income of a minor child that has to be included, omitted from the return.
+- TDS deducted by a customer but missing from Form 26AS because the deductor has not filed its statement correctly.
+
+## What to keep ready
+
+Login access to the e-filing portal, statements of every bank account for the year, capital gains reports from brokers and mutual funds, and details of any foreign assets or income, which are reported separately.

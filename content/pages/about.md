@@ -1,5 +1,6 @@
 ---
 title: The Firm
+meta_description: "Kunal Darwani & Company is a firm of Chartered Accountants in Tajganj, Agra. Partners CA. Kunal Darwani and CA. Reet Darwani, office address and practice areas."
 ---
 **Kunal Darwani & Company** is a firm of Chartered Accountants in practice, whose partners are members of the Institute of Chartered Accountants of India. The firm's office is at Tajganj, Agra, Uttar Pradesh.
 

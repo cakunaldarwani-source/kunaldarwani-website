@@ -4,7 +4,7 @@ short: Foreign Accounting Outsourcing
 category: accounting
 order: 230
 new: true
-summary: Bookkeeping, reconciliations, month-end close and year-end support for businesses and accounting firms in the US, UK, UAE, Canada and Australia, delivered from India on the client's own systems.
+summary: Bookkeeping, reconciliations, month-end close and year-end support for overseas businesses and accounting firms, delivered from India on their own systems.
 includes:
   - Day-to-day bookkeeping and transaction categorisation
   - Bank, credit card and payment-gateway reconciliations (Stripe, PayPal, Shopify, Amazon)

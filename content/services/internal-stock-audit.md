@@ -33,3 +33,17 @@ A **stock audit** is commissioned by a bank to verify the inventory and receivab
 2. We carry out fieldwork – process walk-throughs, sample testing and physical verification.
 3. We discuss observations with process owners and agree corrective actions.
 4. We issue the report, and follow up on the actions in the next cycle.
+
+## Which companies must appoint an internal auditor?
+
+Under Rule 13 of the Companies (Accounts) Rules, 2014, every listed company must appoint one. An unlisted public company must do so if, in the preceding financial year, it had paid-up share capital of ₹50 crore or more, turnover of ₹200 crore or more, outstanding loans from banks or public financial institutions exceeding ₹100 crore, or outstanding deposits of ₹25 crore or more. A private company must do so if its turnover was ₹200 crore or more, or its bank and financial institution borrowings exceeded ₹100 crore at any time, in the preceding financial year.
+
+## What we commonly see in stock audits
+
+- Stock statements prepared from estimates instead of book figures, so they do not match the closing stock in the accounts.
+- Receivables older than the period allowed in the sanction letter included in the drawing power.
+- Slow-moving and obsolete items carried at full cost.
+- Differences between the stock statement, GST returns and the books that nobody has reconciled.
+- Insurance cover that does not match the stock value or all the storage locations.
+
+Keeping a location-wise stock register, debtor and creditor ageing, the sanction letter and current insurance policies ready shortens the fieldwork considerably.
