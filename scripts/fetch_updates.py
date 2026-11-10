@@ -44,13 +44,19 @@ SOURCES = [
     {"name": "CBDT", "kind": "news", "type": "rss", "label": "Income Tax Press Release",
      "url": "https://www.incometaxindia.gov.in/press-release-rss-feed/-/asset_publisher/bxhj/rss"},
     {"name": "RBI", "kind": "circular", "type": "rss", "label": "RBI Notification",
-     "url": "https://www.rbi.org.in/notifications_rss.xml"},
+     "url": "https://www.rbi.org.in/notifications_rss.xml",
+     "exclude": r"section 51a of uapa"},
     {"name": "RBI", "kind": "news", "type": "rss", "label": "RBI Press Release",
      "url": "https://www.rbi.org.in/pressreleases_rss.xml",
      "exclude": r"money market operations|auction|weekly statistical|treasury bill|result of|cut-off|"
                 r"lending facility|reserve money|state government securities|government stock|"
-                r"variable rate repo|variable rate reverse repo|\bsdl\b|overnight|imposes monetary penalty|"
-                r"cancels the certificate|directions under section 35a|appoints|payment of interest"},
+                r"variable rate repo|variable rate reverse repo|\bsdl\b|overnight|monetary penalty|"
+                r"cancels (the )?certificate|directions under section 35 ?a|appoints|payment of interest|supersession|"
+                r"turnover data|survey|sectoral deployment|sovereign gold bond|money supply|scheduled banks.? statement|"
+                r"lending and deposit rates|monthly data|releases data|overseas direct investment|balance of payments|"
+                r"rbi bulletin|citizen.?s charter|census on|rate of interest on government|conference|meeting of central board|"
+                r"inaugurates|section 51a of uapa|conversion/switch|minutes of the monetary policy|amalgamation of|"
+                r"lapse of|all inclusive directions|restrictions on"},
     {"name": "SEBI", "kind": "circular", "type": "rss", "label": "SEBI Circular",
      "url": "https://www.sebi.gov.in/sebirss.xml", "include_link": r"/legal/(circulars|master-circulars)/"},
     {"name": "SEBI", "kind": "news", "type": "rss", "label": "SEBI Press Release",

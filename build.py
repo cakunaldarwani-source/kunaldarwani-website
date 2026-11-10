@@ -60,6 +60,7 @@ def main():
     updates = json.loads(upd_path.read_text(encoding="utf-8")) if upd_path.exists() else {"items": []}
     sum_path = ROOT / "data" / "summaries.json"
     summaries = json.loads(sum_path.read_text(encoding="utf-8")) if sum_path.exists() else {}
+    updates["updated_human"] = fmt_date(updates["updated"][:10]) if updates.get("updated") else ""
     for u in updates["items"]:
         u["date_human"] = fmt_date(u["date"])
         u["summary"] = summaries.get(u["link"], {}).get("summary", "")

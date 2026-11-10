@@ -257,6 +257,16 @@ address { font-style: normal; }
 .upd-sum { margin: 4px 0 2px; font-size: .88rem; color: var(--muted); line-height: 1.5; }
 .upd-by { display: inline-block; font: 500 .66rem/1 var(--font-mono); letter-spacing: .05em; text-transform: uppercase; color: var(--red); margin-left: 4px; }
 
+.upd-latest-band { padding-bottom: 0; }
+.upd-latest { list-style: none; margin: var(--s3) 0 0; padding: 0; display: grid; gap: 0; background: var(--sheet); border: 1px solid var(--rule); border-radius: var(--radius); box-shadow: var(--shadow); }
+.upd-latest li { display: grid; grid-template-columns: 4.2rem 1fr auto; gap: var(--s3); align-items: baseline; padding: var(--s3) var(--s4); border-bottom: 1px solid var(--rule); }
+.upd-latest li:last-child { border-bottom: 0; }
+.upd-latest a { color: var(--ink); text-decoration: none; font-size: .93rem; line-height: 1.45; }
+.upd-latest a:hover { color: var(--blue); text-decoration: underline; }
+.upd-latest .upd-src { justify-self: start; }
+.upd-latest time { font-size: .76rem; color: var(--muted); white-space: nowrap; }
+@media (max-width: 600px) { .upd-latest li { grid-template-columns: 1fr; gap: 4px; } }
+
 /* Careers application form */
 .apply-form { display: grid; gap: var(--s4); background: var(--sheet); border: 1px solid var(--rule); border-radius: var(--radius); padding: var(--s5); box-shadow: var(--shadow); margin-bottom: var(--s6); }
 .apply-form label { display: grid; gap: 6px; font-size: .9rem; font-weight: 500; color: var(--ink); }
