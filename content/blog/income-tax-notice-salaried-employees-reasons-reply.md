@@ -1,6 +1,6 @@
 ---
 title: "Income Tax Notice for Salaried Employees: Reasons and Replies"
-date: '2026-11-07'
+date: '2026-11-14'
 service: income-tax-notices-assessment
 author: CA. Kunal Darwani
 summary: Why salaried taxpayers receive income tax notices, which notice is which, and how to check, correct and reply before the deadline.
