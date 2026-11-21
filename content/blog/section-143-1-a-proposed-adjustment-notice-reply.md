@@ -1,6 +1,6 @@
 ---
 title: "Section 143(1)(a) Notice: What It Means and How to Reply"
-date: '2026-11-14'
+date: '2026-11-21'
 service: income-tax-notices-assessment
 author: CA. Kunal Darwani
 summary: What a proposed adjustment under section 143(1)(a) is, which errors it can cover, and how to agree or disagree on the e-filing portal within 30 days.
