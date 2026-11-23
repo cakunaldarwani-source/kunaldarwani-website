@@ -282,3 +282,12 @@ address { font-style: normal; }
 .notice { background: #eef8f1; border: 1px solid #bfe3cb; border-left: 4px solid #2e8b57; border-radius: var(--radius); padding: var(--s4) var(--s5); margin-bottom: var(--s5); }
 .notice h2 { font-size: 1.15rem; margin-bottom: var(--s2); }
 .notice p { margin: 0; }
+
+/* WhatsApp button and query form */
+.wa-btn { position: fixed; right: 18px; bottom: calc(18px + env(safe-area-inset-bottom, 0px)); z-index: 50; width: 54px; height: 54px; border-radius: 50%; background: #25D366; display: flex; align-items: center; justify-content: center; box-shadow: 0 2px 8px rgba(0, 0, 0, .25); }
+.wa-btn:hover { background: #1ebe5b; }
+.wa-btn:focus-visible { outline: 3px solid var(--blue); outline-offset: 3px; }
+@media print { .wa-btn { display: none; } }
+.query-form { background: var(--sheet); border: 1px solid var(--rule); border-radius: var(--radius); padding: var(--s4); box-shadow: var(--shadow); margin: var(--s4) 0; min-height: 20rem; }
+.query-box { background: var(--blue-soft); border-radius: var(--radius); padding: var(--s4) var(--s5); margin: var(--s6) 0 var(--s4); }
+.query-box p { margin: 0; }
