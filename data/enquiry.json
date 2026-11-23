@@ -1,0 +1,245 @@
+{
+ "other": 604,
+ "popular": [
+  "Income Tax Returns & Tax Planning",
+  "GST Returns & Compliance",
+  "Accounting & Bookkeeping",
+  "Tax Audit",
+  "Statutory Audit",
+  "Company Incorporation"
+ ],
+ "items": [
+  {
+   "n": "Accounting & Bookkeeping",
+   "g": "Accounting",
+   "k": "accounting bookkeeping",
+   "b": 504,
+   "s": "accounting-bookkeeping"
+  },
+  {
+   "n": "Business Agreements & Deeds",
+   "g": "Documentation",
+   "k": "business agreements",
+   "b": 566,
+   "s": "business-agreements"
+  },
+  {
+   "n": "Closure of Company & LLP",
+   "g": "Company law",
+   "k": "company closure",
+   "b": 604,
+   "s": "company-closure"
+  },
+  {
+   "n": "Company Incorporation",
+   "g": "Business setup",
+   "k": "company incorporation",
+   "b": 100,
+   "s": "company-incorporation"
+  },
+  {
+   "n": "Corporate Advisory & Business Structuring",
+   "g": "Advisory",
+   "k": "corporate advisory",
+   "b": 604,
+   "s": "corporate-advisory"
+  },
+  {
+   "n": "Digital Signature Certificates (DSC)",
+   "g": "Documentation",
+   "k": "digital signature certificate",
+   "b": 388,
+   "s": "digital-signature-certificate"
+  },
+  {
+   "n": "Business Conversions",
+   "g": "Company law",
+   "k": "entity conversion",
+   "b": 604,
+   "s": "entity-conversion"
+  },
+  {
+   "n": "Foreign Accounting Outsourcing",
+   "g": "Accounting",
+   "k": "foreign accounting outsourcing",
+   "b": 504,
+   "s": "foreign-accounting-outsourcing"
+  },
+  {
+   "n": "FSSAI Registration & Food Licence",
+   "g": "Registration",
+   "k": "fssai licence",
+   "b": 162,
+   "s": "fssai-licence"
+  },
+  {
+   "n": "GST Notices, Audit & Advisory",
+   "g": "Taxation",
+   "k": "gst notices advisory",
+   "b": 604,
+   "s": "gst-notices-advisory"
+  },
+  {
+   "n": "GST Registration",
+   "g": "Registration",
+   "k": "gst registration",
+   "b": 98,
+   "s": "gst-registration"
+  },
+  {
+   "n": "GST Returns & Compliance",
+   "g": "Taxation",
+   "k": "gst returns",
+   "b": 102,
+   "s": "gst-returns"
+  },
+  {
+   "n": "Import Export Code (IEC)",
+   "g": "Registration",
+   "k": "import export code",
+   "b": 286,
+   "s": "import-export-code"
+  },
+  {
+   "n": "Income Tax Notices, Assessments & Appeals",
+   "g": "Taxation",
+   "k": "income tax notices assessment",
+   "b": 604,
+   "s": "income-tax-notices-assessment"
+  },
+  {
+   "n": "Income Tax Returns & Tax Planning",
+   "g": "Taxation",
+   "k": "income tax return",
+   "b": 166,
+   "s": "income-tax-return"
+  },
+  {
+   "n": "Trademark, Copyright & Patent Support",
+   "g": "Registration",
+   "k": "intellectual property",
+   "b": 160,
+   "s": "intellectual-property"
+  },
+  {
+   "n": "Internal, Stock & Concurrent Audit",
+   "g": "Audit",
+   "k": "internal stock audit",
+   "b": 604,
+   "s": "internal-stock-audit"
+  },
+  {
+   "n": "ISO Implementation & Certification Support",
+   "g": "Registration",
+   "k": "iso certification",
+   "b": 288,
+   "s": "iso-certification"
+  },
+  {
+   "n": "Joint Ventures, Foreign Subsidiaries & FEMA",
+   "g": "Business setup",
+   "k": "joint venture fdi",
+   "b": 604,
+   "s": "joint-venture-fdi"
+  },
+  {
+   "n": "LLP & Partnership Firm Registration",
+   "g": "Business setup",
+   "k": "llp partnership",
+   "b": 660,
+   "s": "llp-partnership"
+  },
+  {
+   "n": "NBFC & Microfinance Registration",
+   "g": "Business setup",
+   "k": "nbfc registration",
+   "b": 100,
+   "s": "nbfc-registration"
+  },
+  {
+   "n": "NGO, Trust & Society Registration",
+   "g": "Business setup",
+   "k": "ngo trust registration",
+   "b": 604,
+   "s": "ngo-trust-registration"
+  },
+  {
+   "n": "Payroll Processing & Compliance",
+   "g": "Accounting",
+   "k": "payroll",
+   "b": 604,
+   "s": "payroll"
+  },
+  {
+   "n": "PF & ESI Registration and Compliance",
+   "g": "Registration",
+   "k": "pf esi registration",
+   "b": 638,
+   "s": "pf-esi-registration"
+  },
+  {
+   "n": "BIS, CE, HACCP, Organic & PSARA Licences",
+   "g": "Registration",
+   "k": "product certifications",
+   "b": 604,
+   "s": "product-certifications"
+  },
+  {
+   "n": "Project Reports, CMA Data & Loan Documentation",
+   "g": "Advisory",
+   "k": "project finance",
+   "b": 640,
+   "s": "project-finance"
+  },
+  {
+   "n": "Proprietorship, MSME (Udyam) & HUF Setup",
+   "g": "Business setup",
+   "k": "proprietorship msme huf",
+   "b": 284,
+   "s": "proprietorship-msme-huf"
+  },
+  {
+   "n": "ROC & Annual Compliance",
+   "g": "Company law",
+   "k": "roc compliance",
+   "b": 168,
+   "s": "roc-compliance"
+  },
+  {
+   "n": "Shop & Establishment Registration and Trade Licence",
+   "g": "Registration",
+   "k": "shop establishment trade licence",
+   "b": 302,
+   "s": "shop-establishment-trade-licence"
+  },
+  {
+   "n": "Startup India (DPIIT) Recognition",
+   "g": "Business setup",
+   "k": "startup india",
+   "b": 666,
+   "s": "startup-india"
+  },
+  {
+   "n": "Statutory Audit",
+   "g": "Audit",
+   "k": "statutory audit",
+   "b": 604,
+   "s": "statutory-audit"
+  },
+  {
+   "n": "Tax Audit",
+   "g": "Audit",
+   "k": "tax audit",
+   "b": 1052,
+   "s": "tax-audit"
+  },
+  {
+   "n": "TDS & TCS Compliance",
+   "g": "Taxation",
+   "k": "tds compliance",
+   "b": 702,
+   "s": "tds-compliance"
+  }
+ ],
+ "_note": "Services in the 'Send a query' form. b = Bitrix24 'Services' option ID (604 = Other Service); s = service page slug. Leads go to Bitrix through https://indiansalahkar.com/enquiry and are tagged as kunaldarwani.com (CA firm) leads."
+}

@@ -194,7 +194,9 @@ def main():
     render("partners.html", "partners.html", page_title="Partners", nav="partners")
     render("calendar.html", "compliance-calendar.html", compliance=compliance,
            page_title="Compliance Calendar", nav="calendar")
-    render("contact.html", "contact.html", page_title="Contact", nav="contact")
+    enq = load_json("enquiry.json")
+    enq_json = json.dumps({k: enq[k] for k in ("other", "popular", "items")}, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
+    render("contact.html", "contact.html", page_title="Contact", nav="contact", enq_json=enq_json)
     render("careers.html", "careers.html", page_title="Careers",
            description="Careers at Kunal Darwani & Company, Chartered Accountants, Agra. Apply for articleship, CA, accounts and tax roles.", nav="careers")
     art = load_json("articleship.json")
