@@ -1,6 +1,87 @@
 {
- "updated": "2026-11-22 18:59 IST",
+ "updated": "2026-11-23 21:45 IST",
  "items": [
+  {
+   "title": "Reserve Bank of India (All India Financial Institutions - Securitisation Transactions) Amendment Directions, 2026",
+   "link": "https://www.rbi.org.in/scripts/NotificationUser.aspx?Id=13756&Mode=0",
+   "date": "2026-11-23",
+   "source": "RBI",
+   "label": "RBI Notification",
+   "kind": "circular",
+   "first_seen": "2026-11-23"
+  },
+  {
+   "title": "Reserve Bank of India (Non-Banking Financial Companies - Securitisation Transactions) Amendment Directions, 2026",
+   "link": "https://www.rbi.org.in/scripts/NotificationUser.aspx?Id=13755&Mode=0",
+   "date": "2026-11-23",
+   "source": "RBI",
+   "label": "RBI Notification",
+   "kind": "circular",
+   "first_seen": "2026-11-23"
+  },
+  {
+   "title": "Reserve Bank of India (Small Finance Banks - Securitisation Transactions) Amendment Directions, 2026",
+   "link": "https://www.rbi.org.in/scripts/NotificationUser.aspx?Id=13754&Mode=0",
+   "date": "2026-11-23",
+   "source": "RBI",
+   "label": "RBI Notification",
+   "kind": "circular",
+   "first_seen": "2026-11-23"
+  },
+  {
+   "title": "Reserve Bank of India (Commercial Banks - Securitisation Transactions) Amendment Directions, 2026",
+   "link": "https://www.rbi.org.in/scripts/NotificationUser.aspx?Id=13753&Mode=0",
+   "date": "2026-11-23",
+   "source": "RBI",
+   "label": "RBI Notification",
+   "kind": "circular",
+   "first_seen": "2026-11-23"
+  },
+  {
+   "title": "Governor, Reserve Bank of India meets Managing Directors & Chief Executive Officers of select NBFCs, HFCs and Industry Representatives in Mumbai on November 23, 2026",
+   "link": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=64032",
+   "date": "2026-11-23",
+   "source": "RBI",
+   "label": "RBI Press Release",
+   "kind": "news",
+   "first_seen": "2026-11-23"
+  },
+  {
+   "title": "Governor, Reserve Bank of India meets Chairpersons and Managing Directors & Chief Executive Officers of select UCBs and Industry Representatives in Mumbai on November 23, 2026",
+   "link": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=64031",
+   "date": "2026-11-23",
+   "source": "RBI",
+   "label": "RBI Press Release",
+   "kind": "news",
+   "first_seen": "2026-11-23"
+  },
+  {
+   "title": "Reserve Bank (Securitisation Transactions) Amendment Directions, 2026",
+   "link": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=64028",
+   "date": "2026-11-23",
+   "source": "RBI",
+   "label": "RBI Press Release",
+   "kind": "news",
+   "first_seen": "2026-11-23"
+  },
+  {
+   "title": "RBI issues Draft Amendment Directions for ‘Preventive Safeguards for Electronic Banking Transactions (EBTs)’",
+   "link": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=64026",
+   "date": "2026-11-23",
+   "source": "RBI",
+   "label": "RBI Press Release",
+   "kind": "news",
+   "first_seen": "2026-11-23"
+  },
+  {
+   "title": "RBI releases 2026 list of Domestic Systemically Important Banks (D-SIBs)",
+   "link": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=64025",
+   "date": "2026-11-23",
+   "source": "RBI",
+   "label": "RBI Press Release",
+   "kind": "news",
+   "first_seen": "2026-11-23"
+  },
   {
    "title": "Reserve Bank issues Foreign Exchange Management (Export and Import of Goods and Services) (Second Amendment) Regulations, 2026",
    "link": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=64009",
@@ -1211,15 +1292,6 @@
    "title": "Announcement for Extension of Last Date for Submitting MEF 2026-27 from 29th August to 9th September, 2026",
    "link": "https://www.icai.org/post/mef280826",
    "date": "2026-08-28",
-   "source": "ICAI",
-   "label": "ICAI Announcement",
-   "kind": "news",
-   "first_seen": "2026-10-03"
-  },
-  {
-   "title": "Important Announcement - Self-Paced Module Test",
-   "link": "https://www.icai.org/post/exam-spmt-24082026",
-   "date": "2026-08-24",
    "source": "ICAI",
    "label": "ICAI Announcement",
    "kind": "news",
