@@ -288,6 +288,49 @@ address { font-style: normal; }
 .wa-btn:hover { background: #1ebe5b; }
 .wa-btn:focus-visible { outline: 3px solid var(--blue); outline-offset: 3px; }
 @media print { .wa-btn { display: none; } }
-.query-form { background: var(--sheet); border: 1px solid var(--rule); border-radius: var(--radius); padding: var(--s4); box-shadow: var(--shadow); margin: var(--s4) 0; min-height: 20rem; }
+.query-form { background: var(--sheet); border: 1px solid var(--rule); border-radius: var(--radius); padding: var(--s5); box-shadow: var(--shadow); margin: var(--s4) 0; }
 .query-box { background: var(--blue-soft); border-radius: var(--radius); padding: var(--s4) var(--s5); margin: var(--s6) 0 var(--s4); }
 .query-box p { margin: 0; }
+
+/* Send a query form (same behaviour as indiansalahkar.com) */
+.enq { display: flex; flex-direction: column; gap: 14px; position: relative; }
+.enq-hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+.enq-f { display: flex; flex-direction: column; gap: 5px; }
+.enq-f > label { font-size: .88rem; font-weight: 500; color: var(--ink); }
+.enq-f .opt { font-weight: 400; color: var(--muted); }
+.enq input, .enq textarea { font: 400 1rem/1.4 var(--font-body); color: var(--ink); width: 100%; box-sizing: border-box; }
+.enq-f > input, .enq-f > textarea, .enq-tel, .enq-box { border: 1px solid var(--rule-strong); border-radius: 8px; background: #fff; transition: border-color .15s; }
+.enq-f > input { height: 46px; padding: 0 14px; }
+.enq-f > textarea { padding: 10px 14px; resize: vertical; min-height: 84px; }
+.enq-f > input:focus, .enq-f > textarea:focus, .enq-tel:focus-within, .enq-box:focus-within { outline: 2px solid var(--blue-soft); border-color: var(--blue); }
+.enq-tel { display: flex; align-items: stretch; overflow: hidden; }
+.enq-tel span { display: flex; align-items: center; padding: 0 12px; color: var(--muted); border-right: 1px solid var(--rule-strong); font-weight: 500; background: var(--paper); }
+.enq-tel input { border: 0; background: transparent; height: 46px; padding: 0 14px; min-width: 0; outline: none; }
+.enq-svc { position: relative; }
+.enq-box { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; padding: 6px 8px; min-height: 46px; cursor: text; }
+.enq-chips { display: contents; }
+.enq-chip { display: inline-flex; align-items: center; gap: 4px; background: var(--blue-soft); color: var(--blue-deep); border-radius: 999px; padding: 4px 4px 4px 12px; font-size: .86rem; font-weight: 500; line-height: 1.3; max-width: 100%; }
+.enq-chip.is-custom { background: #fdf3e2; color: #7a5310; border: 1px dashed #c9933a; }
+.enq-chip button { display: inline-flex; align-items: center; justify-content: center; width: 24px; height: 24px; border: 0; border-radius: 999px; background: transparent; color: inherit; cursor: pointer; padding: 0; flex: none; }
+.enq-chip button:hover { background: rgba(20, 38, 64, .1); }
+.enq-chip svg, .enq-in svg { width: 14px; height: 14px; stroke: currentColor; stroke-width: 2.4; fill: none; stroke-linecap: round; }
+.enq-in { flex: 1 1 160px; display: flex; align-items: center; gap: 8px; min-width: 0; padding-left: 4px; color: var(--muted); }
+.enq-in svg { width: 17px; height: 17px; flex: none; }
+.enq-in input { border: 0; background: transparent; height: 32px; outline: none; min-width: 0; }
+.enq-drop { position: absolute; left: 0; right: 0; top: 100%; margin-top: 6px; background: #fff; border: 1px solid var(--rule); border-radius: 12px; box-shadow: 0 12px 32px rgba(20, 38, 64, .14); z-index: 30; max-height: 340px; overflow-y: auto; padding-bottom: 4px; }
+.enq-h { padding: 10px 14px 4px; font: 500 .7rem var(--font-mono); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.enq-o { display: flex; align-items: center; justify-content: space-between; gap: 12px; width: 100%; min-height: 44px; padding: 8px 14px; border: 0; background: #fff; font: 400 .95rem var(--font-body); text-align: left; cursor: pointer; color: var(--ink); }
+.enq-o small { color: var(--muted); font-size: .76rem; white-space: nowrap; }
+.enq-o:hover, .enq-o.active { background: var(--blue-soft); }
+.enq-custom { justify-content: flex-start; border-top: 1px solid var(--rule); font-size: .92rem; }
+.enq-custom .plus { width: 26px; height: 26px; border-radius: 999px; background: var(--blue); color: #fff; display: inline-flex; align-items: center; justify-content: center; font-weight: 600; flex: none; }
+.enq-err { margin: 0; color: #b42318; font-size: .9rem; font-weight: 500; }
+.enq-err a { color: var(--blue); text-decoration: underline; }
+.enq-go { justify-content: center; width: 100%; height: 50px; font-size: 1rem; }
+.enq-go:disabled { opacity: .7; cursor: wait; }
+.enq-note { margin: 0; font-size: .8rem; color: var(--muted); text-align: center; }
+.enq-done { text-align: center; padding: 12px 0 4px; }
+.enq-done[hidden], .enq[hidden], .enq-drop[hidden], .enq-err[hidden] { display: none; }
+.enq-tick { width: 56px; height: 56px; border-radius: 999px; background: #e7f6ec; color: #2e8b57; display: inline-flex; align-items: center; justify-content: center; margin-bottom: 10px; }
+.enq-tick svg { width: 28px; height: 28px; stroke: currentColor; stroke-width: 2.6; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+.enq-done p { color: var(--muted); }

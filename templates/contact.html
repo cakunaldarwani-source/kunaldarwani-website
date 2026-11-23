@@ -32,14 +32,27 @@
     <h2>Send a query</h2>
     <p>Share a few details and your query. The firm will respond during office hours.</p>
     <div class="query-form">
-      <script data-b24-form="inline/86/bar2tq" data-b24-form-telemetry-sign="v1:86:site.89562e9112a5fa78ceb524ad0623f35530facc151209cef8bcab9bceb873602b" data-skip-moving="true">
-      (function(w,d,u){
-      var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/180000|0);
-      var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
-      })(window,document,'https://cdn.bitrix24.in/b27729365/crm/form/loader_86.js');
-      </script>
+      <form class="enq" data-enquiry novalidate data-endpoint="https://indiansalahkar.com/enquiry" data-wa="{{ site.whatsapp }}" data-page="/contact.html">
+        <div class="enq-hp" aria-hidden="true"><label>Leave this empty <input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
+        <div class="enq-f"><label for="enq-name">Your name</label><input id="enq-name" name="name" type="text" autocomplete="name" maxlength="80" placeholder="e.g. Rahul Sharma" required></div>
+        <div class="enq-f"><label for="enq-phone">Mobile / WhatsApp number</label><div class="enq-tel"><span>+91</span><input id="enq-phone" name="phone" type="tel" inputmode="numeric" autocomplete="tel-national" placeholder="10-digit number" required></div></div>
+        <div class="enq-f"><label for="enq-email">E-mail <span class="opt">(optional)</span></label><input id="enq-email" name="email" type="email" autocomplete="email" maxlength="120" placeholder="you@business.com"></div>
+        <div class="enq-f enq-svc"><label for="enq-q">Your query relates to</label>
+          <div class="enq-box"><span class="enq-chips"></span><span class="enq-in"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input id="enq-q" type="text" role="combobox" aria-expanded="false" aria-controls="enq-list" aria-autocomplete="list" autocomplete="off" placeholder="Search e.g. ITR, GST return, audit"></span></div>
+          <div class="enq-drop" id="enq-list" role="listbox" hidden></div></div>
+        <div class="enq-f"><label for="enq-details">Your query <span class="opt">(optional)</span></label><textarea id="enq-details" name="details" rows="3" maxlength="1000" placeholder="Briefly describe your query"></textarea></div>
+        <p class="enq-err" role="alert" hidden></p>
+        <button class="btn enq-go" type="submit">Send query</button>
+        <p class="enq-note">By sending, you agree to be contacted about this query. See the <a href="privacy-policy.html">privacy policy</a>.</p>
+      </form>
+      <div class="enq-done" hidden>
+        <span class="enq-tick"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5 10 17l9-10"/></svg></span>
+        <h3>Thank you<span data-enq-first></span></h3>
+        <p>Your query has been received. The firm will respond during office hours ({{ site.hours }}).</p>
+        <a class="btn btn-ghost" data-enq-wa href="https://wa.me/{{ site.whatsapp }}" target="_blank" rel="noopener">Continue on WhatsApp</a>
+      </div>
+      <script>window.__ENQ__={{ enq_json|safe }};</script>
     </div>
-    <p class="small">The details you submit are used only to respond to your query. See the <a href="privacy-policy.html">privacy policy</a>.</p>
   </div>
 </section>
 {% endblock %}
