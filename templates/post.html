@@ -18,6 +18,9 @@
       {% endfor %}
     </div>
     {% endif %}
+    <aside class="query-box">
+      <p><strong>Have a query on this topic?</strong> <a href="../contact.html#query">Send a query</a> or <a href="https://wa.me/{{ site.whatsapp }}?text={{ ('Hello, I have a query regarding ' ~ p.title ~ '.')|urlencode }}" target="_blank" rel="noopener">chat on WhatsApp</a>.</p>
+    </aside>
     <aside class="post-foot">
       {% if p.service_obj %}<p>Related service: <a href="../services/{{ p.service_obj.slug }}.html">{{ p.service_obj.title }}</a></p>{% endif %}
       {% if p.related %}<p><strong>Related reading</strong></p>

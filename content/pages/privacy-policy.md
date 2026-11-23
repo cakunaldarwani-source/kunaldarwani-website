@@ -6,7 +6,7 @@ This policy explains how Kunal Darwani & Company, Chartered Accountants ("the fi
 
 ## Information we collect
 
-This website does not use advertising trackers, and it does not ask you to create an account. If you contact the firm by email, phone or WhatsApp, we receive the information you choose to share, such as your name, contact details and the nature of your query.
+This website does not use advertising trackers, and it does not ask you to create an account. If you contact the firm by email, phone, WhatsApp or the query form on the Contact page, we receive the information you choose to share, such as your name, contact details and the nature of your query.
 
 The website's hosting provider may automatically log technical information, such as IP address, browser type and pages visited, for security and performance purposes.
 
