@@ -1,3 +1,4 @@
+import re
 #!/usr/bin/env python3
 """Static site builder for Kunal Darwani & Company, Chartered Accountants.
 
@@ -160,9 +161,20 @@ def main():
 
     for p in posts:
         p["author_slug"] = (partners_by_name.get(p.get("author")) or {}).get("slug")
+        # Internal links (26 Nov 2026): up to 5 related posts (same service first, then shared keyword words),
+        # plus previous/next article, so every post is linked from several others and gets crawled.
+        def _words(q):
+            kw = q.get("keywords") or []
+            kw = kw if isinstance(kw, list) else [kw]
+            return {w for w in re.findall(r"[a-z0-9]+", (" ".join(map(str, kw)) + " " + q["title"]).lower()) if len(w) > 3}
+        mine = _words(p)
         same = [q for q in posts if q is not p and q.get("service") == p.get("service")]
-        others = [q for q in posts if q is not p and q not in same]
-        p["related"] = (same + others)[:3]
+        others = sorted((q for q in posts if q is not p and q not in same),
+                        key=lambda q: len(mine & _words(q)), reverse=True)
+        p["related"] = (same + others)[:5]
+        i = posts.index(p)
+        p["newer"] = posts[i - 1] if i > 0 else None
+        p["older"] = posts[i + 1] if i + 1 < len(posts) else None
         desc = p.get("meta_description") or p.get("summary")
         url = page_url(f"blog/{p['slug']}.html")
         article = {"@type": "Article", "headline": p["title"][:110], "description": desc,
