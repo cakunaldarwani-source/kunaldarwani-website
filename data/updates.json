@@ -1,6 +1,24 @@
 {
- "updated": "2026-11-25 21:20 IST",
+ "updated": "2026-11-26 21:00 IST",
  "items": [
+  {
+   "title": "Half-yearly review of -Significant Indices- under SEBI (Index Providers) Regulations, 2024",
+   "link": "https://www.sebi.gov.in/legal/circulars/nov-2026/half-yearly-review-of-significant-indices-under-sebi-index-providers-regulations-2024_105853.html",
+   "date": "2026-11-25",
+   "source": "SEBI",
+   "label": "SEBI Circular",
+   "kind": "circular",
+   "first_seen": "2026-11-26"
+  },
+  {
+   "title": "Simplification of client on-boarding and rationalisation of risk management framework at KYC Registration Agencies",
+   "link": "https://www.sebi.gov.in/legal/circulars/nov-2026/simplification-of-client-on-boarding-and-rationalisation-of-risk-management-framework-at-kyc-registration-agencies_105839.html",
+   "date": "2026-11-25",
+   "source": "SEBI",
+   "label": "SEBI Circular",
+   "kind": "circular",
+   "first_seen": "2026-11-26"
+  },
   {
    "title": "47th Half-Yearly Report on Management of Foreign Exchange Reserves: April – September 2026",
    "link": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=64042",
@@ -9,6 +27,24 @@
    "label": "RBI Press Release",
    "kind": "news",
    "first_seen": "2026-11-25"
+  },
+  {
+   "title": "Caution to investors regarding impersonation of SEBI registered intermediaries on closed user groups of social media platforms",
+   "link": "https://www.sebi.gov.in/media-and-notifications/press-releases/nov-2026/caution-to-investors-regarding-impersonation-of-sebi-registered-intermediaries-on-closed-user-groups-of-social-media-platforms_105944.html",
+   "date": "2026-11-23",
+   "source": "SEBI",
+   "label": "SEBI Press Release",
+   "kind": "news",
+   "first_seen": "2026-11-26"
+  },
+  {
+   "title": "Advisory Regarding Unregulated Pre-listing Premium often called as Grey Market Premium (GMP) for Upcoming Initial Public Offers (IPOs)",
+   "link": "https://www.sebi.gov.in/media-and-notifications/press-releases/nov-2026/advisory-regarding-unregulated-pre-listing-premium-often-called-as-grey-market-premium-gmp-for-upcoming-initial-public-offers-ipos-_105942.html",
+   "date": "2026-11-23",
+   "source": "SEBI",
+   "label": "SEBI Press Release",
+   "kind": "news",
+   "first_seen": "2026-11-26"
   },
   {
    "title": "Reserve Bank of India (All India Financial Institutions - Securitisation Transactions) Amendment Directions, 2026",
@@ -99,6 +135,15 @@
    "label": "RBI Press Release",
    "kind": "news",
    "first_seen": "2026-11-20"
+  },
+  {
+   "title": "SEBI hosts IOSCO’s Asia-Pacific Regional Committee Regulatory Roundtable on Market Infrastructure Institutions",
+   "link": "https://www.sebi.gov.in/media-and-notifications/press-releases/nov-2026/sebi-hosts-iosco-s-asia-pacific-regional-committee-regulatory-roundtable-on-market-infrastructure-institutions_105848.html",
+   "date": "2026-11-19",
+   "source": "SEBI",
+   "label": "SEBI Press Release",
+   "kind": "news",
+   "first_seen": "2026-11-26"
   },
   {
    "title": "Finances of Panchayati Raj Institutions",
